@@ -1,0 +1,91 @@
+html {
+    background: #b3b3b3;
+    border:  1px solid red;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: white;
+    padding: 0px;
+    border:  1px solid black;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+.header {
+    border: 1px black solid;
+    background: red;
+    /*top: 100px;*/
+    font-size: x-large;
+    left: 0px;
+    width: 100%; /*was 300px*/
+    height: 60px;
+    color: white;
+    padding-top: 30px;
+    text-align: center;
+    /*margin: 20px 20px 20px 20px;*/
+    position: relative;
+}
+
+.images {
+    border: 1px black solid;
+    background: blue;
+    /*background: url("/assets/images/monaco-blue-soft.jpg") blue;*/
+    /*top: 60px;*/
+    font-size: x-large;
+    left: 0px;
+    width: 100%; /*was 300px*/
+    height: 400px;
+    color: white;
+    padding-top: 100px;
+    text-align: center;
+    /*margin: 20px 20px 20px 20px;*/
+    position: relative;
+}
+
+.main {
+    border: 1px black solid;
+    background: lightgray;
+    /*top: 150px;*/
+    font-size: x-large;
+    left: 0px;
+    width: 100%;  /*was 300px*/
+    height: 400px;
+    color: black;
+    padding-top: 125px;
+    text-align: center;
+    /*margin: 20px 20px 20px 20px;*/
+    position: relative;
+
+    /*z-index: 99;*/
+
+}
+
+.footer {
+    border: 1px black solid;
+    background: green;
+    /*top: 180px;*/
+    font-size: x-large;
+    left: 0px;
+    width: 100%; /*was 300px*/
+    height: 60px;
+    color: white;
+    padding-top: 30px;
+    text-align: center;
+    /*margin: 20px;*/
+    position: relative;
+
+    /*z-index: 99;*/
+}
+
+
+
+
+
+
+
+
