@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Bookman Old Style');
+
+html {
+    background: #b3b3b3;
+    height: 100%;
+    text-align: center;
+}
+
+body {
+    background: white;
+    height: 100%;
+    width: 100%;    /*this will open up the body to a 100% width*/
+    border:  1px solid black;
+    margin: 0;
+}
+
+.header {
+    border: 1px solidred;
+    background: red;
+    color: white;
+    width: 100%;    /*was 300px*/
+    height: 92px;   /*was 100px*/
+    position: fixed;  /*was relative*/
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    font-family: "Bookman Old Style", sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    color: blue;
+    text-shadow: 2px 2px 12px #000000;
+    padding-left: 20px;
+  }
+  
+  .header-logo::first-letter {
+      font-size: 150%;
+      color: cornflowerblue;
+  }
+
+.section1 {
+    border: 1px solid blue;
+    background: blue;
+    color: white;
+    width: 100%;    /*was 300px*/
+    height: 382px;  /*was 100px*/
+    position: relative;
+    top: 92px
+}
+
+.section2 {
+    border: 1px solid lightgray;
+    background: lightgray;
+    color: black;
+    width: 100%;    /*was 300px*/
+    height: 382px;  /*was 100px*/
+    position: relative;
+    top: 92px;
+}
+
+.footer {
+    border: 1px solid green;
+    background: green;
+    color: white;
+    width: 100%;    /*was 300px*/
+    height: 90px;   /*was 100px*/
+    position: relative;
+    top: 92px;
+}
+
+.descriptive-text {
+    font-size: 25px;
+    color: red;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.descriptive-text a:hover,
+.descriptive-text a:active {
+    color: green;
+} 

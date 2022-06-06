@@ -1,0 +1,266 @@
+
+/** ------------------------------------------------------------------------------------------------------------------------------- */
+/** SASS VARS **/
+/** ------------------------------------------------------------------------------------------------------------------------------- */
+
+:root {
+
+/*  --toc-width                             :  800px; */
+    --sidebar-width                         :  300px;                                   /* was: 17rem = 272px */;
+    --sidebar-padding                       :  0px 25px 0 25px;                         /* was: 0 25px; left snd right(?)*/
+
+    --sidebar-background                    :  var(--base-background-color);            /* Was: var(--mono-tint3) or var(--base-background-color);*/
+/*  --sidebar-border-color                  :  blue                                   *//* ?? was: var(--mono-tint2)      */
+    --sidebar-border-width                  :  5px;                                     /* vertical grey seperator, was: 0 1px 0 0 */
+
+    --sidebar-name-font-size                :  var(--font-size-l);                      /* Title font was: --font-size-l) */
+    --sidebar-name-font-weight              :  400;                                     /* Title font was: 300 or normal; */
+    --sidebar-name-text-align               :  center;                                  /* Title was: center  */
+/*  --sidebar-name-color                    :  red ;                                  *//* ?? was: var(--theme-color);       */
+/*  --sidebar-name-margin                   :  5.5rem 0 0;                            *//* ?? was: 1.5rem 0 0 */
+
+/*  --sidebar-nav-strong-border-width       :  0 0 1px 0;                             *//* ?? was: 0 0 1px 0; */
+/*  --sidebar-nav-strong-border-color       :  red;                                   *//* ?? was: var(--sidebar-border-color); */
+/*  --sidebar-nav-strong-font-size          :  smaller;                               *//* ?? was: smaller */
+/*  --sidebar-nav-strong-font-weight        :  700;                                   *//* ?? was: var(--strong-font-weight); */
+/*  --sidebar-nav-strong-color              :  red;                                   *//* ?? was: var(--heading-color); */
+/*  --sidebar-nav-strong-margin             :  1.50em 0 0.5em;                        *//* ?? was: 1.50em 0 0.5em or 2.00em -25px 0.75em 0;*/
+/*  --sidebar-nav-strong-padding            :  0.25em 0;                              *//* ?? was: 0.25em 0       or 0.25em   0px 0.75em 0;*/
+/*  --sidebar-nav-strong-text-transform     :  uppercase;                             *//* ?? was: ?? */
+
+    --sidebar-nav-margin                    : -1.2rem 0 0;                              /* Title bottom margin, was: 1.5rem 0 0 */
+    --sidebar-nav-indent                    :  1.2em;                                   /* LI Indent, was: 1.0em */
+
+    --sidebar-nav-link-margin               : -1.00px -25px 0  0;                       /* TOC Items padding vertical spacing, was: 0.00px -25px 0  0; */
+    --sidebar-nav-link-padding              :  0.0em   5px;                             /* TOC Items padding was: 0.25em   0px       */
+
+    --sidebar-nav-link-border-width         :  0px;                                     /* TOC Items border width  was: 0        4px 0  0; */
+    --sidebar-nav-link-border-style         :  solid;                                   /* TOC Items border stytle was: solid */
+    --sidebar-nav-link-border-color         :  red;                                     /* TOC Items border color  was: transparent; */
+    --sidebar-nav-link-border-color--active :  rgb(0,0,0);                              /* TOC Items border color  was: var(--theme-color) */
+    --sidebar-nav-link-border-radius        : .5rem;                                    /* TOC Items border radius was: ?? */
+
+    --sidebar-nav-link-background-color     :  white;                                   /* was: white */
+/*  --sidebar-nav-link-background-image     :  url("") ;  */                            /* was: ?? */
+/*  --sidebar-nav-link-background-position  :  cover;     */                            /* was: ?? */
+/*  --sidebar-nav-link-background-repeat    :  no repeat; */                            /* was: ?? */
+/*  --sidebar-nav-link-background-size      :  center;    */                            /* was: ?? */
+
+    --sidebar-nav-link-color                :  black                                    /* was: var(--base-color); */
+    --sidebar-nav-link-font-weight          :  400                                      /* was: normal */;
+
+    --sidebar-nav-link-text-decoration      :  none;                                    /* TOC Items underline was none    */
+    --sidebar-nav-link-text-decoration--active:underline;                               /* TOC Items underline was: none   */
+    --sidebar-nav-link-text-decoration--hover: underline;                               /* TOC Items underline was: underline     */
+/*  --sidebar-nav-link-text-decoration-color:  red;                                   *//* ?? was: ??     */
+/*  --sidebar-nav-link-before-margin        :  0px 0.35em 0 0;                        *//* ?? was: 0 0.35em 0 0; */
+    --sidebar-nav-link-before-content-l3    : '';                                       /* Appears to the left of child item, sometimes. was: '-' */
+
+    --sidebar-nav-link-transition           :  var(--sidebar-nav-link-transition);      /* ?? */
+/*  --sidebar-nav-pagelink-transition       :  var(--sidebar-nav-link-transition);    *//* ?? */
+/*  --sidebar-nav-pagelink-background-repeat:  no-repeat;                             *//* ?? */
+
+    --sidebar-transition-duration           :  var(--duration-fast);
+
+    --title-font-family                     : "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    --title-line-height                     :  32px;
+    --title-font-size                       :  30px;                                    /* was 1.1rem 17.6px */
+    --title-font-weight                     :  700;
+    --title-text-align                      :  center;
+    --title-text-color                      : rgb(255, 0, 98);
+    --title-text-decoration                 :  underline;
+
+    --subtitle-font-family                  : "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    --subtitle-line-height                  :  24px;
+    --subtitle-font-size                    :  20px;
+    --subtitle-font-weight                  :  400;
+    --subtitle-text-align                   :  center;
+    --subtitle-text-color                   : rgb(0, 0, 0);
+    --subtitle-text-decoration              :  none;
+
+    --border-radius-s                       :  2px;
+    --border-radius-m                       :  4px;
+    --border-radius-l                       :  8px;
+    --hr-border                             :  1px solid var(--mono-tint2);
+
+    --base-font-family                      : "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    --base-line-height                      :  1.4;
+    --base-font-size                        :  18px;                                    /* was 1.1rem 17.6px */
+    --strong-color                          :  grey !important;                         /* was var(--heading-color); */
+    --strong-font-weight                    :  600;
+
+    --paragraph-font-size                   :  18px;
+    --paragraph-h1-margin-top               :  5px;
+    --paragraph-h2-margin-top               :  5px;
+    --paragraph-h3-margin-top               :  5px;
+
+    --cover-max-width: 45em;
+
+    --heading-color                         :  rgb(48, 48, 122);                        /* was: var( --mono-shade3 ); */
+    --heading-margin                        :  2.5rem 0 0;
+    --heading-font-weight                   :  var(--strong-font-weight);
+
+    --heading-h1-margin                     :  1rem 0rem -0.5rem -2rem;                 /* 1rem 0rem -0.5rem 0rem: top right bottom left */
+    --heading-h1-border-style               :  solid;
+    --heading-h1-font-size                  :  var(--font-size-xxl);                    /* was 1.40rem; */
+    --heading-h1-font-weight                :  700;                                     /* was 400      */
+    --heading-h1-color                      :  green;                                   /* was: var(--heading-color); */
+
+    --heading-h2-margin                     :  1rem 0rem -1.5rem -1rem;                 /* was 1rem 0rem -1.5rem 0rem; or 2.5rem 0 1.5rem; */
+    --heading-h2-border-color               :  var(--mono-tint2);
+    --heading-h2-border-style               :  solid;
+    --heading-h2-border-width               :  0 0 1px 0;
+    --heading-h2-font-size                  :  var(--font-size-xl);                     /* was 1.40rem; */
+    --heading-h2-font-weight                :  700;                                     /* was 400      */
+    --heading-h2-padding                    :  0 0 1rem 0;
+    --heading-h2-color                      :  var(--heading-color);
+
+    --heading-h3-margin                     :  1rem 0rem -.5rem 0rem;                   /* not defined, was: 1rem 0rem -.5rem 0rem  */
+    --heading-h3-border-style               :  solid;
+    --heading-h3-font-weight                :  700;                                     /* not defined  */
+    --heading-h3-font-size                  :  var(--font-size-l);                      /* was 1.30rem; */
+    --heading-h3-color                      :  rgb(108, 108, 134);
+
+    --heading-h4-margin                     :  1rem 0rem -.5rem 0rem;                   /* not defined, was: 1rem 0rem -.5rem 0rem  */
+    --heading-h4-border-style               :  solid;
+/*  --heading-h4-font-weight                :  400;   */                                /* not defined  */
+    --heading-h4-font-size                  :  var(--font-size-m);                      /* was 1.20rem; */
+
+    --heading-h5-margin                     :  1rem 0rem -.5rem 0rem;                   /* not defined, was: 1rem 0rem -.5rem 0rem  */
+    --heading-h5-border-style               :  solid;
+/*  --heading-h5-font-weight                :  400;   */                                /* not defined  */
+    --heading-h5-font-size                  :  var(--font-size-s);                      /* was 1.10rem; */
+
+    --heading-h6-margin                     :  1rem 0rem 0.0rem 0rem;                   /* not defined, was: 1rem 0rem 0.0rem 0rem  */
+    --heading-h6-border-style               :  solid;
+/*  --heading-h6-font-weight                :  400;   */                                /* not defined  */
+    --heading-h6-font-size                  :  var(--font-size-xs);                     /* was 1.00rem; */
+
+    --strong-color                          :  var(--heading-color);
+    --search-result-heading-color           :  var(--heading-color);
+    --sidebar-nav-strong-color              :  var(--heading-color);
+
+    --blockquote-border-width               :  1px;
+    --blockquote-border-style               :  solid;
+    --blockquote-border-color               :  red;
+    --blockquote-border-radius              : .25rem;
+    --blockquote-background                 :  white;
+    --blockquote-color                      :  green;
+    --blockquote-font-family                : "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    --blockquote-font-size                  :  1rem;
+    --blockquote-font-style                 :  italic;                                  /* normal | italic | oblique */
+    --blockquote-font-weight                :  700;
+    --blockquote-padding                    :  2px 0px  4px  12px;                      /* was: 1.5em; *//* top right bottom left */
+    --blockquote-margin                     : .7em 10px 0px -10px;                      /* was: 2em 0; *//* was: 1.5em 0; */
+
+    --navbar-root-margin                    :  0 0 0 .8em;
+
+    --sidebar-name-color                    : #0374B5;
+    --sidebar-name-margin                   :  1.5rem -.2rem;
+    --sidebar-nav-link-font-weight--active  :  bold;
+
+    --pagination-title-color                : #0374B5;
+
+    --link-color                            : #0374B5;
+    --link-text-decoration                  :  underline;
+    --link-text-decoration--hover           :  underline;
+
+    --code-theme-text                       : #333;
+    --code-theme-background                 : rgb(219, 204, 189);                     /* was: var(--mono-tint3); */ 
+
+    --code-font-family                      :  Inconsolata, Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+    --code-font-size                        :  calc( var(--font-size-m) * 0.95 );
+    --code-font-weight                      :  normal;
+    --code-tab-size                         :  4;
+
+    --code-block-border-radius              :  var(--border-radius-l);                  /* was --border-radius-m */
+    --code-block-line-height                :  var(--base-line-height);
+    --code-block-margin                     :  -15px 0px 15px 0px;                      /* was : 1em 0; */
+    --code-block-padding                    :  4px 8px;                                 /* was 1.75em 1.5em 1.5em 1.5em; */
+
+    --code-inline-background                :  rgb(219, 204, 189);                    /* was: var(--code-theme-background); */
+    --code-inline-border-radius             :  var(--border-radius-m);
+    --code-inline-color                     :  var(--code-theme-text);
+    --code-inline-margin                    :  0px 0px;                                 /* was: 0 0.15em; */
+    --code-inline-padding                   :  0px 4px;                                 /* was: 0.125em 0.4em; */
+
+    --pre-font-family                       :  var(--code-font-family);
+    --pre-font-size                         :  var(--code-font-size);
+    }
+
+/** ------------------------------------------------------------------------------------------------------------------------------- */
+/** SOME NEW SELECTORS **?
+/** ------------------------------------------------------------------------------------------------------------------------------- */
+.md-title {
+    font-family       : var(--title-font-family);                                       /* "Source Sans Pro", "Helvetica Neue", Arial, sans-serif; */
+    line-height       : var(--title-line-height);                                       /*  32px */
+    font-size         : var(--title-font-size);                                         /*  30px;   *//* was 1.1rem 17.6px */
+    font-weight       : var(--title-font-weight);                                       /*  700; */
+    text-align        : var(--title-text-align);                                        /*  center; */
+    color             : var(--title-text-color);                                        /*  rgb(255, 0, 98); */
+    text-decoration   : var(--title-text-decoration);                                   /*  underline; */
+    }
+
+.md-subtitle {
+    font-family       : var(--subtitle-font-family);                                    /* "Source Sans Pro", "Helvetica Neue", Arial, sans-serif; */
+    line-height       : var(--subtitle-line-height);                                    /*  24px */
+    font-size         : var(--subtitle-font-size);                                      /*  20px;   *//* was 1.1rem 17.6px */
+    font-weight       : var(--subtitle-font-weight);                                    /*  400; */
+    text-align        : var(--subtitle-text-align);                                     /*  center; */
+    color             : var(--subtitle-text-color);                                     /*  black */
+    text-decoration   : var(--subtitle-text-decoration);                                /*  underline; */
+    }
+
+.md-rendered-html { 
+    margin            : -15px 0px  0px -10px;
+    padding           :   8px 5px 10px  10px;
+    border            :  2px solid red;
+    width             :  500px;
+    box-shadow        :  4px 3px 8px 1px #969696;
+   -webkit-box-shadow :  4px 3px 8px 1px #969696;
+    }
+
+.md-line {
+    width             :  100%;
+    height            :  2px; 
+    border            :  0; 
+    background-color  : gray;
+    margin            :  8px 0px 0px 0px;
+    padding           :  0px 0px 0px 0px;                         /* affects the line height */
+    }
+
+.markdown-section h1 + h2 {
+    margin-top      :  var(--paragraph-h1-margin-top);
+    }
+
+.markdown-section h2 + h3 {
+    margin-top      :  var(--paragraph-h1-margin-top);
+    }
+
+.markdown-section h1 + p {
+    margin-top      :  var(--paragraph-h1-margin-top);
+    }
+
+.markdown-section h2 + p {
+    margin-top      :  var(--paragraph-h2-margin-top);
+    }
+
+.markdown-section h3 + p {
+    margin-top      :  var(--paragraph-h3-margin-top);
+    }
+
+.markdown-section p {
+    font-style      :  var(--paragraph-font-style);
+    font-size       :  var(--paragraph-font-size);
+/*  margin-top      :  var(--paragraph-margin-top); */
+
+    }
+
+.markdown-section blockquote {
+    margin          :  var(--blockquote-margin         );  /* was: 1.5em 0; */
+    padding         :  var(--blockquote-padding        );
+    }
+
+
+/* aside > div > ul > li:nth-child(2) { color: red; } */ 
+  

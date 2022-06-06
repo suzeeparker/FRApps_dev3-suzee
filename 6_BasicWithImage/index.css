@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Bookman Old Style');
+
+/*From Basic Blocks*/
+html {
+    background: #b3b3b3;
+    border:  1px solid red;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*From Basic Blocks*/
+body {
+    background: white;
+    padding: 0px;
+    /*border:  1px solid black;*/
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/*From Basic Fixed Header*/
+.header {
+  width: 100%;
+  height: 90px;
+  top: 0;
+  left: 0;
+  background: red; 
+  padding: 8px 16px 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+}
+
+/*From Basic Fixed Header with Links*/
+.nav-list {
+  list-style: none;
+  margin: 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*From Basic Fixed Header with Links*/
+.nav-list-item a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 8px 0;
+
+}
+
+/*From Basic Fixed Header with Links*/
+.nav-list-item a:hover,
+.nav-list-item a:active {
+color: #ccc;
+}  
+
+/*From Basic Fixed Header with Links*/
+.nav-list-item-cta a {
+  color: white;
+  background: blue ;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+/*From Basic Fixed Header with Logo*/
+.header-logo {
+    font-family: "Bookman Old Style", sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    color: cornflowerblue;
+    text-shadow: 2px 2px 12px #000000;
+    padding: 0px 0px 0px 10px;
+  }
+
+
+.header-logo {
+  font-family: "Bookman Old Style", sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+  color: blue;
+  text-shadow: 2px 2px 12px #000000;
+  padding-left: 20px;
+}
+
+.header-logo::first-letter {
+    font-size: 200%;
+    color: cornflowerblue;
+}
+
+.image-text {
+	font-family: "Bookman Old Style", sans-serif;
+	font-size: 60px;
+  font-weight: bolder;
+  color: blue;
+  text-shadow: 2px 2px 12px #000000;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px;
+
+}
+
+
+.image-text::first-letter {
+  font-size: 150%;
+  color: cornflowerblue;
+}
+
+/*From Basic with Image & Text*/
+.section1 {
+  border: 1px black solid;
+  /*background: blue;*/
+  /*background: url("assets/images/monaco-blue-soft.jpg");*/
+  /*background: url("assets/images/FruitBasket.jpg");*/
+  background: url("assets/images/F35.jpg");
+  /*background: url("assets/images/RP.jpg");*/
+  background-color: blue;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  top: 90px;
+  font-size: x-large;
+  left: 0px;
+  width: 100%; 
+  height: 500px;
+  color: white;
+  /*text-align: left;*/
+  /*margin: 20px 20px 20px 20px;*/
+  position: relative;
+}
+
+/*From Basic Blocks*/
+.section2 {
+    border: 1px black solid;
+    background: lightgray;
+    font-size: x-large;
+    left: 0px;
+    width: 100%;  /*was 300px*/
+    height: 400px;
+    color: black;
+    padding-top: 30px;
+    text-align: center;
+    /*margin: 20px 20px 20px 20px;*/
+    position: relative;
+    /*z-index: 99;*/
+}
+
+/*From Basic with Image & Text*/
+.descriptive-text {
+  font-size: 35px;
+  color: red;
+  text-align: center;
+  padding-top: 0px;
+}
+
+.descriptive-text a:hover,
+.descriptive-text a:active {
+  color: green;
+} 
+
+/*From Basic Fixed Header with Links*/
+.footer {
+    border: 1px black solid;
+    background: green;
+    /*top: 180px;*/
+    font-size: large;
+    left: 0px;
+    width: 100%; 
+    height: 60px;
+    color: white;
+    /*padding-top: 30px;*/
+    padding-bottom: 10px;
+    text-align: center;
+    /*margin: 20px;*/
+    position: fixed;
+    bottom: 0px;
+    /*z-index: 99;*/
+}
+
+/*From Basic Fixed Footer with Links*/
+.footer-text {
+  font-size: x-large;
+  text-align: right;
+  padding: 0px 30px 0px 65%;}
+
+/*From Basic Fixed Footer with Links*/
+.footer-list {
+    list-style: none;
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+/*From Basic Fixed Footer with Links*/
+.footer-list-item a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 8px 0;
+
+  }
+
+/*From Basic Fixed Footer with Links*/
+.footer-list-item a:hover,
+.footer-list-item a:active {
+  color: #ccc;
+}
+

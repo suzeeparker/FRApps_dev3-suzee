@@ -9,10 +9,11 @@ html {
 body {
     background: white;
     height: 100%;
+
 }
 
 .header {
-    border: 1px solid red;
+    border: 1px solid black;
     background: red;
     color: white;
     width: 300px;
@@ -21,7 +22,7 @@ body {
 }
 
 .section1 {
-    border: 1px solid blue;
+    border: 1px solid black;
     background: blue;
     color: white;
     width: 300px;
@@ -30,7 +31,7 @@ body {
 }
 
 .section2 {
-    border: 1px solid lightgray;
+    border: 1px solid black;
     background: lightgray;
     color: black;
     width: 300px;
@@ -39,7 +40,7 @@ body {
 }
 
 .footer {
-    border: 1px solid green;
+    border: 1px solid black;
     background: green;
     color: white;
     width: 300px;

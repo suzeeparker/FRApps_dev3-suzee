@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Bookman Old Style');
+
 html {
     background: #b3b3b3;
     border:  1px solid red;
     height: 100%;
     margin: 0px;
     padding: 0px;
+    text-align: center;
 }
 
 body {
@@ -17,72 +20,68 @@ body {
 
 
 .header {
-    border: 1px black solid;
+    border: 1px red solid;
     background: red;
-    /*top: 100px;*/
-    font-size: x-large;
-    left: 0px;
-    width: 100%; /*was 300px*/
-    height: 60px;
     color: white;
-    padding-top: 30px;
+    top: 0px;
+    left: 0px;
+    height: 90px;
+    width: 100%; /*was 300px*/
     text-align: center;
-    /*margin: 20px 20px 20px 20px;*/
     position: relative;
+    font-size: x-large;
 }
 
-.images {
-    border: 1px black solid;
+.section1 {
+    border: 1px blue solid;
     background: blue;
-    /*background: url("/assets/images/monaco-blue-soft.jpg") blue;*/
-    /*top: 60px;*/
     font-size: x-large;
     left: 0px;
+    height: 370px;
     width: 100%; /*was 300px*/
-    height: 400px;
     color: white;
-    padding-top: 100px;
     text-align: center;
-    /*margin: 20px 20px 20px 20px;*/
     position: relative;
 }
 
-.main {
-    border: 1px black solid;
+
+
+.section2 {
+    border: 1px lightgray solid;
     background: lightgray;
-    /*top: 150px;*/
     font-size: x-large;
     left: 0px;
+    height: 370px;
     width: 100%;  /*was 300px*/
-    height: 400px;
     color: black;
-    padding-top: 125px;
     text-align: center;
-    /*margin: 20px 20px 20px 20px;*/
     position: relative;
-
-    /*z-index: 99;*/
-
 }
 
 .footer {
-    border: 1px black solid;
+    border: 1px green solid;
     background: green;
-    /*top: 180px;*/
     font-size: x-large;
     left: 0px;
+    height: 90px;
     width: 100%; /*was 300px*/
-    height: 60px;
     color: white;
-    padding-top: 30px;
     text-align: center;
-    /*margin: 20px;*/
     position: relative;
-
-    /*z-index: 99;*/
 }
 
+.descriptive-text {
+    font-size: 40px;
+    color: red;
+    text-align: center;
+    padding-top: 0px;
+    margin: 50px 0 0 0;
+}
 
+.descriptive-text a:hover,
+.descriptive-text a:active {
+  color: green;
+} 
 
 
 
