@@ -19,7 +19,7 @@
     - index.css
 
 - Paste in the "favicon.gif" into the root directory.
-    Thia will give you a nice FormR icon on the tab of your browser
+    This will give you a nice FormR icon on the tab of your browser
 
 Open the index.html and paste the following on Line 1:
 ```HTML
@@ -234,7 +234,7 @@ Now when you scroll up and down the header is fixed; with "My Logo" centered at 
 <img class="shadow-border" src="assets/images/BasicFixedHeaderImage4.jpg">
 
 To make this look correct we have more work to do in the index.css file.
-Below the z-index and these lines of code:
+Below the z-index add these lines of code:
 
 *THIS IS WHERE I LEFT OFF (Line 239)...*
 
