@@ -7,8 +7,12 @@
 - From VSCode
 
 - Be certain that you have checked "Auto Save" in the File menu
-And that you have added "Live Server" to the "Extensions"
-<img class="shadow-border" src="assets/images/BasicBlocksImage1b.jpg">
+
+<img class="shadow-border" src="assets/images/BasicBlocksImage1.jpg">
+
+- And that you have added "Live Server" to the "Extensions"
+
+<img class="shadow-border" src="assets/images/BasicBlocksImage2.jpg">
 
 - In a folder called BasicTraining, create 2 new files.
     - index.html
@@ -49,11 +53,9 @@ Save this page, if you have NOT checked the "Auto Save" option in the File menu.
 From VSCode, right click on the file "index,html" and click on "Open In Live Server"
 - (This option will not be available if you had not added the "Live Server" extension)
 
-<img class="shadow-border" src="assets/images/BasicBlocksImage1c.jpg">
-
 You will see in your browser the following:s
 
-<img class="shadow-border" src="assets/images/BasicBlocksImage1a.jpg">
+<img class="shadow-border" src="assets/images/BasicBlocksImage3.jpg">
 
 ___
 Open the index.css file and paste the following on Line 1
@@ -110,10 +112,10 @@ body {
 
 ```
 
-**Congratulations**, you have just created a simple html page with a cascading style sheet (CSS) that makes 4 basic blocks!
+**Congratulations**, you have just created a simple html page with a cascading style sheet (CSS) that makes 4 *basic blocks!*
 Like this:
 
-<img class="shadow-border" src="assets/images/BasicBlocksImage2.jpg">
+<img class="shadow-border" src="assets/images/BasicBlocksImage4.jpg">
 
 ___ 
 
@@ -131,11 +133,12 @@ To understand this CSS code, lets look at the header css properties.
 ```
 We will be building from this basic page to create a page with fixed header and footer, links and a button and an image,
 ___
-### Step 2
+## Basic Large Blocks
+
 
 Next we will add to the code in the index.css file to continue building on our basic web page.
 
-BODY
+### Step 1 (Body)
 
 In the .body section add::<br>
 ```css
@@ -153,9 +156,9 @@ body {
 }
 ```
 ___
-HEADER
+### Step 2 (Header)
 
-In the .header section change width to 100% and height to 90px... :
+In the .header section change width to 100% and height to 92px... :
 ```css
     width: 100%;    /*was 300px*/
     height: 92px;   /*was 100px*/
@@ -163,7 +166,7 @@ In the .header section change width to 100% and height to 90px... :
 ...like this:
 ```css
 .header {
-    border: 1px solid black;
+    border: 1px solid red;
     background: red;
     color: white;
     width: 100%;    /*was 300px*/
@@ -172,17 +175,17 @@ In the .header section change width to 100% and height to 90px... :
 }
 ```
 ___
-SECTION1 & SECTION2
+### Step 3 (Sections 1 & 2)
 
-In section1 and section2, change the width to 100% and height to 380px:
+In section1 and section2, change the width to 100% and height to 372px:
 ```css
     width:  100%;    /*was 300px*/
     height: 372px;   /*was 100px*/
 ```
 ___
-FOOTER
+### Step 4 (Footer)
 
-In the .footer section change width to 100% and height to 90px, like this:
+In the .footer section change width to 100% and height to 92px, like this:
 ```css
     width:  100%;    /*was 300px*/
     height: 92px;    /*was 100px*/
@@ -190,40 +193,54 @@ In the .footer section change width to 100% and height to 90px, like this:
 ___
 **Congratulation**, now look at your web page.  All the blocks now have changed to fill up the page in Chrome.
 
-<img class="shadow-border" src="assets/images/BasicBlocksImage1d.jpg">
+<img class="shadow-border" src="assets/images/BasicBlocksImage5.jpg">
 
 ___
 ## Basic With Fixed Header
-### Step 1
+### Step 1 (index.html)
+#### header tag
 
 Next we will add to the code to the index.css file to continue building on our basic web page to include a FIXED header.
 
-First, in the index.html file, replace:
+In the index.html file, replace:
+
 ```html
     <h2>header</h2>
 ```
+<img src="assets/images/BasicFixedHeaderImage1.jpg">
+
 with:
+
 ```html
     <span class="header-logo">My Logo</span>
 ```    
+<img src="assets/images/BasicFixedHeaderImage2.jpg">
+
 this should be on line 13 in your VSCode (index.html).
 
-Next let's work on the index.css file.  We will make additions to the .header properties and create some
-new properties.
+### Step 2 (index.css)
+
+Next let's work on the index.css file.  We will make additions to the .header properties and create some new properties.
 
 In the .header properties change the position from relative to fixed and add z-index: 100, like this:
 ```css
     position: fixed;   /*was relative*/
     z-index: 100;
 ```
+<img src="assets/images/BasicFixedHeaderImage3.jpg">
+
 Now when you scroll up and down the header is fixed; with "My Logo" centered at the top.
+
+<img class="shadow-border" src="assets/images/BasicFixedHeaderImage4.jpg">
 
 To make this look correct we have more work to do in the index.css file.
 Below the z-index and these lines of code:
+THIS IS WHERE I LEFT OFF...
 ```css
     display: flex;
     justify-content: space-between;
 ```
+
 To get the logo to look good, add this code below the .header properties:
 ```css
     .header-logo {
