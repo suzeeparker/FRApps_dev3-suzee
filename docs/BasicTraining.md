@@ -235,7 +235,9 @@ Now when you scroll up and down the header is fixed; with "My Logo" centered at 
 
 To make this look correct we have more work to do in the index.css file.
 Below the z-index and these lines of code:
-THIS IS WHERE I LEFT OFF...
+
+*THIS IS WHERE I LEFT OFF (Line 239)...*
+
 ```css
     display: flex;
     justify-content: space-between;
