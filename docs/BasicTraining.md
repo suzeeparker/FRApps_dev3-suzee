@@ -177,7 +177,7 @@ SECTION1 & SECTION2
 In section1 and section2, change the width to 100% and height to 380px:
 ```css
     width:  100%;    /*was 300px*/
-    height: 300px;   /*was 100px*/
+    height: 372px;   /*was 100px*/
 ```
 ___
 FOOTER
@@ -185,7 +185,7 @@ FOOTER
 In the .footer section change width to 100% and height to 90px, like this:
 ```css
     width:  100%;    /*was 300px*/
-    height: 90px;    /*was 100px*/
+    height: 92px;    /*was 100px*/
 ```
 ___
 **Congratulation**, now look at your web page.  All the blocks now have changed to fill up the page in Chrome.
