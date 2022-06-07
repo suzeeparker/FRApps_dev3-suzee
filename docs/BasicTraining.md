@@ -107,18 +107,7 @@ body {
     height: 100px;
     position: relative;
 }
-/*
-.descriptive-text {
-    font-size: 20px;
-    color: red;
-    text-align: center;
-}
 
-.descriptive-text a:hover,
-.descriptive-text a:active {
-    color: green;
-}
-*/
 ```
 
 **Congratulations**, you have just created a simple html page with a cascading style sheet (CSS) that makes 4 basic blocks!
@@ -199,9 +188,10 @@ In the .footer section change width to 100% and height to 90px, like this:
     height: 90px;    /*was 100px*/
 ```
 ___
-**Congratulation**, now look at your web page.  All the blocks now have changed to fill up the page
-in Chrome.
-___
+**Congratulation**, now look at your web page.  All the blocks now have changed to fill up the page in Chrome.
+
+<img class="shadow-border" src="assets/images/BasicBlocksImage1d.jpg">
+
 ___
 ## Basic With Fixed Header
 ### Step 1
