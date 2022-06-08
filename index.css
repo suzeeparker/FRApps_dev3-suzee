@@ -70,14 +70,4 @@ body {
     top: 92px;
 }
 
-.descriptive-text {
-    font-size: 25px;
-    color: red;
-    text-align: center;
-    margin-top: 100px;
-}
 
-.descriptive-text a:hover,
-.descriptive-text a:active {
-    color: green;
-} 

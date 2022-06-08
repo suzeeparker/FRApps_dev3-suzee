@@ -21,7 +21,7 @@
 - Paste in the "favicon.gif" into the root directory.
     This will give you a nice FormR icon on the tab of your browser
 
-Open the index.html and paste the following on Line 1:
+Open the index.<u>html</u> and paste the following on Line 1:
 ```HTML
 <!DOCTYPE html>
 <html lang="en">
@@ -50,7 +50,7 @@ Open the index.html and paste the following on Line 1:
 ```
 Save this page, if you have NOT checked the "Auto Save" option in the File menu.
 
-From VSCode, right click on the file "index,html" and click on "Open In Live Server"
+From VSCode, right click on the file "index.<u>html</u>" and click on "Open In Live Server"
 - (This option will not be available if you had not added the "Live Server" extension)
 
 You will see in your browser the following:s
@@ -58,7 +58,7 @@ You will see in your browser the following:s
 <img class="shadow-border" src="assets/images/BasicBlocksImage3.jpg">
 
 ___
-Open the index.css file and paste the following on Line 1
+Open the index.<u>css</u> file and paste the following on Line 1
 
 ```css
 @import url('https://fonts.googleapis.com/css?family=Bookman Old Style');
@@ -131,7 +131,7 @@ To understand this CSS code, lets look at the header css properties.
                             (DOM) reading from the top to the bottom
 }
 ```
-We will be building from this basic page to create a page with fixed header and footer, links and a button and an image,
+We will be building from this basic page to create a page with fixed header and footer, links and a button and an image.  From there we will move on to adding JavaScript (JS) to this web page.
 ___
 ## Basic Large Blocks
 
@@ -158,7 +158,7 @@ body {
 ___
 ### Step 2 (Header)
 
-In the .header section change width to 100% and height to 92px... :
+In the .header section change width to 100% and height to 92px...
 ```css
     width: 100%;    /*was 300px*/
     height: 92px;   /*was 100px*/
@@ -196,9 +196,10 @@ ___
 <img class="shadow-border" src="assets/images/BasicBlocksImage5.jpg">
 
 ___
-## Basic With Fixed Header
-### Step 1 (index.html)
-#### header tag
+## Basic Blocks With Fixed Header
+### Step 1 (index.<u>html</u>)
+___
+Header tag
 
 Next we will add to the code to the index.css file to continue building on our basic web page to include a FIXED header.
 
@@ -216,13 +217,14 @@ with:
 ```    
 <img src="assets/images/BasicFixedHeaderImage2.jpg">
 
-this should be on line 13 in your VSCode (index.html).
+this should be on line 13 in your VSCode (index.<u>html</u>).
 
-### Step 2 (index.css)
+### Step 2 (index.<u>css</u>)
 
-Next let's work on the index.css file.  We will make additions to the .header properties and create some new properties.
+Next let's work on the index.<u>css</u> file.  We will make additions to the .header properties and create some new properties.
 
-In the .header properties change the position from relative to fixed and add z-index: 100, like this:
+In the .header properties change the position from relative to fixed and add <u>z-index: 100;</u>
+like this:
 ```css
     position: fixed;   /*was relative*/
     z-index: 100;
@@ -233,16 +235,28 @@ Now when you scroll up and down the header is fixed; with "My Logo" centered at 
 
 <img class="shadow-border" src="assets/images/BasicFixedHeaderImage4.jpg">
 
-To make this look correct we have more work to do in the index.css file.
-Below the z-index add these lines of code:
-
-*THIS IS WHERE I LEFT OFF (Line 239)...*
+To make this look good, we have more work to do in the index.<u>css</u> file.
+Below the z-index: 100; add these lines of code:
 
 ```css
     display: flex;
     justify-content: space-between;
 ```
-
+The full .header class should now look like this:
+```css
+.header {
+    border: 1px solid red;
+    background: red;
+    color: white;
+    width: 100%;
+    height: 92px;
+    position: fixed;
+    z-index: 100;
+	display: flex;
+    justify-content: space-between;
+}
+```
+___
 To get the logo to look good, add this code below the .header properties:
 ```css
     .header-logo {
@@ -261,11 +275,15 @@ To get the logo to look good, add this code below the .header properties:
 ```
 You have a logo that is font-based.  Later we will change to an image.
 
+<img class="shadow-border" src="assets/images/BasicFixedHeaderImage5.jpg">
+
+___
+
 To make all the blocks have their respective height and place on the page add:
 ```css
     top: 92px;
 ```
-at the bottom of ,section1 and .section2 and .footer--it should look like this for those three areas:
+at the bottom of .section1 and .section2 and .footer--it should look like this for those three areas:
 ```css
     .section1 {
         border: 1px solid blue;
@@ -274,7 +292,7 @@ at the bottom of ,section1 and .section2 and .footer--it should look like this f
         width: 100%;    /*was 300px*/
         height: 382px;  /*was 100px*/
         position: relative;
-        top: 92px
+        top: 92px   /*Needed for Fixed Header*/
     }
 
     .section2 {
@@ -284,7 +302,7 @@ at the bottom of ,section1 and .section2 and .footer--it should look like this f
         width: 100%;    /*was 300px*/
         height: 382px;  /*was 100px*/
         position: relative;
-        top: 92px;
+        top: 92px;   /*Needed for Fixed Header*/
     }
 
     .footer {
@@ -294,12 +312,12 @@ at the bottom of ,section1 and .section2 and .footer--it should look like this f
         width: 100%;    /*was 300px*/
         height: 90px;   /*was 100px*/
         position: relative;
-        top: 92px;
+        top: 92px;   /*Needed for Fixed Header*/
     }
 ```
 Next we will add some links and button to the header.
 
-In index.html add the following code, just below the 
+In index.<u>html</u> add the following code, just below the 
 ```css
 <span class="header-logo">My Logo</span>:
         <ul class="nav-list">
