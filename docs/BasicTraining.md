@@ -150,7 +150,7 @@ In the .body section add::<br>
 width: 100%;    /*this will open up the body to a 100% width*/
 ``` 
 
-below the existing code for height, like this:
+below the existing code for <font color=#A81966>height</font>, like this:
 ```css
 body {
     background: white;
@@ -341,4 +341,4 @@ In index.<u>html</u> add the following code, just below the
 This should start on line 14 in your VSCode in index.<u>html</u> file.
 <img class="shadow-border" src="assets/images/BasicFixedHeaderImage6.jpg">
 
-...to be continued
+...to be continued later
