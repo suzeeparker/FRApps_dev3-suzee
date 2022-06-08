@@ -166,7 +166,7 @@ ___
 In the .header section change width to 100% and height to 92px...
 ```css
     width: 100%;    /*was 300px*/
-    height: 100%;   /*was 100px*/
+    height: 10%;   /*was 100px*/
 ```
 ...like this:
 ```css
