@@ -267,7 +267,7 @@ To get the logo to look good, add this code below the .header properties:
 ```css
     .header-logo {
       font-family: "Bookman Old Style", sans-serif;
-      font-size: 30px;
+      font-size: 1.7rem;
       font-weight: bolder;
       color: blue;
       text-shadow: 2px 2px 12px #000000;
@@ -286,7 +286,7 @@ ___
 
 To make all the blocks have their respective height and place on the page add:
 ```css
-    top: 92px;
+    top: 10%;
 ```
 at the bottom of .section1 and .section2 and .footer--it should look like this for those three areas:
 ```css
@@ -294,30 +294,33 @@ at the bottom of .section1 and .section2 and .footer--it should look like this f
         border: 1px solid blue;
         background: blue;
         color: white;
+        font-size: 1.5rem;
         width: 100%;    /*was 300px*/
-        height: 382px;  /*was 100px*/
+        height: 40%;  /*was 100px*/
         position: relative;
-        top: 92px   /*Needed for Fixed Header*/
+        top: 10%   /*Needed for Fixed Header*/
     }
 
     .section2 {
         border: 1px solid lightgray;
         background: lightgray;
         color: black;
+        font-size: 1.5rem;
         width: 100%;    /*was 300px*/
-        height: 382px;  /*was 100px*/
+        height: 40%;  /*was 100px*/
         position: relative;
-        top: 92px;   /*Needed for Fixed Header*/
+        top: 10%;   /*Needed for Fixed Header*/
     }
 
     .footer {
         border: 1px solid green;
         background: green;
         color: white;
+        font-size: 1.5rem;    
         width: 100%;    /*was 300px*/
-        height: 90px;   /*was 100px*/
+        height: 10%;   /*was 100px*/
         position: relative;
-        top: 92px;   /*Needed for Fixed Header*/
+        top: 10%;   /*Needed for Fixed Header*/
     }
 ```
 ___
