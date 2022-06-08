@@ -15,8 +15,8 @@
 <img class="shadow-border" src="assets/images/BasicBlocksImage2.jpg">
 
 - In a folder called BasicTraining, create 2 new files.
-    - index.html
-    - index.css
+    - index.<u>html</u>
+    - index.<u>css</u>
 
 - Paste in the "favicon.gif" into the root directory.
     This will give you a nice FormR icon on the tab of your browser
@@ -77,6 +77,7 @@ body {
 .header {
     border: 1px solid red;
     background: red;
+    font-size: 1.5rem;
     color: white;
     width: 300px;
     height: 100px;
@@ -86,6 +87,7 @@ body {
 .section1 {
     border: 1px solid blue;
     background: blue;
+    font-size: 1.5rem;
     color: white;
     width: 300px;
     height: 100px;
@@ -95,6 +97,7 @@ body {
 .section2 {
     border: 1px solid lightgray;
     background: lightgray;
+    font-size: 1.5rem;
     color: black;
     width: 300px;
     height: 100px;
@@ -104,6 +107,7 @@ body {
 .footer {
     border: 1px solid green;
     background: green;
+    font-size: 1.5rem;
     color: white;
     width: 300px;
     height: 100px;
@@ -125,6 +129,8 @@ To understand this CSS code, lets look at the header css properties.
     border: 1px solid red;  places a 1 pixel red border around the block
     background: red;        makes the background red
     color: white;           makes the font color white
+    font-size: 1.5rem;      rem ensure consistency of font size and spacing           
+                            throughout your UI (1.5rem = 24px)
     width: 300px;           makes the block 300 pixels wide
     height: 100px;          makes the block 100 pixels tall
     position: relative;     places the header box relative to the html code
@@ -135,10 +141,9 @@ We will be building from this basic page to create a page with fixed header and 
 ___
 ## Basic Large Blocks
 
+Next we will add to the code in the index.<u>css</u> file to continue building on our basic web page.
 
-Next we will add to the code in the index.css file to continue building on our basic web page.
-
-### Step 1 (Body)
+### 1. Body
 
 In the .body section add::<br>
 ```css
@@ -156,12 +161,12 @@ body {
 }
 ```
 ___
-### Step 2 (Header)
+### 2. Header
 
 In the .header section change width to 100% and height to 92px...
 ```css
     width: 100%;    /*was 300px*/
-    height: 92px;   /*was 100px*/
+    height: 100%;   /*was 100px*/
 ```
 ...like this:
 ```css
@@ -170,25 +175,25 @@ In the .header section change width to 100% and height to 92px...
     background: red;
     color: white;
     width: 100%;    /*was 300px*/
-    height: 92px;   /*was 100px*/
+    height: 10%;   /*was 100px*/
     position: relative;
 }
 ```
 ___
-### Step 3 (Sections 1 & 2)
+### 3. Sections 1 & 2
 
 In section1 and section2, change the width to 100% and height to 372px:
 ```css
     width:  100%;    /*was 300px*/
-    height: 372px;   /*was 100px*/
+    height: 40%;   /*was 100px*/
 ```
 ___
-### Step 4 (Footer)
+### 4. Footer
 
 In the .footer section change width to 100% and height to 92px, like this:
 ```css
     width:  100%;    /*was 300px*/
-    height: 92px;    /*was 100px*/
+    height: 10%;    /*was 100px*/
 ```
 ___
 **Congratulation**, now look at your web page.  All the blocks now have changed to fill up the page in Chrome.
@@ -197,7 +202,7 @@ ___
 
 ___
 ## Basic Blocks With Fixed Header
-### Step 1 (index.<u>html</u>)
+### 1. index.<u>html</u>
 ___
 Header tag
 
@@ -219,7 +224,7 @@ with:
 
 this should be on line 13 in your VSCode (index.<u>html</u>).
 
-### Step 2 (index.<u>css</u>)
+### 2. index.<u>css</u>
 
 Next let's work on the index.<u>css</u> file.  We will make additions to the .header properties and create some new properties.
 
@@ -248,8 +253,9 @@ The full .header class should now look like this:
     border: 1px solid red;
     background: red;
     color: white;
+    font-size: 1.5rem;
     width: 100%;
-    height: 92px;
+    height: 10%;
     position: fixed;
     z-index: 100;
 	display: flex;
@@ -276,7 +282,6 @@ To get the logo to look good, add this code below the .header properties:
 You have a logo that is font-based.  Later we will change to an image.
 
 <img class="shadow-border" src="assets/images/BasicFixedHeaderImage5.jpg">
-
 ___
 
 To make all the blocks have their respective height and place on the page add:
@@ -316,7 +321,7 @@ at the bottom of .section1 and .section2 and .footer--it should look like this f
     }
 ```
 ___
-### Step 3 (Nav Bar)
+### 3. Nav Bar
 
 Next we will add some links and a button (a nav bar) to the header.
 
@@ -330,7 +335,7 @@ In index.<u>html</u> add the following code, just below the
             <li class="nav-list-item-cta"><a href=#>Sign In</a></li>
         </ul>
 ```
-This should start on line 14 in your VSCode.
+This should start on line 14 in your VSCode in index.<u>html</u> file.
 <img class="shadow-border" src="assets/images/BasicFixedHeaderImage6.jpg">
 
 ...to be continued
