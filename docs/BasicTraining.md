@@ -315,7 +315,10 @@ at the bottom of .section1 and .section2 and .footer--it should look like this f
         top: 92px;   /*Needed for Fixed Header*/
     }
 ```
-Next we will add some links and button to the header.
+___
+### Step 3 (Nav Bar)
+
+Next we will add some links and a button (a nav bar) to the header.
 
 In index.<u>html</u> add the following code, just below the 
 ```css
@@ -328,5 +331,6 @@ In index.<u>html</u> add the following code, just below the
         </ul>
 ```
 This should start on line 14 in your VSCode.
+<img class="shadow-border" src="assets/images/BasicFixedHeaderImage6.jpg">
 
 ...to be continued
