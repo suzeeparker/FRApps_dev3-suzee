@@ -163,7 +163,7 @@ body {
 ___
 ### 2. Header
 
-In the .header section change width to 100% and height to 92px...
+In the .header section change width to 100% and height to 10%...
 ```css
     width: 100%;    /*was 300px*/
     height: 10%;   /*was 100px*/
