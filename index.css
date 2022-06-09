@@ -18,8 +18,9 @@ body {
     border: 1px solidred;
     background: red;
     color: white;
+    font-size: 1.5rem;
     width: 100%;    /*was 300px*/
-    height: 92px;   /*was 100px*/
+    height: 10%;   /*was 100px*/
     position: fixed;  /*was relative*/
     z-index: 100;
     display: flex;
@@ -33,19 +34,48 @@ body {
     color: blue;
     text-shadow: 2px 2px 12px #000000;
     padding-left: 20px;
-  }
+}
   
 .header-logo::first-letter {
-      font-size: 150%;
-      color: cornflowerblue;
-  }
+    font-size: 150%;
+    color: cornflowerblue;
+}
+
+.nav-list {
+    list-style: none;
+    margin-right: 30px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-list-item a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 8px 0;
+}
+
+.nav-list-item a:hover,
+.nav-list-item a:active {
+    color: #ccc;
+}  
+
+.nav-list-item-cta a {
+    color: white;
+    background: blue ;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
 
 .section1 {
     border: 1px solid blue;
     background: blue;
     color: white;
+    font-size: 1.5rem;
     width: 100%;    /*was 300px*/
-    height: 382px;  /*was 100px*/
+    height: 40%;  /*was 100px*/
     position: relative;
     top: 92px
 }
@@ -54,8 +84,9 @@ body {
     border: 1px solid lightgray;
     background: lightgray;
     color: black;
+    font-size: 1.5rem;
     width: 100%;    /*was 300px*/
-    height: 382px;  /*was 100px*/
+    height: 40%;  /*was 100px*/
     position: relative;
     top: 92px;
 }
@@ -64,10 +95,9 @@ body {
     border: 1px solid green;
     background: green;
     color: white;
+    font-size: 1.5rem;
     width: 100%;    /*was 300px*/
-    height: 90px;   /*was 100px*/
+    height: 10%;   /*was 100px*/
     position: relative;
     top: 92px;
 }
-
-

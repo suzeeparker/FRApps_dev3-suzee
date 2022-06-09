@@ -125,14 +125,19 @@ ___
 
 To understand this CSS code, lets look at the header css properties.
 ```css
-.header {                       CLASS NAME
+.header {                       Description
     border: 1px solid red;  places a 1 pixel red border around the block
+
     background: red;        makes the background red
+
     color: white;           makes the font color white
+
     font-size: 1.5rem;      rem ensure consistency of font size and spacing           
                             throughout your UI (1.5rem = 24px)
     width: 300px;           makes the block 300 pixels wide
+
     height: 100px;          makes the block 100 pixels tall
+
     position: relative;     places the header box relative to the html code
                             (DOM) reading from the top to the bottom
 }
@@ -145,12 +150,11 @@ Next we will add to the code in the index.<u>css</u> file to continue building o
 
 ### 1. Body
 
-In the .body section add::<br>
-```css
-width: 100%;    /*this will open up the body to a 100% width*/
-``` 
+In the .body section add...<br>
 
-below the existing code for <font color=#A81966>height</font>, like this:
+<b><font color=#A81966>width</font></b>: 100%;    /*this will open up the body to a 100% width*/
+
+...below the existing code for <b><font color=#A81966>height</font></b>, like this:
 ```css
 body {
     background: white;
@@ -163,7 +167,7 @@ body {
 ___
 ### 2. Header
 
-In the .header section change width to 100% and height to 10%...
+In the .header section change <b><font color=#A81966>width</font></b> to 100% and <b><font color=#A81966>height</font></b> to 10%:
 ```css
     width: 100%;    /*was 300px*/
     height: 10%;   /*was 100px*/
@@ -182,7 +186,7 @@ In the .header section change width to 100% and height to 10%...
 ___
 ### 3. Sections 1 & 2
 
-In section1 and section2, change the width to 100% and height to 372px:
+In section1 and section2, change the <b><font color=#A81966>width</font></b> to 100% and <b><font color=#A81966>height</font></b> to 40%:
 ```css
     width:  100%;    /*was 300px*/
     height: 40%;   /*was 100px*/
@@ -190,7 +194,7 @@ In section1 and section2, change the width to 100% and height to 372px:
 ___
 ### 4. Footer
 
-In the .footer section change width to 100% and height to 92px, like this:
+In the .footer section change the <b><font color=#A81966>width</font></b> to 100% and <b><font color=#A81966>height</font></b> to 10%, like this:
 ```css
     width:  100%;    /*was 300px*/
     height: 10%;    /*was 100px*/
@@ -228,7 +232,7 @@ this should be on line 13 in your VSCode (index.<u>html</u>).
 
 Next let's work on the index.<u>css</u> file.  We will make additions to the .header properties and create some new properties.
 
-In the .header properties change the position from relative to fixed and add <u>z-index: 100;</u>
+In the .header properties change the <b><font color=#A81966>position:</font></b> from relative to fixed AND add <b><font color=#A81966>z-index:</font></b> 100;
 like this:
 ```css
     position: fixed;   /*was relative*/
@@ -284,9 +288,9 @@ You have a logo that is font-based.  Later we will change to an image.
 <img class="shadow-border" src="assets/images/BasicFixedHeaderImage5.jpg">
 ___
 
-To make all the blocks have their respective height and place on the page add:
+To make all the blocks have their respective height and place on the page add <b><font color=#A81966>top:</font></b> 10%;
 ```css
-    top: 10%;
+    top: 10%; /*Needed for Fixed Header*/
 ```
 at the bottom of .section1 and .section2 and .footer--it should look like this for those three areas:
 ```css
@@ -339,6 +343,190 @@ In index.<u>html</u> add the following code, just below the
         </ul>
 ```
 This should start on line 14 in your VSCode in index.<u>html</u> file.
-<img class="shadow-border" src="assets/images/BasicFixedHeaderImage6.jpg">
+<img class="shadow-border" src="assets/images/BasicNavBarImage1.jpg">
 
-...to be continued later
+On your browser, you will see some links appear at the top right of the header, like this:
+
+<img class="shadow-border" src="assets/images/BasicNavBarImage2.jpg">
+
+___
+
+Back to index.<u>css</u> we will add this code below:
+
+    .header-logo::first-letter {
+      font-size: 150%;
+      color: cornflowerblue;
+  }
+
+```css
+ .nav-list {
+    list-style: none;
+    margin-right: 30px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  ```
+  This will change the "nav bar" from vertical to horizontal in the header and a place a 30px margin on the right side.  It should look like this in Chrome:
+
+  <img class="shadow-border" src="assets/images/BasicNavBarImage3.jpg">
+
+  ___
+
+  Now let's clean it up with a little more code in index.<u>css</u>.  Just below the above code add this:
+
+```css
+  .nav-list-item a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 8px 0;
+
+  }
+```
+
+Notice the change on your browser:
+
+  <img class="shadow-border" src="assets/images/BasicNavBarImage4.jpg">
+
+___
+
+Now lets make the first 3 links change color when you hover over one, adding this code below the last bit of code:
+
+```css
+.nav-list-item a:hover,
+.nav-list-item a:active {
+  color: #ccc;
+}  
+```
+See the change:
+
+  <img class="shadow-border" src="assets/images/BasicNavBarImage5.jpg">
+
+___
+
+One final touch is to turn the last link into a blue button. Add this code:
+
+```css
+.nav-list-item-cta a {
+  color: white;
+  background: blue ;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+```
+  <img class="shadow-border" src="assets/images/BasicNavBarImage6.jpg">
+
+___
+
+Let's look at all the code in index.<u>css</u> to this point.  You can copy and paste this in your index.<u>css</u> file.
+
+```css
+@import url('https://fonts.googleapis.com/css?family=Bookman Old Style');
+
+html {
+    background: #b3b3b3;
+    height: 100%;
+    text-align: center;
+}
+
+body {
+    background: white;
+    height: 100%;
+    width: 100%;    /*this will open up the body to a 100% width*/
+    border:  1px solid black;
+    margin: 0;
+}
+
+.header {
+    border: 1px solidred;
+    background: red;
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;    /*was 300px*/
+    height: 10%;   /*was 100px*/
+    position: fixed;  /*was relative*/
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    font-family: "Bookman Old Style", sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    color: blue;
+    text-shadow: 2px 2px 12px #000000;
+    padding-left: 20px;
+}
+  
+.header-logo::first-letter {
+    font-size: 150%;
+    color: cornflowerblue;
+}
+
+.nav-list {
+    list-style: none;
+    margin-right: 30px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-list-item a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 8px 0;
+}
+
+.nav-list-item a:hover,
+.nav-list-item a:active {
+    color: #ccc;
+}  
+
+.nav-list-item-cta a {
+    color: white;
+    background: blue ;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+.section1 {
+    border: 1px solid blue;
+    background: blue;
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;    /*was 300px*/
+    height: 40%;  /*was 100px*/
+    position: relative;
+    top: 92px
+}
+
+.section2 {
+    border: 1px solid lightgray;
+    background: lightgray;
+    color: black;
+    font-size: 1.5rem;
+    width: 100%;    /*was 300px*/
+    height: 40%;  /*was 100px*/
+    position: relative;
+    top: 92px;
+}
+
+.footer {
+    border: 1px solid green;
+    background: green;
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;    /*was 300px*/
+    height: 10%;   /*was 100px*/
+    position: relative;
+    top: 92px;
+}
+```
+
+
+
