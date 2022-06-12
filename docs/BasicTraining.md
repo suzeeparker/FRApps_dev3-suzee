@@ -7,7 +7,7 @@
 
 - Be certain that you have checked "Auto Save" in the File menu
 
-<img class="shadow-border" src="../assets/images/instructional/BasicBlocksImage1.jpg">
+<img class="shadow-border" src="assets/images/instructional/BasicBlocksImage1.jpg">
 
 - And that you have added "Live Server" to the "Extensions"
 
