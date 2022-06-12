@@ -3,97 +3,41 @@
 /*From Basic Blocks*/
 html {
     background: #b3b3b3;
-    border:  1px solid red;
     height: 100%;
-    margin: 0px;
     padding: 0px;
 }
 
-/*From Basic Blocks*/
+/*The body properites*/
 body {
-    background: white;
-    padding: 0px;
-    border:  1px solid black;
-    margin: 0;
-    height: 100%;
-    width: 100%;
+  background: white;
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
 
-/*From Basic Fixed Header*/
+/*Set global properties for the <h2> tags*/
+/*It also overrides the intrinsic margin of*/
+/*20 to 0--allowing to stack the blocks together*/
+h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: white;
+  padding: 6rem;
+  text-align: center;
+}
+
+/*The .header properites*/
 .header {
-  width: 100%;
-  height: 90px;
-  top: 0;
-  left: 0;
-  background: red; 
-  padding: 8px 16px 10px 0px;
+  background: red;
+  width: 100%;    /*was 300px*/
+  height: 10%;   /*was 100px*/
+  position: fixed;  /*was relative*/
+  z-index: 100;
   display: flex;
   justify-content: space-between;
-  position: fixed;
-  z-index: 1;
 }
 
-/*From Basic Fixed Header with Links*/
-.nav-list {
-  list-style: none;
-  margin: 20px;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-/*From Basic Fixed Header with Links*/
-.nav-list-item a {
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
-  margin: 8px 0;
-
-}
-
-/*From Basic Fixed Header with Links*/
-.nav-list-item a:hover,
-.nav-list-item a:active {
-color: #ccc;
-}  
-
-.nav-list-item-cta a {
-  color: white;
-  background: blue ;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-}
-
-/*From Basic Fixed Header with Logo*/
-.header-logo {
-    font-family: "Bookman Old Style", sans-serif;
-    font-size: 40px;
-    font-weight: bolder;
-    color: cornflowerblue;
-    text-shadow: 2px 2px 12px #000000;
-    padding: 0px 0px 0px 10px;
-  }
-
-
-.text-M {
-	font-family: "Bookman Old Style", sans-serif;
-	font-size: 60px;
-  font-weight: bolder;
-  color: cornflowerblue;
-  text-shadow: 2px 2px 12px #000000;
-}
-
-/*From Fixed Header with LOGO*/
-.text-yText {
-	font-family: "Bookman Old Style", sans-serif;
-  font-weight: bolder;
-	font-size: 30px;
-  color: white;
-  text-shadow: 2px 2px 12px #000000;
-}
-
-/*From Fixed Header with LOGO*/
+/*Sets all the properties for the font-based logo*/
 .header-logo {
   font-family: "Bookman Old Style", sans-serif;
   font-size: 30px;
@@ -103,74 +47,81 @@ color: #ccc;
   padding-left: 20px;
 }
 
-/*From Fixed Header with LOGO*/
+/*Sets the properties for the first letter*/
+/*of the font-based logo*/
 .header-logo::first-letter {
-    font-size: 200%;
-    color: cornflowerblue;
+  font-size: 150%;
+  color: cornflowerblue;
 }
 
-/*From Basic with Image & Text*/
+/*Sets properties for the nav-bar*/
+/*introducing the flex property*/
+.nav-list {
+  list-style: none;
+  margin-right: 30px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*Sets the properties for each of the nav-bar items*/
+.nav-list-item a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 8px 0;
+}
+
+/*Sets the color of the nav-bar items when you hover*/
+.nav-list-item a:hover,
+.nav-list-item a:active {
+  color: #ccc;
+}
+
+/*Creates the blue button around the 'Sign In'*/
+/*button.  -cta stands for 'Call To Action'*/
+.nav-list-item-cta a {
+  color: white;
+  background: blue ;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+/*The .section1 properites*/
 .section1 {
-    border: 1px black solid;
-    background: blue;
-    top: 90px;
-    font-size: x-large;
-    left: 0px;
-    width: 100%; /*was 300px*/
-    height: 400px;
-    color: white;
-    padding-top: 100px;
-    text-align: center;
-    /*margin: 20px 20px 20px 20px;*/
-    position: relative;
+  background: blue;
+  height: 45%;  /*was 100px*/
+  width: 100%;    /*was 300px*/
+  position: relative;
+  top: 10%; /*Added to adjust the top position*/
 }
 
-/*From Basic Blocks*/
+/*The .section2 properites*/
 .section2 {
-    border: 1px black solid;
-    background: lightgray;
-    font-size: x-large;
-    left: 0px;
-    width: 100%;  /*was 300px*/
-    height: 400px;
-    color: black;
-    padding-top: 30px;
-    text-align: center;
-    /*margin: 20px 20px 20px 20px;*/
-    position: relative;
-    /*z-index: 99;*/
+  background: lightgray;
+  width: 100%;    /*was 300px*/
+  height: 50%;  /*Added 5% to create scrolling*/
+  position: relative;
+  top: 10%; /*Added to adjust the top position*/
 }
 
-/*From Basic with Image & Text*/
-.descriptive-text {
-  font-size: 40px;
-  color: red;
-  text-align: center;
-  padding-top: 0px;
+/*This is another <h2> override*/
+/*setting the font color from white to black*/
+.section2 h2 {
+  color: black;
 }
 
-.descriptive-text a:hover,
-.descriptive-text a:active {
-  color: green;
-} 
-
-/*From Basic Fixed Header with Links*/
+/*The .footer properites*/
+/*The position was changed to fixed*/
+/*With a z-index of 99*/
 .footer {
-    border: 1px black solid;
     background: green;
-    /*top: 180px;*/
-    font-size: large;
-    left: 0px;
     width: 100%; 
-    height: 60px;
-    color: white;
-    /*padding-top: 30px;*/
-    padding-bottom: 10px;
-    text-align: center;
-    /*margin: 20px;*/
+    /*height: 10%;  Removed in place of the bottom property*/
+    bottom: 0;
     position: fixed;
-    bottom: 0px;
-    /*z-index: 99;*/
+    z-index: 99;
 }
 
 /*From Basic Fixed Footer with Links*/
@@ -202,5 +153,11 @@ color: #ccc;
 .footer-list-item a:hover,
 .footer-list-item a:active {
   color: #ccc;
+}
+
+/*This is another <h2> override*/
+/*setting the padding from 6 to 0 rem*/
+.footer h2 {
+  padding: 0;
 }
 

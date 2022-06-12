@@ -6,46 +6,56 @@ html {
     text-align: center;
 }
 
+/*The body properites*/
 body {
     background: white;
     height: 100%;
 }
 
+/*Set global properties for the <h2> tags*/
+/*It also overrides the intrinsic margin of*/
+/*20 to 0--allowing to stack the blocks together*/
+h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+/*The .header properites*/
 .header {
-    border: 1px solid red;
     background: red;
-    font-size: 1.5rem;
-    color: white;
     width: 300px;
     height: 100px;
     position: relative;
 }
 
+/*The .section1 properites*/
 .section1 {
-    border: 1px solid blue;
     background: blue;
-    font-size: 1.5rem;
-    color: white;
     width: 300px;
     height: 100px;
     position: relative;
 }
 
+/*The .section2 properites*/
 .section2 {
-    border: 1px solid lightgray;
     background: lightgray;
-    font-size: 1.5rem;
-    color: black;
     width: 300px;
     height: 100px;
     position: relative;
 }
 
+/*This is another <h2> override*/
+/*setting the font color from white to black*/
+.section2 h2 {
+    color: black;
+}
+
+/*The .section2 properites*/
 .footer {
-    border: 1px solid green;
     background: green;
-    font-size: 1.5rem;
-    color: white;
     width: 300px;
     height: 100px;
     position: relative;
