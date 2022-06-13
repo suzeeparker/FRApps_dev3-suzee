@@ -80,7 +80,6 @@ ___
 Open the index.<b>css</b> file and paste the following on Line 1
 <br><br>
 ```css
-
 /*Basic Blocks*/
 @import url('https://fonts.googleapis.com/css?family=Bookman Old Style');
 
@@ -147,7 +146,7 @@ h2 {
 
 ```
 
-### First Basic Web Page
+### Basic Block Web Page
 <br>
 
 **Congratulations**, you have just created a simple html page with a cascading style sheet (CSS) that makes 4 *basic blocks!*
@@ -267,7 +266,7 @@ In the .footer section change the <b><font color=#A81966>width</font></b> to 100
     height: 10%;    /*was 100px*/
 ```
 ___
-### 5. &#60;h2&#62; Tag
+### 5. &#60;h2&#62; tag
 <br>
 The &#60;h2&#62; tags come with built in margins which we must override for the blocks to sit perfectly on top of each other.  
 <br><br>Please cut and paste this snippet below the body properties.
@@ -352,7 +351,7 @@ ___
 ___
 
 ```css
-
+/*Large Blocks CSS*/
 @import url('https://fonts.googleapis.com/css?family=Bookman Old Style');
 
 /*The html properites*/
@@ -434,12 +433,18 @@ h2 {
 ```
 ___
 
-## Blocks W/ Fixed Header
+## Blocks w/ Fixed Header
 ### 1. index.<b>html</b>
+<br>
+Let's ADD and CHANGE code in both index.<b>html</b> AND index.<b>css</b>
+<br><br> 
 ___
-Header tag
 
-Next we will add to the code to the index.css file to continue building on our basic web page to include a FIXED header.
+#### &#60;header&#62; tag
+
+First the &#60;header&#62; tag
+
+Next we will add to the code to the index.<b>html</b> file to continue building on our basic web page to include a FIXED header.
 
 In the index.html file, replace:
 
@@ -461,6 +466,8 @@ this should be on line 13 in your VSCode (index.<b>html</b>).
 
 Next let's work on the index.<b>css</b> file.  We will make additions to the .header properties and create some new properties.
 
+#### .header
+
 In the .header properties change the <b><font color=#A81966>position:</font></b> from relative to fixed AND add <b><font color=#A81966>z-index:</font></b> 100;
 like this:
 ```css
@@ -474,6 +481,7 @@ Now when you scroll up and down the header is fixed; with "My Logo" centered at 
 <img class="shadow-border" src="assets/images/BasicFixedHeaderImage4.jpg">
 
 To make this look good, we have more work to do in the index.<b>css</b> file.
+
 Below the z-index: 100; add these lines of code:
 
 ```css
@@ -495,6 +503,10 @@ The full .header class should now look like this:
 }
 ```
 ___
+
+#### .header-logo AND .header-logo::first-letter
+
+
 To get the logo to look good, add this code below the .header properties:
 ```css
     .header-logo {
@@ -515,6 +527,8 @@ You have a logo that is font-based.  Later we will change to an image.
 
 <img class="shadow-border" src="assets/images/BasicFixedHeaderImage5.jpg">
 ___
+
+#### <b><font color=#A81966>top:</font> properties
 
 To make all the blocks have their respective height and place on the page add <b><font color=#A81966>top:</font></b> 10%;
 ```css
@@ -554,18 +568,20 @@ at the bottom of .section1 and .section2 and .footer--it should look like this f
 ```
 ___
 ### 3. Nav Bar
+#### index.<b>html</b>
 
 Next we will add some links and a button (a nav bar) to the header.
 
-In index.<b>html</b> add the following code, just below the 
+In index.<b>html</b> add the following code, just below<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&#60;span class="header-logo"&#62;My Logo&#60;/span&#62; 
+
 ```css
-<span class="header-logo">My Logo</span>:
-        <ul class="nav-list">
-            <li class="nav-list-item"><a href=#>Links</a>&nbsp;&nbsp;&nbsp;</li>
-            <li class="nav-list-item"><a href=#>Cards</a>&nbsp;&nbsp;&nbsp;</li>
-            <li class="nav-list-item"><a href=#>FAQs</a>&nbsp;&nbsp;&nbsp;</li>
-            <li class="nav-list-item-cta"><a href=#>Sign In</a></li>
-        </ul>
+<ul class="nav-list">
+    <li class="nav-list-item"><a href=#>Links</a>&nbsp;&nbsp;&nbsp;</li>
+    <li class="nav-list-item"><a href=#>Cards</a>&nbsp;&nbsp;&nbsp;</li>
+    <li class="nav-list-item"><a href=#>FAQs</a>&nbsp;&nbsp;&nbsp;</li>
+    <li class="nav-list-item-cta"><a href=#>Sign In</a></li>
+</ul>
 ```
 This should start on line 14 in your VSCode in index.<b>html</b> file.
 <img class="shadow-border" src="assets/images/BasicNavBarImage1.jpg">
@@ -576,15 +592,16 @@ On your browser, you will see some links appear at the top right of the header, 
 
 ___
 
-Back to index.<b>css</b> we will add this code below:
-
-    .header-logo::first-letter {
-      font-size: 150%;
-      color: cornflowerblue;
-  }
+#### index.<b>css</b>
+Back to index.<b>css</b> we will add this code below the 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;.header-logo::first-letter property:
+<br><br>
 
 ```css
- .nav-list {
+/*Sets properties for the nav-bar*/
+/*Introducing the flex property*/
+.nav-list {
     list-style: none;
     margin-right: 30px;
     padding: 0;
@@ -593,6 +610,11 @@ Back to index.<b>css</b> we will add this code below:
     align-items: center;
   }
   ```
+Like this:
+
+<img class="shadow-border" src="assets/images/BasicFixedHeaderImage8.jpg">
+
+
   This will change the "nav bar" from vertical to horizontal in the header and a place a 30px margin on the right side.  It should look like this in Chrome:
 
   <img class="shadow-border" src="assets/images/BasicNavBarImage3.jpg">
@@ -645,7 +667,7 @@ One final touch is to turn the last link into a blue button. Add this code:
 
 ___
 
-### Fixed Header Code
+### <b>FULL</b> Fixed Header Code
 #### index.html
 
 Let's look at all the code in index.<b>html</b> to this point.  You can copy and paste this in your index.<b>html</b> file.
