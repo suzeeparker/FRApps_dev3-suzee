@@ -1325,7 +1325,7 @@ Copy/paste the below code:
 
 ```html
         <div class="header">
-            <img class="formr-logo" src="assets/images/formR.gif"/>
+            <img class="formr-logo" src="assets/images/formr-logo.gif"/>
             <!--<span class="header-logo">My Logo</span>-->
 ```
 Then add the below css property (.formr-logo) below the .header-logo::first-letter css code...
@@ -1335,10 +1335,10 @@ ___
 /*This replaces the action of the above css code*/
 /*This sets the size and position of the formr.gif logo*/
 .formr-logo {
-  width: 120px;
-  height: 41px;
+  width: 210px;
+  height: 60px;
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 ```
 ...like this:

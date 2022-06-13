@@ -58,9 +58,9 @@ h2 {
 /*This sets the size and position of the formr.gif logo*/
 .formr-logo {
   width: 210px;
-  height: 57px;
+  height: 60px;
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 /*Sets properties for the nav-bar*/
