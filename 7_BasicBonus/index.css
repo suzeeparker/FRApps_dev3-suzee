@@ -54,6 +54,15 @@ h2 {
   color: cornflowerblue;
 }
 
+/*This replaces the action of the above css code*/
+/*This sets the size and position of the formr.gif logo*/
+.formr-logo {
+  width: 210px;
+  height: 57px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
 /*Sets properties for the nav-bar*/
 /*introducing the flex property*/
 .nav-list {

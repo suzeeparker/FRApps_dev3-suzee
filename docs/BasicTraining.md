@@ -7,11 +7,11 @@
 
 - Be certain that you have checked "Auto Save" in the File menu
 
-<img class="shadow-border" src="assets/images/instructional/BasicBlocksImage1.jpg">
+<img class="shadow-border" src="assets/images/md-images/BasicBlocksImage1.jpg">
 
 - And that you have added "Live Server" to the "Extensions"
 
-<img class="shadow-border" src="assets/images/instructional/BasicBlocksImage2.jpg">
+<img class="shadow-border" src="assets/images/md-images/BasicBlocksImage2.jpg">
 
 ___
 
@@ -64,13 +64,13 @@ From VSCode, right click on the file "index.<b>html</b>" and click on "Open In L
 - (This option will not be available if you had not added the "Live Server" extension)
 
 
-<img class="shadow-border" src="assets/images/instructional/BasicBlocksLiveServer.jpg">
+<img class="shadow-border" src="assets/images/md-images/BasicBlocksLiveServer.jpg">
 
 ___
 
 You will see in your browser the following:
 
-<img class="shadow-border" src="assets/images/instructional/BasicBlocksImage3.jpg">
+<img class="shadow-border" src="assets/images/md-images/BasicBlocksImage3.jpg">
 
 ___
 
@@ -154,7 +154,7 @@ h2 {
 
 Like this:
 
-<img class="shadow-border" src="assets/images/instructional/BasicBlocksImage4.jpg">
+<img class="shadow-border" src="assets/images/md-images/BasicBlocksImage4.jpg">
 
 ___
 
@@ -283,7 +283,7 @@ h2 {
 Like this:
 
 
-<img class="shadow-border" src="assets/images/instructional/BasicFixedHeaderImage6.jpg">
+<img class="shadow-border" src="assets/images/md-images/BasicFixedHeaderImage6.jpg">
 
 <br><br>
 <b>ALSO</b>, we must override the padding for this &#60;h2&#62; tag in the footer with the following, placed at the bottom of the css code:
@@ -296,14 +296,14 @@ Like this:
 ```
 Like this:
 
-<img class="shadow-border" src="assets/images/instructional/BasicFixedHeaderImage7.jpg">
+<img class="shadow-border" src="assets/images/md-images/BasicFixedHeaderImage7.jpg">
 
 ### Large Blocks Web Page
 __
 
 **Congratulation**, now look at your web page.  All the blocks now have changed to fill up the page in Chrome.
 
-<img class="shadow-border" src="assets/images/instructional/BasicBlocksImage5.jpg">
+<img class="shadow-border" src="assets/images/md-images/BasicBlocksImage5.jpg">
 
 ___
 
@@ -452,14 +452,14 @@ In the index.html file, replace:
 ```html
     <h2>header</h2>
 ```
-<img src="assets/images/instructional/BasicFixedHeaderImage1.jpg">
+<img src="assets/images/md-images/BasicFixedHeaderImage1.jpg">
 
 with:
 
 ```html
     <span class="header-logo">My Logo</span>
 ```    
-<img src="assets/images/instructional/BasicFixedHeaderImage2.jpg">
+<img src="assets/images/md-images/BasicFixedHeaderImage2.jpg">
 
 this should be on line 13 in your VSCode (index.<b>html</b>).
 
@@ -475,11 +475,11 @@ like this:
     position: fixed;   /*was relative*/
     z-index: 100;
 ```
-<img src="assets/images/instructional/BasicFixedHeaderImage3.jpg">
+<img src="assets/images/md-images/BasicFixedHeaderImage3.jpg">
 
 Now when you scroll up and down the header is fixed; with "My Logo" centered at the top.
 
-<img class="shadow-border" src="assets/images/instructional/BasicFixedHeaderImage4.jpg">
+<img class="shadow-border" src="assets/images/md-images/BasicFixedHeaderImage4.jpg">
 
 To make this look good, we have more work to do in the index.<b>css</b> file.
 
@@ -526,7 +526,7 @@ To get the logo to look good, add this code below the .header properties:
 ```
 You have a logo that is font-based.  Later we will change to an image.
 
-<img class="shadow-border" src="assets/images/instructional/BasicFixedHeaderImage5.jpg">
+<img class="shadow-border" src="assets/images/md-images/BasicFixedHeaderImage5.jpg">
 ___
 
 #### <b><font color=#A81966>top:</font> properties
@@ -585,11 +585,11 @@ In index.<b>html</b> add the following code, just below<br>
 </ul>
 ```
 This should start on line 14 in your VSCode in index.<b>html</b> file.
-<img class="shadow-border" src="assets/images/instructional/BasicNavBarImage1.jpg">
+<img class="shadow-border" src="assets/images/md-images/BasicNavBarImage1.jpg">
 
 On your browser, you will see some links appear at the top right of the header, like this:
 
-<img class="shadow-border" src="assets/images/instructional/BasicNavBarImage2.jpg">
+<img class="shadow-border" src="assets/images/md-images/BasicNavBarImage2.jpg">
 
 ___
 
@@ -613,12 +613,12 @@ Back to index.<b>css</b> we will add this code below the
   ```
 Like this:
 
-<img class="shadow-border" src="assets/images/instructional/BasicFixedHeaderImage8.jpg">
+<img class="shadow-border" src="assets/images/md-images/BasicFixedHeaderImage8.jpg">
 
 
   This will change the "nav bar" from vertical to horizontal in the header and a place a 30px margin on the right side.  It should look like this in Chrome:
 
-  <img class="shadow-border" src="assets/images/instructional/BasicNavBarImage3.jpg">
+  <img class="shadow-border" src="assets/images/md-images/BasicNavBarImage3.jpg">
 
   ___
 
@@ -636,7 +636,7 @@ Like this:
 
 Notice the change on your browser:
 
-  <img class="shadow-border" src="assets/images/instructional/BasicNavBarImage4.jpg">
+  <img class="shadow-border" src="assets/images/md-images/BasicNavBarImage4.jpg">
 
 ___
 
@@ -650,7 +650,7 @@ Now lets make the first 3 links change color when you hover over one, adding thi
 ```
 See the change:
 
-  <img class="shadow-border" src="assets/images/instructional/BasicNavBarImage5.jpg">
+  <img class="shadow-border" src="assets/images/md-images/BasicNavBarImage5.jpg">
 
 ___
 
@@ -664,7 +664,7 @@ One final touch is to turn the last link into a blue button. Add this code:
   border-radius: 8px;
 }
 ```
-  <img class="shadow-border" src="assets/images/instructional/BasicNavBarImage6.jpg">
+  <img class="shadow-border" src="assets/images/md-images/BasicNavBarImage6.jpg">
 
 ___
 
@@ -1317,7 +1317,7 @@ In index.<b>html</b> remark out the  &#60;span class="header-logo">My Logo</span
 
 Then add  "&#60;img class="formr-logo" src="assets/images/formR.gif"/&#62;" below the &#60;div class="header"&#62; -- like this:
 
-<img src="assets/images/instructional/BasicBonusImage1.jpg">
+<img src="assets/images/md-images/BasicBonusImage1.jpg">
 
 ___
 
@@ -1343,13 +1343,13 @@ ___
 ```
 ...like this:
 
-<img src="assets/images/instructional/BasicBonusImage2.jpg">
+<img src="assets/images/md-images/BasicBonusImage2.jpg">
 
 ___
 
 The final web page should look like this:
 
-<img class="shadow-border" src="assets/images/instructional/BasicFinalImage1.jpg">
+<img class="shadow-border" src="assets/images/md-images/BasicFinalImage1.jpg">
 
 ___
 
