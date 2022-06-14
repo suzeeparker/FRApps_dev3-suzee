@@ -1113,10 +1113,9 @@ ___
 ```
 ___
 
-
-
-
 #### Final CSS
+
+___
 
 ```css
 
@@ -1309,7 +1308,7 @@ h2 {
 }
 
 ```
-___
+__
 
 ## BONUS
 
@@ -1361,3 +1360,4 @@ ___
 Moving forward we will add JavaScript to include some cool things in the nav-bar, Section2 and responsiveness of the page.
 
 ___
+
