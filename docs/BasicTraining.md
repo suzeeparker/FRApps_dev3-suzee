@@ -307,7 +307,7 @@ __
 
 ___
 
-### Large Blocks Code:
+### <b>FULL</b> Large Blocks Code:
 <br>
 Below is the full code for the Large Blocks web page.
 <br>
@@ -845,6 +845,10 @@ h2 {
 
 
 
+### <b>FULL</b> Fixed Footer Code
+#### index.<b>html</b>
+
+___
 
 ```html
 <!DOCTYPE html>
@@ -884,13 +888,9 @@ h2 {
 </html>
 
 ```
+#### index.<b>css</b>
 
-
-
-
-
-
-
+___
 
 ```css
 @import url('https://fonts.googleapis.com/css?family=Bookman Old Style');
@@ -1066,8 +1066,11 @@ h2 {
 
 
 
+### <b>FULL</b> FINAL Code
 
-### Final HTML
+#### Final HTML
+
+___
 
 ```html
 
@@ -1113,7 +1116,7 @@ ___
 
 
 
-### Final CSS
+#### Final CSS
 
 ```css
 

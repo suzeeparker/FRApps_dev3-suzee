@@ -56,7 +56,14 @@ h2 {
 
 /*This replaces the action of the above css code*/
 /*This sets the size and position of the formr.gif logo*/
-.formr-logo {
+.formr-logo1 {
+  width: 210px;
+  height: 70px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.formr-logo2 {
   width: 210px;
   height: 60px;
   padding-left: 20px;
@@ -119,9 +126,9 @@ h2 {
   font-family: "Bookman Old Style", sans-serif;
   font-size: 3rem;
   font-weight: bolder;
-  color: blue;
+  color: #0000ff;
   text-shadow: 2px 2px 12px #000000;
-  padding: 80px 400px 20px 0px;
+  padding: 50px 420px 0px 0px;
 }
 
 /*Sets the properties for the first letter*/
@@ -129,7 +136,7 @@ h2 {
 .image-text::first-letter {
   font-size: 150%;
   color: cornflowerblue;
-}
+ }
 
 /*The .section2 properites*/
 .section2 {
