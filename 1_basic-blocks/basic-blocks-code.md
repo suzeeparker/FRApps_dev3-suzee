@@ -1,0 +1,107 @@
+
+HTML
+
+___
+
+
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <link rel="stylesheet" href="index.css">
+       <link rel="shortcut icon" href="../favicon.gif">
+       <title>Basic-Training</title>
+    </head>
+    <body>
+        <div class="header">
+            <h2>header</h2>
+        </div>
+        <div class="section1">
+           <h2>section 1</h2>
+        </div>
+        <div class="section2">
+            <h2>section 2</h2>
+        </div>
+        <div class="footer">
+            <h2>footer</h2>
+        </div>
+    </body>
+</html>
+```
+
+
+CSS
+
+___
+
+
+```css
+/*Basic Blocks*/
+@import url('https://fonts.googleapis.com/css?family=Bookman Old Style');
+
+html {
+    background: #b3b3b3;
+    height: 100%;
+    text-align: center;
+}
+
+/*The body properites*/
+body {
+    background: white;
+    height: 100%;
+}
+
+/*Set global properties for the <h2> tags*/
+/*It also overrides the intrinsic margin of*/
+/*20 to 0--allowing to stack the blocks together*/
+h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+/*The .header properites*/
+.header {
+    background: red;
+    width: 300px;
+    height: 100px;
+    position: relative;
+}
+
+/*The .section1 properites*/
+.section1 {
+    background: blue;
+    width: 300px;
+    height: 100px;
+    position: relative;
+}
+
+/*The .section2 properites*/
+.section2 {
+    background: lightgray;
+    width: 300px;
+    height: 100px;
+    position: relative;
+}
+
+/*This is another <h2> override*/
+/*setting the font color from white to black*/
+.section2 h2 {
+    color: black;
+}
+
+/*The .section2 properites*/
+.footer {
+    background: green;
+    width: 300px;
+    height: 100px;
+    position: relative;
+}
+
+```
+
+___
