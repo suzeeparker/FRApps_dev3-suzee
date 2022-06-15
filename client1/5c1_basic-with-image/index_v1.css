@@ -1,3 +1,5 @@
+/* Basic with Image CSS */
+
 @import url('https://fonts.googleapis.com/css?family=Bookman Old Style');
 
 /*From Basic Blocks*/
@@ -184,3 +186,4 @@ h2 {
 /*setting the padding from 6 to 0 rem*/
 .footer h2 {
   padding: 0;
+}
