@@ -1,0 +1,59 @@
+       Size      Date   Time    File Path & Name
+  ----------  ----------------  -----------------------------------------------------
+
+           0  2022-06-15 14:09  ./docs
+           0  2022-06-15 12:02  ./docs/.nojekyll
+        3859  2022-06-15 14:17  ./docs/index.html
+         205  2022-06-15 14:20  ./docs/README.md
+        2306  2022-06-15 10:30  ./docs/_sidebar.md
+
+           0  2022-06-15 12:09  ./docs/assets
+           0  2022-06-15 12:50  ./docs/assets/css
+         120  2022-06-15 12:02  ./docs/assets/css/custom.css
+       18602  2022-06-14 17:58  ./docs/assets/css/theme-simple-vars.css
+       79497  2022-06-14 17:58  ./docs/assets/css/theme-simple.css
+
+           0  2022-06-15 12:09  ./docs/assets/images
+       36122  2022-06-15 12:02  ./docs/assets/images/monaco-blue-soft.jpg
+
+           0  2022-06-15 12:09  ./docs/assets/images/md-images
+       57077  2022-06-15 12:02  ./docs/assets/images/md-images/BasicBlocksImage1.jpg
+       39862  2022-06-15 12:02  ./docs/assets/images/md-images/BasicBlocksImage1_75.jpg
+       37160  2022-06-15 12:02  ./docs/assets/images/md-images/BasicBlocksImage2.jpg
+       24104  2022-06-15 12:02  ./docs/assets/images/md-images/BasicBlocksImage2_75.jpg
+       12328  2022-06-15 12:02  ./docs/assets/images/md-images/BasicBlocksImage3.jpg
+       20680  2022-06-15 12:02  ./docs/assets/images/md-images/BasicBlocksImage4.jpg
+       74318  2022-06-15 12:02  ./docs/assets/images/md-images/BasicBlocksImage5.jpg
+       20750  2022-06-15 12:02  ./docs/assets/images/md-images/BasicBlocksLiveServer.jpg
+       40258  2022-06-15 12:02  ./docs/assets/images/md-images/BasicBlocksLiveServerImage1.jpg
+       28014  2022-06-15 12:02  ./docs/assets/images/md-images/BasicBlocksLiveServerImage1_75.jpg
+       23481  2022-06-15 12:02  ./docs/assets/images/md-images/BasicBonusImage1.jpg
+       51031  2022-06-15 12:02  ./docs/assets/images/md-images/BasicBonusImage2.jpg
+      123338  2022-06-15 12:02  ./docs/assets/images/md-images/BasicFinalImage1.jpg
+       12155  2022-06-15 12:02  ./docs/assets/images/md-images/BasicFixedHeaderImage1.jpg
+       14202  2022-06-15 12:02  ./docs/assets/images/md-images/BasicFixedHeaderImage2.jpg
+       28627  2022-06-15 12:02  ./docs/assets/images/md-images/BasicFixedHeaderImage2_125.jpg
+        7954  2022-06-15 12:02  ./docs/assets/images/md-images/BasicFixedHeaderImage3.jpg
+        6553  2022-06-15 12:02  ./docs/assets/images/md-images/BasicFixedHeaderImage4.jpg
+       10937  2022-06-15 12:02  ./docs/assets/images/md-images/BasicFixedHeaderImage5.jpg
+       35307  2022-06-15 12:02  ./docs/assets/images/md-images/BasicFixedHeaderImage6.jpg
+       27183  2022-06-15 12:02  ./docs/assets/images/md-images/BasicFixedHeaderImage7.jpg
+       18050  2022-06-15 12:02  ./docs/assets/images/md-images/BasicFixedHeaderImage7_75.jpg
+       41764  2022-06-15 12:02  ./docs/assets/images/md-images/BasicFixedHeaderImage8.jpg
+       68752  2022-06-15 12:02  ./docs/assets/images/md-images/BasicFixedHeaderImage_.jpg
+        5256  2022-06-15 12:02  ./docs/assets/images/md-images/BasicImage1.jpg
+       69639  2022-06-15 12:02  ./docs/assets/images/md-images/BasicNavBarImage1.jpg
+        8814  2022-06-15 12:02  ./docs/assets/images/md-images/BasicNavBarImage2.jpg
+        9276  2022-06-15 12:02  ./docs/assets/images/md-images/BasicNavBarImage3.jpg
+        8438  2022-06-15 12:02  ./docs/assets/images/md-images/BasicNavBarImage4.jpg
+       12966  2022-06-15 12:02  ./docs/assets/images/md-images/BasicNavBarImage5.jpg
+       11090  2022-06-15 12:02  ./docs/assets/images/md-images/BasicNavBarImage6.jpg
+
+           0  2022-06-15 12:36  ./docs/FRApps
+        1895  2022-06-15 12:02  ./docs/FRApps/basic-blocks-code.md
+        5682  2022-06-15 12:02  ./docs/FRApps/basic-bonus.md
+        2400  2022-06-15 12:02  ./docs/FRApps/basic-large-blocks-code.md
+        4846  2022-06-15 12:02  ./docs/FRApps/basic-with-fixed-footer.md
+        4082  2022-06-15 12:02  ./docs/FRApps/basic-with-fixed-header.md
+        5391  2022-06-15 12:02  ./docs/FRApps/basic-with-image.md
+
