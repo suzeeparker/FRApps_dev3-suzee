@@ -6,14 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport"    content="width=device-width, initial-scale=1">
 
-    <title>Basic Training</title>
-    <meta name="description" content="Basic Training for FRApps">
-    <link rel="icon"         href="assets/icons/favicon.png">
+    <title>FRApps Customization Docs</title>
+    <meta name="description" content="FRApps Customization Docs">
+    <link rel="icon"            href="assets/icons/favicon.png">
 
-    <link rel="stylesheet"   href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css" title="Simple">
-    <link rel="stylesheet"   href="assets/css/md-vars.css">
-    <link rel="stylesheet"   href="assets/css/custom.css">
+<!-- Docsify Theme Stylesheet -->
+    <link rel="stylesheet"      href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css" title="Simple">
+<!--<link rel="stylesheet"      href="assets/css/theme-custom.css">-->
 
+<!-- Custom Theme Stylesheet -->
+    <link rel="stylesheet"      href="assets/css/theme-simple-vars.css">
+    <link rel="stylesheet"      href="assets/css/custom.css">
   </head>
 
   <body>
@@ -27,24 +30,51 @@
 
     var aType             = 'embedded' // ??
 
-    window.$docsify = {
+    window.$docsify =
 
    // GENERAL SETTINGS
    // -----------------------------------------------------------------
 
-        name              : 'Basic Training',    // Appears as Title in Left Navbar 
-        loadSidebar       :  true,
-        hideSideBar       : (aType == 'standalone') ?   true  :   false,   // true
-        loadNavBar        : (aType == 'standalone') ?   false :   true,    // false 
-        externalLinkTarget: (aType == 'standalone') ? '_top'  : '_blank',
+//   { name               : 'Basic Training'     // Appears as Title in Left Navbar
+     { name               : 'formR Tutorial'
+     , logo               : 'assets/images/formR-icon.jpg'
+
+      , repo              : 'https://github.com/https://github.com/8020data/FormR_docs/'
+
+   // , homepage          : '_home.md'
+   // , homepage          : 'https://raw.githubusercontent.com/docsifyjs/docsify/master/README.md'    // Or use the readme in your repo
+   // , homepage          : 'README.md'   // Default is README.md
+
+   // , coverpage         : 'coverpage.md'
+
+      , loadNavBar        :  true
+   // , externalLinkTarget: (aType == 'standalone') ? '_top'  : '_blank'
 
    // SIDEBAR NAVIGATION
    // -----------------------------------------------------------------
 
-        auto2top          :  false,
-        maxLevel          :  3,
-        subMaxLevel       :  5, // Set subMaxLevel to 0 to remove automatic display of page table of contents (TOC) in Sidebar
-
+//     Config 1
+//     -------------------    ----------
+   /* , hideSidebar       :  true     // Don't show sidebar at all, even if $docsify.loadSideBar is true
+//  * , hideSideBar       : (aType == 'standalone') ?   true  :   false,   // true
+    */
+//     Config 2
+//     -------------------    ----------
+   /* , auto2top          :  false    // has no effect
+    * , loadSidebar       :  false    // Loads the TOC from homepage headings, README.md or $docsify.homepage
+    * , maxLevel          :  1        // TOC Levels displayed from home page headings if $docsify.loadSidebar is false
+//  *   maxLevel          :           // All TOC Levels from home page headings if not defined
+//  * , subMaxLevel       :  0        // has no effect if $docsify.loadSidebar is false
+    */
+//     Config 3
+//     -------------------    ----------
+//    , auto2top          :  true    // Use root TOC from _sidebar or $docsify.homepage
+      , loadSidebar       :  true    // Load the TOC from both the _sidebar (and homepage headings, README.md or $docsify.homepage)
+//    , maxLevel          :  1       // Has no effect if $docsify.loadSidebar is true
+      , subMaxLevel       :  3       // TOC Levels displayed from home page headings if $docsify.loadSidebar is true
+//    , subMaxLevel       :  0       // Set subMaxLevel to 0 to remove automatic display of TOC in Sidebar
+                                     // All TOCs in homepage can be hidden with <!-- {docsify-ignore-all} -->
+                                     // Any one TOC in homepage can be hidden with <!-- {docsify-ignore} -->
     } // eoo window.$docsify
 //  ----------------------------------------------------------------------------------------------------
     </script>
@@ -56,5 +86,5 @@
 </html>
 
 
-     
+
 

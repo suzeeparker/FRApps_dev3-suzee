@@ -5,13 +5,16 @@
 
 :root {
 
-/*  --toc-width                             :  800px; */
-    --sidebar-width                         :  350px;                                   /* was: 17rem = 272px (changed 061022 from 300 to 350px)*/;
+    --theme-color                           : darkblue;
+
+    /*  --toc-width                             :  800px; */
+    --sidebar-width                         :  350px;                                   /* was: 17rem = 272px */;
     --sidebar-padding                       :  0px 25px 0 25px;                         /* was: 0 25px; left snd right(?)*/
 
     --sidebar-background                    :  var(--base-background-color);            /* Was: var(--mono-tint3) or var(--base-background-color);*/
 /*  --sidebar-border-color                  :  blue                                   *//* ?? was: var(--mono-tint2)      */
     --sidebar-border-width                  :  5px;                                     /* vertical grey seperator, was: 0 1px 0 0 */
+
     --sidebar-name-font-size                :  var(--font-size-l);                      /* Title font was: --font-size-l) */
     --sidebar-name-font-weight              :  400;                                     /* Title font was: 300 or normal; */
     --sidebar-name-text-align               :  center;                                  /* Title was: center  */
@@ -95,7 +98,7 @@
 
     --cover-max-width: 45em;
 
-    --heading-color                         :  rgb(48, 48, 122);                        /* was: var( --mono-shade3 ); */
+    --heading-color                         :  darkblue;                        /* was: var( --mono-shade3 ); */
     --heading-margin                        :  2.5rem 0 0;
     --heading-font-weight                   :  var(--strong-font-weight);
 
@@ -103,7 +106,7 @@
     --heading-h1-border-style               :  solid;
     --heading-h1-font-size                  :  var(--font-size-xxl);                    /* was 1.40rem; */
     --heading-h1-font-weight                :  700;                                     /* was 400      */
-    --heading-h1-color                      :  green;                                   /* was: var(--heading-color); */
+    --heading-h1-color                      : var(--heading-color) ;                                   /* was: var(--heading-color); */
 
     --heading-h2-margin                     :  1rem 0rem -1.5rem -1rem;                 /* was 1rem 0rem -1.5rem 0rem; or 2.5rem 0 1.5rem; */
     --heading-h2-border-color               :  var(--mono-tint2);
@@ -118,7 +121,7 @@
     --heading-h3-border-style               :  solid;
     --heading-h3-font-weight                :  700;                                     /* not defined  */
     --heading-h3-font-size                  :  var(--font-size-l);                      /* was 1.30rem; */
-    --heading-h3-color                      :  rgb(108, 108, 134);
+    --heading-h3-color                      :  var(--heading-color);
 
     --heading-h4-margin                     :  1rem 0rem -.5rem 0rem;                   /* not defined, was: 1rem 0rem -.5rem 0rem  */
     --heading-h4-border-style               :  solid;
@@ -154,18 +157,18 @@
 
     --navbar-root-margin                    :  0 0 0 .8em;
 
-    --sidebar-name-color                    : #0374B5;
+    --sidebar-name-color                    : darkblue;
     --sidebar-name-margin                   :  1.5rem -.2rem;
     --sidebar-nav-link-font-weight--active  :  bold;
 
     --pagination-title-color                : #0374B5;
 
-    --link-color                            : #0374B5;
+    --link-color                            : blue;
     --link-text-decoration                  :  underline;
     --link-text-decoration--hover           :  underline;
 
     --code-theme-text                       : #333;
-    --code-theme-background                 : rgb(219, 204, 189);                     /* was: var(--mono-tint3); */
+    --code-theme-background                 : rgb(219, 204, 189);                     /* was: var(--mono-tint3); */ 
 
     --code-font-family                      :  Inconsolata, Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
     --code-font-size                        :  calc( var(--font-size-m) * 0.95 );
@@ -210,7 +213,7 @@
     text-decoration   : var(--subtitle-text-decoration);                                /*  underline; */
     }
 
-.md-rendered-html {
+.md-rendered-html { 
     margin            : -15px 0px  0px -10px;
     padding           :   8px 5px 10px  10px;
     border            :  2px solid red;
@@ -221,8 +224,8 @@
 
 .md-line {
     width             :  100%;
-    height            :  2px;
-    border            :  0;
+    height            :  2px; 
+    border            :  0; 
     background-color  : gray;
     margin            :  8px 0px 0px 0px;
     padding           :  0px 0px 0px 0px;                         /* affects the line height */
@@ -260,5 +263,53 @@
     padding         :  var(--blockquote-padding        );
     }
 
+    
+.page-back {
+    float        : left;
+    font-weight  : normal;
+    color        : maroon;
+    margin-top   : 15px;
+    margin-bottom: 20px;
+    }
 
-/* aside > div > ul > li:nth-child(2) { color: red; } */
+.page-next {
+    float        : right;
+    font-weight  : normal;
+    color        : maroon;
+    margin-top   : 15px;
+    margin-bottom: 20px;
+    }
+
+.enabled {
+    color           : #000000 !important;
+    pointer-events  : auto      !important;
+    }
+
+.disabled {
+    color           : #aaaaaa !important;   /* .(10610.01.1 RAM Make it grey to start) */
+    pointer-events  : none      !important;     /* .(10610.01.2 RAM Disable click event) */
+    }
+
+.meta-container a {
+    text-decoration: none;
+    color: unset !important;
+    }
+
+.meta-container {
+    /* float: right; */
+    color: rgba(68, 68, 68, 0.788);
+    position: absolute;
+    position: absolute;
+    bottom: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0px;
+    right: 0px;
+    width: 80%;
+    font-size:80%;
+    text-align:left;   /* was center */
+    }
+
+
+/* aside > div > ul > li:nth-child(2) { color: red; } */ 
+  
