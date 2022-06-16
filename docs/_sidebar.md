@@ -17,9 +17,9 @@
 
 <h>3. Customize FRApps</h>
 
-1. [My HTML Custom App      ](/FRApps/fr0201_My-Custom-HTML-App.md         "FRApps 1 - My HTML Custom App"       )
-2. [My Javascript Custom App](/FRApps/fr0202_My-Custom-Javascript-App.md   "FRApps 2 - My Javascript Custom App" )
-3. [My React Custom App     ](/FRApps/fr0203_My-Custom-React-App.md        "FRApps 3 - My React Custom App"      )
+1. [My HTML Custom App      ](/FRApps/fr020100_My-Custom-HTML-App.md         "FRApps 1 - My HTML Custom App"       )
+2. [My Javascript Custom App](/FRApps/fr020200_My-Custom-Javascript-App.md   "FRApps 2 - My Javascript Custom App" )
+3. [My React Custom App     ](/FRApps/fr020300_My-Custom-React-App.md        "FRApps 3 - My React Custom App"      )
 
 <h>4. Run formR</h>
 
