@@ -8,7 +8,7 @@
 
     <title>FRApps Customization Docs</title>
     <meta name="description" content="FRApps Customization Docs">
-    <link rel="icon"            href="assets/icons/favicon.png">
+    <link rel="icon"            href="favicon.png">
 
 <!-- Docsify Theme Stylesheet -->
     <link rel="stylesheet"      href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css" title="Simple">
@@ -60,18 +60,18 @@
     */
 //     Config 2
 //     -------------------    ----------
-   /* , auto2top          :  false    // has no effect
-    * , loadSidebar       :  false    // Loads the TOC from homepage headings, README.md or $docsify.homepage
-    * , maxLevel          :  1        // TOC Levels displayed from home page headings if $docsify.loadSidebar is false
-//  *   maxLevel          :           // All TOC Levels from home page headings if not defined
-//  * , subMaxLevel       :  0        // has no effect if $docsify.loadSidebar is false
+   /* , auto2top          :  false    // Has no effect
+    * , loadSidebar       :  false    // TOC is read from _sidebar first, then markdown file headings. Levels unaffected by MaxLevel or subMaxLevel
+    * , maxLevel          :  1        // TOC levels read from markdown file headings. None read if #s not in file. If $docsify.loadSidebar is false. 
+//  * , maxLevel          :           // All TOC Levels from home page headings if not defined
+//  * , subMaxLevel       :  0        // Has no effect if $docsify.loadSidebar is false
     */
 //     Config 3
 //     -------------------    ----------
 //    , auto2top          :  true    // Use root TOC from _sidebar or $docsify.homepage
-      , loadSidebar       :  true    // Load the TOC from both the _sidebar (and homepage headings, README.md or $docsify.homepage)
+      , loadSidebar       :  true    // TOC is read from both the _sidebar  and headings in markdown files, README.md or $docsify.homepage)
 //    , maxLevel          :  1       // Has no effect if $docsify.loadSidebar is true
-      , subMaxLevel       :  3       // TOC Levels displayed from home page headings if $docsify.loadSidebar is true
+      , subMaxLevel       :  3       // TOC Levels read from markdown file headings after those in _sidebar       if $docsify.loadSidebar is true. Does not effect levels in _sidebar
 //    , subMaxLevel       :  0       // Set subMaxLevel to 0 to remove automatic display of TOC in Sidebar
                                      // All TOCs in homepage can be hidden with <!-- {docsify-ignore-all} -->
                                      // Any one TOC in homepage can be hidden with <!-- {docsify-ignore} -->
