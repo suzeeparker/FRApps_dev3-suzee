@@ -123,8 +123,10 @@
     --heading-h3-font-size                  :  var(--font-size-l);                      /* was 1.30rem; */
     --heading-h3-color                      :  var(--heading-color);
 
-    --heading-h4-margin                     :  1rem 0rem -.5rem 0rem;                   /* not defined, was: 1rem 0rem -.5rem 0rem  */
+/*  --heading-h4-margin                     :  1rem 0rem -.5rem 0rem;                 *//* .(20616.01.1) not defined, was: 1rem 0rem -.5rem 0rem  */
+    --heading-h4-margin                     :  1rem 0rem -.5rem 2rem;                   /* .(20616.01.1 RAM Made left margin 2rem) */
     --heading-h4-border-style               :  solid;
+    --heading-h4-border-width               :  0 0 1px 0;                               /* .(20616.01.2 RAM Added) 
 /*  --heading-h4-font-weight                :  400;   */                                /* not defined  */
     --heading-h4-font-size                  :  var(--font-size-m);                      /* was 1.20rem; */
 
@@ -158,7 +160,7 @@
     --navbar-root-margin                    :  0 0 0 .8em;
 
     --sidebar-name-color                    : darkblue;
-    --sidebar-name-margin                   :  1.5rem -.2rem;
+    --sidebar-name-margin                   :  1.5rem -.2rem 0rem -.2rem;               /* .(20616.02.1 RAM was 1.5rem -.2rem) */
     --sidebar-nav-link-font-weight--active  :  bold;
 
     --pagination-title-color                : #0374B5;
