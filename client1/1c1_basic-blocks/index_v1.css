@@ -2,62 +2,92 @@
 
 @import url('https://fonts.googleapis.com/css?family=Bookman Old Style');
 
+/*-----------------------------------------
+root selector to create variables
+-------------------------------------------*/
+:root {
+    --header-color: red;
+    --section1-color: blue;
+    --section2-color: lightgray;
+    --footer-color: green;
+    --h2-text-color-light: white;
+    --h2-text-color-dark: black;
+    --h2-font-size: 1.5rem;
+} 
+
+/*-----------------------------------------
+The html properites
+------------------------------------------*/
 html {
     background: #b3b3b3;
     height: 100%;
     text-align: center;
 }
 
-/*The body properites*/
+/*-----------------------------------------
+The body properites
+------------------------------------------*/
 body {
     background: white;
     height: 100%;
 }
 
-/*Set global properties for the <h2> tags*/
-/*It also overrides the intrinsic margin of*/
-/*20 to 0--allowing to stack the blocks together*/
+/*-----------------------------------------
+Set global properties for the <h2> tags
+It also overrides the intrinsic margin of
+20 to 0--allowing to stack the blocks together
+-------------------------------------------*/
 h2 {
     margin: 0;
-    font-size: 1.5rem;
-    color: white;
+    font-size: var(--h2-font-size) ;
+    color: var(--h2-text-color-light);
     padding: 1.5rem;
     text-align: center;
   }
 
-/*The .header properites*/
+/*-----------------------------------------
+The .header properites
+------------------------------------------*/
 .header {
-    background: red;
+    background: var(--header-color);
     width: 300px;
     height: 100px;
     position: relative;
 }
 
-/*The .section1 properites*/
+/*-----------------------------------------
+The .section1 properites
+------------------------------------------*/
 .section1 {
-    background: blue;
+    background: var(--section1-color);
     width: 300px;
     height: 100px;
     position: relative;
 }
 
-/*The .section2 properites*/
+/*-----------------------------------------
+The .section2 properites
+------------------------------------------*/
 .section2 {
-    background: lightgray;
+    background: var(--section2-color);
     width: 300px;
     height: 100px;
     position: relative;
 }
 
-/*This is another <h2> override*/
-/*setting the font color from white to black*/
+/*-----------------------------------------
+This is another <h2> override
+setting the font color from white to black
+------------------------------------------*/
 .section2 h2 {
-    color: black;
+    color: var(--h2-text-color-dark);
 }
 
-/*The .section2 properites*/
+/*-----------------------------------------
+The .footer properites
+------------------------------------------*/
 .footer {
-    background: green;
+    background: var(--footer-color);
     width: 300px;
     height: 100px;
     position: relative;

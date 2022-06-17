@@ -1,4 +1,11 @@
+<!-- ---------------------------------------------------------------------- -->
+<div class="page-back">
 
+[<-- BACK](/FRApps/fr020103_Basic-with-Fixed-Header)
+
+</div><div class="page-next">
+
+<!-- ---------------------------------------------------------------------- -->
 HTML
 
 ___
@@ -13,7 +20,7 @@ ___
         <link rel="stylesheet" href="index.css">
         <link rel="shortcut icon" href="../favicon.gif">
         <link href="https://fonts.googleapis.com/css?family=Bookman Old Style" rel="stylesheet">
-        <title>FormR Basic Training</title>
+        <title>FRApps Basic Blocks w/ Fixed Header</title>
     </head>
     <body>
         <div class="header">
@@ -43,16 +50,37 @@ CSS
 ___
 
 ```css
+/*Large Blocks w/ Fixed Header CSS*/
 @import url('https://fonts.googleapis.com/css?family=Bookman Old Style');
 
-/*The html properites*/
+/*-----------------------------------------
+root selector to create variables
+CHANGE: h2-font-size
+-------------------------------------------*/
+:root {
+    --header-color: red;
+    --section1-color: blue;
+    --section2-color: lightgray;
+    --footer-color: green;
+    --h2-text-color-light: white;
+    --h2-text-color-dark: black;
+    --h2-font-size: 2rem;
+}
+
+/*-----------------------------------------
+The html properites
+NO CHANGES or ADDITIONS
+------------------------------------------*/
 html {
     background: #b3b3b3;
     height: 100%;
     text-align: center;
 }
 
-/*The body properites*/
+/*-----------------------------------------
+The body properites
+NO CHANGES or ADDITIONS
+------------------------------------------*/
 body {
     background: white;
     height: 100%;
@@ -60,29 +88,40 @@ body {
     margin: 0;
 }
 
-/*Set global properties for the <h2> tags*/
-/*It also overrides the intrinsic margin of*/
-/*20 to 0--allowing to stack the blocks together*/
+/*-----------------------------------------
+Set global properties for the <h2> tags
+It also overrides the intrinsic margin of
+20 to 0--allowing to stack the blocks together.
+NO CHANGES or ADDITIONS
+-------------------------------------------*/
 h2 {
     margin: 0;
-    font-size: 2rem;
-    color: white;
+    font-size: var(--h2-font-size);
+    color: var(--h2-text-color-light);
     padding: 6rem;
     text-align: center;
 }
 
-/*The .header properites*/
+/*-----------------------------------------
+The .header properites
+CHANGES: position
+ADDITION: z-index, display & justify-content
+REMOVAL: .header h2 
+------------------------------------------*/
 .header {
-    background: red;
-    width: 100%;    /*was 300px*/
-    height: 10%;   /*was 100px*/
+    background: var(--header-color);
+    width: 100%;
+    height: 10%;
     position: fixed;  /*was relative*/
     z-index: 100;
     display: flex;
     justify-content: space-between;
 }
 
-/*Sets all the properties for the font-based logo*/
+/*-----------------------------------------
+***NEW***
+Sets all the properties for the font-based logo
+------------------------------------------*/
 .header-logo {
     font-family: "Bookman Old Style", sans-serif;
     font-size: 30px;
@@ -92,15 +131,22 @@ h2 {
     padding-left: 20px;
 }
 
-/*Sets the properties for the first letter*/
-/*of the font-based logo*/
+/*-----------------------------------------
+***NEW***
+Sets the properties for the first letter
+of the font-based logo
+------------------------------------------*/
+
 .header-logo::first-letter {
     font-size: 150%;
     color: cornflowerblue;
 }
 
-/*Sets properties for the nav-bar*/
-/*introducing the flex property*/
+/*-----------------------------------------
+***NEW***
+Sets properties for the nav-bar
+introducing the flex property
+------------------------------------------*/
 .nav-list {
     list-style: none;
     margin-right: 30px;
@@ -110,7 +156,12 @@ h2 {
     align-items: center;
 }
 
-/*Sets the properties for each of the nav-bar items*/
+/*-----------------------------------------
+***NEW***
+Sets the properties for each
+introducing the flex property
+of the nav-bar items
+------------------------------------------*/
 .nav-list-item a {
     color: black;
     font-weight: bold;
@@ -118,14 +169,22 @@ h2 {
     margin: 8px 0;
 }
 
-/*Sets the color of the nav-bar items when you hover*/
+
+/*-----------------------------------------
+***NEW***
+Sets the color of the nav-bar
+items when you hover
+------------------------------------------*/
 .nav-list-item a:hover,
 .nav-list-item a:active {
     color: #ccc;
 }
 
-/*Creates the blue button around the 'Sign In'*/
-/*button.  -cta stands for 'Call To Action'*/
+/*-----------------------------------------
+***NEW***
+Creates the blue button around the 'Sign In'
+button.  -cta stands for 'Call To Action'
+------------------------------------------*/
 .nav-list-item-cta a {
     color: white;
     background: blue ;
@@ -133,41 +192,55 @@ h2 {
     border-radius: 8px;
 }
 
-/*The .section1 properites*/
+/*-----------------------------------------
+The .section1 properites
+ADDITION: top
+------------------------------------------*/
 .section1 {
-    background: blue;
-    height: 40%;  /*was 100px*/
-    width: 100%;    /*was 300px*/
+    background: var(--section1-color);
+    width: 100%;
+    height: 40%;
     position: relative;
     top: 10%; /*Added to adjust the top position*/
 }
 
-/*The .section2 properites*/
+/*-----------------------------------------
+The .section2 properites
+CHANGE: height
+ADDITION: top
+------------------------------------------*/
 .section2 {
-    background: lightgray;
-    width: 100%;    /*was 300px*/
-    height: 45%;  /*was 100px*/
+    background: var(--section2-color);
+    width: 100%; 
+    height: 45%;  /*was 400px*/
     position: relative;
     top: 10%; /*Added to adjust the top position*/
 }
 
-/*This is another <h2> override*/
-/*setting the font color from white to black*/
+/*-----------------------------------------
+This is another <h2> override setting 
+the font color from white to black
+------------------------------------------*/
 .section2 h2 {
-    color: black;
+    color: var(--h2-text-color-dark);
 }
 
-/*The .footer properites*/
+/*-----------------------------------------
+The .footer properites
+ADDITION: top
+------------------------------------------*/
 .footer {
-    background: green;
-    width: 100%;    /*was 300px*/
-    height: 10%;   /*was 100px*/
+    background: var(--footer-color);
+    width: 100%;
+    height: 10%;
     position: relative;
     top: 10%; /*Added to adjust the top position*/
 }
 
-/*This is another <h2> override*/
-/*setting the padding from 6 to 0 rem*/
+/*-----------------------------------------
+This is another <h2> override
+CHANGE: padding
+------------------------------------------*/
 .footer h2 {
     padding: 0;
 }

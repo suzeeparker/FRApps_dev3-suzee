@@ -1,3 +1,12 @@
+<!-- ---------------------------------------------------------------------- -->
+<div class="page-back">
+
+[<-- BACK](/FRApps/fr020102_Basic-Large-Blocks)
+
+</div><div class="page-next">
+
+<!-- ---------------------------------------------------------------------- -->
+
 HTML
 
 ___
@@ -13,7 +22,7 @@ ___
         <link rel="stylesheet" href="index.css">
         <link rel="shortcut icon" href="../favicon.gif">
         <link href="https://fonts.googleapis.com/css?family=Bookman Old Style" rel="stylesheet">
-        <title>Basic Training</title>
+        <title>FRApps Basic Large Blocks</title>
     </head>
     <body>
         <div class="header">
@@ -42,14 +51,33 @@ ___
 /*Large Blocks CSS*/
 @import url('https://fonts.googleapis.com/css?family=Bookman Old Style');
 
-/*The html properites*/
+/*-----------------------------------------
+root selector to create variables
+CHANGE: h2-font-size
+-------------------------------------------*/
+:root {
+    --header-color: red;
+    --section1-color: blue;
+    --section2-color: lightgray;
+    --footer-color: green;
+    --h2-text-color-light: white;
+    --h2-text-color-dark: black;
+    --h2-font-size: 2rem;
+} 
+
+/*-----------------------------------------
+The html properites
+------------------------------------------*/
 html {
     background: #b3b3b3;
     height: 100%;
     text-align: center;
 }
 
-/*The body properites*/
+/*-----------------------------------------
+The body properites
+ADDITION: width and margin
+------------------------------------------*/
 body {
     background: white;
     height: 100%;
@@ -57,64 +85,84 @@ body {
     margin: 0;
 }
 
-/*Set global properties for the <h2> tags*/
-/*It also overrides the intrinsic margin of*/
-/*20 to 0--allowing to stack the blocks together*/
+/*-----------------------------------------
+Set global properties for the <h2> tags
+It also overrides the intrinsic margin of
+20 to 0--allowing to stack the blocks together.
+CHANGE: padding
+-------------------------------------------*/
 h2 {
     margin: 0;
-    font-size: 2rem;
-    color: white;
+    font-size: var(--h2-font-size);
+    color: var(--h2-text-color-light);
     padding: 6rem;
     text-align: center;
 }
 
-/*The .header properites*/
+/*-----------------------------------------
+The .header properites
+CHANGE: width & height
+------------------------------------------*/
 .header {
-    background: red;
-    color: white;
-    height: 10%; /*was 100px*/
+    background: var(--header-color);
     width: 100%; /*was 300px*/
+    height: 10%; /*was 100px*/
     position: relative;
 }
 
-/*This is the first <h2> override*/
-/*setting the padding from 6 to 1 rem*/
+/*-----------------------------------------
+This is the first <h2> override
+setting the padding from 6 to 1 rem
+------------------------------------------*/
 .header h2 {
     padding: 1rem;
 }
 
-/*The .section1 properites*/
+/*-----------------------------------------
+The .section1 properites
+CHANGE: width & height
+------------------------------------------*/
 .section1 {
-    background: blue;
-    height: 40%; /*was 100px*/
+    background: var(--section1-color);
     width: 100%; /*was 300px*/
+    height: 40%; /*was 100px*/
     position: relative;
 }
 
-/*The .section2 properites*/
+/*-----------------------------------------
+The .section2 properites
+CHANGE: width & height
+------------------------------------------*/
 .section2 {
-    background: lightgray;
+    background: var(--section2-color);
+    width: 100%; /*was 300px*/
     height: 40%; /*was 100px*/
-    width: 100%; /*was 300px*/
     position: relative;
 }
 
-/*This is another <h2> override*/
-/*setting the font color from white to black*/
+/*-----------------------------------------
+This is another <h2> override setting 
+the font color from white to black
+------------------------------------------*/
 .section2 h2 {
-    color:black;
+    color: var(--h2-text-color-dark);
 }
 
-/*The .footer properites*/
+/*-----------------------------------------
+The .footer properites
+CHANGE: width & height
+------------------------------------------*/
 .footer {
-    background: green;
-    height: 10%; /*was 100px*/
+    background: var(--footer-color);
     width: 100%; /*was 300px*/
+    height: 10%; /*was 100px*/
     position: relative;
 }
 
-/*This is another <h2> override*/
-/*setting the padding from 6 to 2 rem*/
+/*-----------------------------------------
+This is another <h2> override
+setting the padding from 6 to 2 rem
+------------------------------------------*/
 .footer h2 {
     padding: 2rem;
 }

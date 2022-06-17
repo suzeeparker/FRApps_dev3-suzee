@@ -1,6 +1,18 @@
+<!-- ------------------------------------------------------------------------- -->
+<!--
+<div class="page-back">
+
+[BACK - X](/FRApps/fr020100_Basic-Tools.md)
+</div><div class="page-next">
+
+[X - NEXT](/FRApps/fr020102_Basic-Large-Blocks.md)
+</div><div style="margin-top:35px">&nbsp;</div>
+-->
+<!-- ------------------------------------------------------------------------- -->
+
 #  HTML Custom App <!-- {docsify-ignore} -->
 
-<!-- -------------------------------------------------------------- >
+<!-- -------------------------------------------------------------- -->
 
 ## 1. Basic Blocks <!-- {docsify-ignore} -->
 
@@ -10,11 +22,11 @@
 
 - Be certain that you have checked "Auto Save" in the File menu
 
-<img class="shadow-border" src="assets/images/md-images/BasicBlocksImage1.jpg">
+<img class="shadow-border" src="FRApps/assets/images/md-images/BasicBlocksImage1.jpg">
 
 - And that you have added "Live Server" to the "Extensions"
 
-<img class="shadow-border" src="assets/images/md-images/BasicBlocksImage2.jpg">
+<img class="shadow-border" src="FRApps/assets/images/md-images/BasicBlocksImage2.jpg">
 
 ___
 
@@ -31,7 +43,8 @@ ___
 
 ### 3. Insert Code
 
-#### index.html   {docsify-ignore}
+#### index.html   <!--{docsify-ignore}-->
+
 
 Open the index.<b>html</b> and paste the following on Line 1:
 <br><br>
@@ -185,3 +198,6 @@ To understand a little of this CSS code, lets look at the header css properties.
 We will be building from this basic page to create a page with fixed header and footer, links with a button and an image.  From there the next course we will move on to adding JavaScript (JS) to this web page.
 ___
 
+[View Full Code For Basic Blocks](/FRApps/code/fr020101_basic-blocks-code.md "Full Code")
+
+___
