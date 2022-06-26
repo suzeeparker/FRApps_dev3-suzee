@@ -10,48 +10,43 @@
 -->
 <!-- ------------------------------------------------------------------------- -->
 
-#  HTML Custom App <!-- {docsify-ignore} -->
+<!--#  HTML Custom App <!-- {docsify-ignore} --> 
 
 <!-- -------------------------------------------------------------- -->
 
-## 1. Basic Blocks <!-- {docsify-ignore} -->
+<!-- ## 1. Basic Blocks <!-- {docsify-ignore} -->
 
-### 1. Assure VSCode Setup
+#  HTML Custom App <!-- {docsify-ignore} -->
 
-- From VSCode
 
-- Be certain that you have checked "Auto Save" in the File menu
+## Basic Blocks <!-- {docsify-ignore} --> 
 
-<img class="shadow-border" src="FRApps/assets/images/md-images/BasicBlocksImage1.jpg">
-
-- And that you have added "Live Server" to the "Extensions"
-
-<img class="shadow-border" src="FRApps/assets/images/md-images/BasicBlocksImage2.jpg">
+## Introduction
+<br>
+We will begin this Custom App by simply copying & pasting the code below into  your empty html and css files.  The results will be 4 very basic blocks that sit on top of each other.  Let's start by reviewing the files in your [repos]itory.
 
 ___
 
-### 2. Create Files
+## 1. Review Files
 
-- In a folder called BasicTraining, create 2 new files.
-    - index.<b>html</b>
+-  Using VSCode, in a folder called BasicTraining, open:
+    - index.<b>html</b> and
     - index.<b>css</b>
-
-- Be certain the "favicon.gif" into the root directory.
-    This will give you a nice FormR icon on the tab of your browser
+    
+Both should be empty.
 
 ___
 
-### 3. Insert Code
+## 2. Insert Code
 
-#### index.html   <!--{docsify-ignore}-->
-
-
-Open the index.<b>html</b> and paste the following on Line 1:
+### index.html   
+<br>
+Click on index.<b>html</b> file from VSCode. Copy and paste the entire below code to Line 1:
 <br><br>
 
 ```HTML
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
     <head>
        <meta charset="UTF-8">
        <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -75,129 +70,225 @@ Open the index.<b>html</b> and paste the following on Line 1:
     </body>
 </html>
 ```
-**Save this page, if you have NOT checked the "Auto Save" option in the File menu.**
+**This page will automatically save with the "Auto Save" option you set earlier.**
 
 From VSCode, right click on the file "index.<b>html</b>" and click on "Open In Live Server"
-- (This option will not be available if you had not added the "Live Server" extension)
+- This option is available because you added the "Live Server" extension earlier
 
 
-<img class="shadow-border" src="assets/images/md-images/BasicBlocksLiveServer.jpg">
-
-___
-
-You will see in your browser the following:
-
-<img class="shadow-border" src="assets/images/md-images/BasicBlocksImage3.jpg">
+<img class="shadow-border" src="FRApps/assets/images/md-images/BasicBlocksImage1.jpg">
 
 ___
 
-#### index.css  {docsify-ignore}
+If your Chrome browser is not already open, this command will open it and show the results of the above html code. 
+
+Like this:
+
+<img class="shadow-border" src="FRApps/assets/images/md-images/BasicBlocksImage2.jpg">
+
+<i>This is our starting point.</i>  Let's move to the CSS code to add our blocks.
+
 ___
 
-Open the index.<b>css</b> file and paste the following on Line 1
+### index.css  
+___
+
+Again, from VSCode click on the index.<b>css</b> file. Then copy and paste the below code (ensure to grab the final curly bracket "<font color='green'><b>}</b></font>" ), on to Line 1 of index.<b>css</b>:
 <br><br>
 
 ```css
-/*Basic Blocks*/
+/* Basic Blocks */
+
 @import url('https://fonts.googleapis.com/css?family=Bookman Old Style');
 
+/*-----------------------------------------
+root selector to create variables
+-------------------------------------------*/
+:root {
+    --header-color: red;
+    --section1-color: blue;
+    --section2-color: lightgray;
+    --footer-color: green;
+    --h2-text-color-light: white;
+    --h2-text-color-dark: black;
+    --nav-list-item-hover-color: white;
+    --h2-font-size: 1.5rem;
+    --nav-list-font-size: 1.2rem;
+    --footer-list-font-size: .9rem;
+} 
+
+/*-----------------------------------------
+The html properites
+------------------------------------------*/
 html {
     background: #b3b3b3;
     height: 100%;
     text-align: center;
 }
 
-/*The body properites*/
+/*-----------------------------------------
+The body properites
+------------------------------------------*/
 body {
     background: white;
     height: 100%;
 }
 
-/*Set global properties for the <h2> tags*/
-/*It also overrides the intrinsic margin of*/
-/*20 to 0--allowing to stack the blocks together*/
+/*-----------------------------------------
+Set global properties for the <h2> tags
+It also overrides the intrinsic margin of
+20 to 0--allowing to stack the blocks together
+-------------------------------------------*/
 h2 {
     margin: 0;
-    font-size: 1.5rem;
-    color: white;
+    font-size: var(--h2-font-size) ;
+    color: var(--h2-text-color-light);
     padding: 1.5rem;
     text-align: center;
   }
 
-/*The .header properites*/
+/*-----------------------------------------
+The .header properites
+------------------------------------------*/
 .header {
-    background: red;
+    background: var(--header-color);
     width: 300px;
     height: 100px;
     position: relative;
 }
 
-/*The .section1 properites*/
+/*-----------------------------------------
+The .section1 properites
+------------------------------------------*/
 .section1 {
-    background: blue;
+    background: var(--section1-color);
     width: 300px;
     height: 100px;
     position: relative;
 }
 
-/*The .section2 properites*/
+/*-----------------------------------------
+The .section2 properites
+------------------------------------------*/
 .section2 {
-    background: lightgray;
+    background: var(--section2-color);
     width: 300px;
     height: 100px;
     position: relative;
 }
 
-/*This is another <h2> override*/
-/*setting the font color from white to black*/
+/*-----------------------------------------
+This is another <h2> override
+setting the font color from white to black
+------------------------------------------*/
 .section2 h2 {
-    color: black;
+    color: var(--h2-text-color-dark);
 }
 
-/*The .section2 properites*/
+/*-----------------------------------------
+The .footer properites
+------------------------------------------*/
 .footer {
-    background: green;
+    background: var(--footer-color);
     width: 300px;
     height: 100px;
     position: relative;
+}
+^ copy to here
+
+```
+
+
+___
+
+## 3. Understanding CSS        <!-- .(20615.01.2 RAM Changed to ### 4. Was #### --> 
+<br>
+To understand a little of this CSS code, let's look at the .header properties.
+<br>
+<br>
+<font color='green'>** Notes:</font>
+<br><br>
+
+```css
+/*-----------------------------------------
+root selector to create variables
+-------------------------------------------*/
+** In CSS you can describe variables, this is very 
+powerful. For example, if it was decided that the 
+header color should actually be salmon, not red,
+it only needs changing here.  Several of the below 
+variables are not used in this particular .css, but 
+will be used in upcoming sessions.
+
+NOTE: in the .header properties below exactly 
+      how this variable is used.  We are setting
+      the background color of the header to red
+      with the variable called "--header-color"
+
+:root {
+    --header-color: red;
+    --section1-color: blue;
+    --section2-color: lightgray;
+    --footer-color: green;
+    --h2-text-color-light: white;
+    --h2-text-color-dark: black;
+    --nav-list-item-hover-color: white;
+    --h2-font-size: 1.5rem;
+    --nav-list-font-size: 1.2rem;
+    --footer-list-font-size: .9rem;
+} 
+_____________________________________________________
+
+/*-----------------------------------------
+The .header properites
+------------------------------------------*/
+.header {
+    background: var(--header-color);
+        ** Sets the background to the variable you set above
+    width: 300px;
+        ** Sets the width of the header block 300 pixels
+    height: 100px;
+        ** Sets the height of the header block 100 pixels
+    position: relative;
+        ** Places the header box relative to the html code
+        *DOM (Document Object Model) reading from 
+        the top to the bottom
+        
 }
 
 ```
 
-### Basic Blocks Web Page       <!-- .(20615.01.1 RAM This seems a little out of place --> 
+&nbsp;&nbsp;&nbsp;&nbsp;*[DOM](https://www.w3.org/TR/WD-DOM/introduction.html "What Is DOM")
+
+
+We will build from this basic page to create a web site with a fixed header and footer, links with a button, and an image.  From there, the next course we will move on to add some magic with JavaScript (JS) to this web page.
+___
+
+
+## ___________________
+
+##  Basic Blocks Web Page       <!-- .(20615.01.1 RAM This seems a little out of place --> 
 <br>
 
-**Congratulations**, you have just created a simple html page with a cascading style sheet (CSS) that makes 4 *basic blocks!*
-
+<span style="font-size: 25px"><b>Congratulations</b></span>, you have just created a simple html page with a cascading style sheet (CSS) which makes 4 *basic blocks.*  
+<br>
+Please check your Chrome browser. 
+<br><br>
 Like this:
 
-<img class="shadow-border" src="assets/images/md-images/BasicBlocksImage4.jpg">
+<img class="shadow-border" src="FRApps/assets/images/md-images/BasicBlocksImage3.jpg">
 
 ___
 
-### 4. Understanding CSS        <!-- .(20615.01.2 RAM Changed to ### 4. Was #### --> 
+<!--## 5. View Full Code  <!-- {docsify-ignore} -->
+<!--## 5. <a target="_blank" title="View Full Code" href="FRApps/code/fr020101_basic-blocks-code.md">View Full Code For Basic Blocks</a>-->
 
-To understand a little of this CSS code, lets look at the header css properties.
-<br><br>
-```css
-.header {                       Description
-  background: red;     makes the background red
-
-  width: 300px;        makes the block 300 pixels
-                          wide
-
-  height: 100px;       makes the block 100 pixels
-                          tall
-
-  position: relative;  places the header box
-                        relative to the html code
-                        (DOM) reading from the
-                        top to the bottom
-}
-```
-We will be building from this basic page to create a page with fixed header and footer, links with a button and an image.  From there the next course we will move on to adding JavaScript (JS) to this web page.
-___
-
-[View Full Code For Basic Blocks](/FRApps/code/fr020101_basic-blocks-code.md "Full Code")
+##  [View Full Code For Basic Blocks](/FRApps/code/fr020101_basic-blocks-code.md "Full Code")
 
 ___
+
+NEXT -->
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

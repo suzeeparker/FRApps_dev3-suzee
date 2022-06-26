@@ -63,6 +63,8 @@ CHANGE: h2-font-size
     --h2-text-color-light: white;
     --h2-text-color-dark: black;
     --h2-font-size: 2rem;
+    --nav-list-font-size: 1.2rem;
+    --footer-list-font-size: .9rem;
 } 
 
 /*-----------------------------------------
@@ -166,5 +168,6 @@ setting the padding from 6 to 2 rem
 .footer h2 {
     padding: 2rem;
 }
+
 ```
 ___

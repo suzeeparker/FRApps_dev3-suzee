@@ -64,7 +64,10 @@ CHANGE: h2-font-size
     --footer-color: green;
     --h2-text-color-light: white;
     --h2-text-color-dark: black;
+    --nav-list-item-hover-color: white;
     --h2-font-size: 2rem;
+    --nav-list-font-size: 1.2rem;
+    --footer-list-font-size: .9rem;
 }
 
 /*-----------------------------------------
@@ -154,6 +157,7 @@ introducing the flex property
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: var(--nav-list-font-size);
 }
 
 /*-----------------------------------------
@@ -167,8 +171,8 @@ of the nav-bar items
     font-weight: bold;
     text-decoration: none;
     margin: 8px 0;
+    padding: 25px;
 }
-
 
 /*-----------------------------------------
 ***NEW***
@@ -177,7 +181,7 @@ items when you hover
 ------------------------------------------*/
 .nav-list-item a:hover,
 .nav-list-item a:active {
-    color: #ccc;
+    color: var(--nav-list-item-hover-color);
 }
 
 /*-----------------------------------------
@@ -244,5 +248,6 @@ CHANGE: padding
 .footer h2 {
     padding: 0;
 }
+
 ```
 ___

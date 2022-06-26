@@ -1,7 +1,7 @@
 <!-- ---------------------------------------------------------------------- -->
 <div class="page-back">
 
-[<-- BACK](/FRApps/fr020103_Basic-with-Fixed-Footer)
+[<-- BACK](/FRApps/fr020104_Basic-with-Fixed-Footer)
 
 </div><div class="page-next">
 
@@ -38,7 +38,6 @@ ___
         <div class="section2">
             <h2>section 2</h2>
         </div>
-
         <div class="footer">
             <ul class="footer-list">
                 <li class="footer-list-item"><a href=#>Support</a></li>
@@ -71,7 +70,10 @@ CHANGE: h2-font-size
     --footer-color: green;
     --h2-text-color-light: white;
     --h2-text-color-dark: black;
+    --nav-list-item-hover-color: white;
     --h2-font-size: 2rem;
+    --nav-list-font-size: 1.2rem;
+    --footer-list-font-size: .9rem;
 }
 
 /*-----------------------------------------
@@ -158,6 +160,7 @@ NO CHANGES or ADDITIONS
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-size: var(--nav-list-font-size);
 }
 
 /*-----------------------------------------
@@ -171,6 +174,7 @@ NO CHANGES or ADDITIONS
   font-weight: bold;
   text-decoration: none;
   margin: 8px 0;
+  padding: 25px;
 }
 
 /*-----------------------------------------
@@ -180,7 +184,7 @@ NO CHANGES or ADDITIONS
 ------------------------------------------*/
 .nav-list-item a:hover,
 .nav-list-item a:active {
-  color: #ccc;
+  color: var(--nav-list-item-hover-color);
 }
 
 /*-----------------------------------------
@@ -236,21 +240,11 @@ REMOVAL: top
 .footer {
   background: var(--footer-color);
   width: 100%; 
-  /*top: 10%;  Removed in place of the bottom property*/
+  /*top: 10%; */
   bottom: 0;
   position: fixed;
   z-index: 99;
 }
-
-/*-----------------------------------------
-This is another <h2> override
-REMOVAL: the entire property
-due to <h2> tag was removed from html
-in the footer
-------------------------------------------*/
-/*.footer h2 {
-    padding: 0;
-}*/
 
 /*-----------------------------------------
 ***NEW***
@@ -271,8 +265,9 @@ introducing the flex property
     margin: 20px;
     padding: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    font-size: var(--footer-list-font-size);
   }
 
 /*-----------------------------------------
@@ -286,7 +281,7 @@ of the nav-bar items
     font-weight: bold;
     text-decoration: none;
     margin: 8px 0;
-
+    padding: 12px;
   }
 
 /*-----------------------------------------
@@ -296,7 +291,9 @@ items when you hover
 ------------------------------------------*/
 .footer-list-item a:hover,
 .footer-list-item a:active {
-  color: #ccc;
+  color: var(--nav-list-item-hover-color);
 }
+
+
 
 ```

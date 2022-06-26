@@ -60,8 +60,11 @@ root selector to create variables
     --footer-color: green;
     --h2-text-color-light: white;
     --h2-text-color-dark: black;
+    --nav-list-item-hover-color: white;
     --h2-font-size: 1.5rem;
-}
+    --nav-list-font-size: 1.2rem;
+    --footer-list-font-size: .9rem;
+} 
 
 /*-----------------------------------------
 The html properites
@@ -124,7 +127,7 @@ The .section2 properites
 }
 
 /*-----------------------------------------
-This is an <h2> override
+This is another <h2> override
 setting the font color from white to black
 ------------------------------------------*/
 .section2 h2 {

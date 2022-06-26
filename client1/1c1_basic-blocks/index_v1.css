@@ -12,7 +12,10 @@ root selector to create variables
     --footer-color: green;
     --h2-text-color-light: white;
     --h2-text-color-dark: black;
+    --nav-list-item-hover-color: white;
     --h2-font-size: 1.5rem;
+    --nav-list-font-size: 1.2rem;
+    --footer-list-font-size: .9rem;
 } 
 
 /*-----------------------------------------

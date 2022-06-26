@@ -1,7 +1,7 @@
 <!-- ---------------------------------------------------------------------- -->
 <div class="page-back">
 
-[<-- BACK](/FRApps/fr020103_Basic-with-Image)
+[<-- BACK](/FRApps/fr020105_Basic-with-Image)
 
 </div><div class="page-next">
 
@@ -37,7 +37,6 @@ ___
         <div class="section2">
             <h2>section 2</h2>
         </div>
-
         <div class="footer">
             <ul class="footer-list">
                 <li class="footer-list-item"><a href=#>Support</a></li>
@@ -70,7 +69,10 @@ CHANGE: h2-font-size
     --footer-color: green;
     --h2-text-color-light: white;
     --h2-text-color-dark: black;
+    --nav-list-item-hover-color: white;
     --h2-font-size: 2rem;
+    --nav-list-font-size: 1.2rem;
+    --footer-list-font-size: .9rem;    
 }
 
 /*-----------------------------------------
@@ -157,6 +159,7 @@ NO CHANGES or ADDITIONS
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-size: var(--nav-list-font-size);
 }
 
 /*-----------------------------------------
@@ -170,6 +173,8 @@ NO CHANGES or ADDITIONS
   font-weight: bold;
   text-decoration: none;
   margin: 8px 0;
+  padding: 25px;
+
 }
 
 /*-----------------------------------------
@@ -179,7 +184,7 @@ NO CHANGES or ADDITIONS
 ------------------------------------------*/
 .nav-list-item a:hover,
 .nav-list-item a:active {
-  color: #ccc;
+  color: var(--nav-list-item-hover-color);
 }
 
 /*-----------------------------------------
@@ -298,8 +303,9 @@ NO CHANGES
     margin: 20px;
     padding: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    font-size: var(--footer-list-font-size);
   }
 
 /*-----------------------------------------
@@ -313,7 +319,7 @@ NO CHANGES
     font-weight: bold;
     text-decoration: none;
     margin: 8px 0;
-
+    padding: 12px;
   }
 
 /*-----------------------------------------
@@ -323,8 +329,9 @@ NO CHANGES
 ------------------------------------------*/
 .footer-list-item a:hover,
 .footer-list-item a:active {
-  color: #ccc;
+  color: var(--nav-list-item-hover-color);
 }
+
 
 ```
 
