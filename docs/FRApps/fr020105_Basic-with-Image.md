@@ -157,7 +157,7 @@ ___
 ## Next Version With formR logo and color changes.
 <br>
 
-<img src="FRApps/assets/images/md-images/formR-logo.gif">
+<img src="FRApps/assets/images/md-images/formr-logo.gif">
 
 In the final section, we will change the font-based logo to a formR logo image file AND we will change the color of the blocks on the web page.  
 
