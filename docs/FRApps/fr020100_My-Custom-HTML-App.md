@@ -12,9 +12,10 @@
 
 These topics illustrate how to create HTML blocks for your home page. 
 
-### [1. Basic Blocks             ](/FRApps/fr020101_Basic-Blocks.md)        <!-- {docsify-ignore-all} -->
-### [2. Basic Large Blocks       ](/FRApps/fr020102_Basic-Large-Blocks.md)
-### [3. Basic with Fixed Header  ](/FRApps/fr020103_Basic-with-Fixed-Header.md)
-### [4. Basic with Image         ](/FRApps/fr020104_Basic-with-Image.md)
-### [5. Basic with Footer        ](/FRApps/fr020104_Basic-with-Footer.md)
-### [6. Bonus                    ](/FRApps/fr020105_Basic-Blocks.md)
+### [1. Introduction             ](/FRApps/fr020101_Introduction.md)        <!-- {docsify-ignore-all} -->
+### [2. Basic Blocks             ](/FRApps/fr020101_Basic-Blocks.md)        <!-- {docsify-ignore-all} -->
+### [3. Basic Large Blocks       ](/FRApps/fr020102_Basic-Large-Blocks.md)
+### [4. Basic with Fixed Header  ](/FRApps/fr020103_Basic-with-Fixed-Header.md)
+### [5. Basic with Image         ](/FRApps/fr020104_Basic-with-Image.md)
+### [6. Basic with Footer        ](/FRApps/fr020104_Basic-with-Footer.md)
+### [7. Bonus                    ](/FRApps/fr020105_Basic-Blocks.md)

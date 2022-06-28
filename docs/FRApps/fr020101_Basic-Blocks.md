@@ -29,7 +29,7 @@ ___
 
 ## 1. Review Files
 
--  Using VSCode, in a folder called BasicTraining, open:
+-  Using VSCode, in a folder called "0c1_my-basic-blocks", open:
     - index.<b>html</b> and
     - index.<b>css</b>
     
