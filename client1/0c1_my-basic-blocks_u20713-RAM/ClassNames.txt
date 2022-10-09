@@ -1,0 +1,113 @@
+Order from
+
+robin.mattern@gmail.com
+
+
+
+
+    --Menubar_body-color           : #FF7034;     /* --header-color                */
+    --Menubar_font-size            : 1.2rem;      /* --nav-list-font-size          */
+    --Menubar_hover-font-color     : white;       /* --nav-list-item-hover-color   */
+
+/*     (not used)                  : 2rem;      *//* --h2-font-size                */
+    --Section1-h2-font-color-light : white;       /* --h2-text-color-light         */
+    --Section1_body-color          : whitesmoke;  /* --section1-color              */
+
+    --Section2_body-color          : whitesmoke;  /* --section2-color              */
+    --Section2_h2-font-color-dark  : black;       /* --h2-text-color-dark          */
+
+    --Footer_font-size             : .9rem;       /* --footer-list-font-size       */
+    --Footer_font-color            : black;       /* --footer-color                */
+    }
+
+------------------------------------------------------------------------------------------
+
+    --Menubar_body-color           : #FF7034;     /* --header-color                */
+    --Menubar_font-size            : 1.2rem;      /* --nav-list-font-size          */
+    --Menubar_hover-font-color     : white;       /* --nav-list-item-hover-color   */
+
+/*     (not used)                  : 2rem;      *//* --h2-font-size                */
+    --Section1_H2_font-color-light : white;       /* --h2-text-color-light         */
+    --Section1_body-color          : whitesmoke;  /* --section1-color              */
+    --Section1_image               : url( ... );  /* --section1-image              */
+
+    --Section2_body-color          : whitesmoke;  /* --section2-color              */
+    --Section2-H2_font-color-dark  : black;       /* --h2-text-color-dark          */
+
+    --Footer_font-size             : .9rem;       /* --footer-list-font-size       */
+    --Footer_font-color            : black;       /* --footer-color                */
+    }
+
+
+
+
+
+                Component/TagName   Sample                           Different Name
+                ClassName           Variable Name                       Rick's Class Name    Rick's Variable Name
+                ------------------  -------------------------------- -- -------------------- ----------------------
+                Header              --Header_color                      header               --header-color
+                Sidebar-Button      --SideBar-Button_margin          X  nav-bar
+                FormR-Logo          --FormR-Logo_image                  formr-logo           --formr-logo-image:
+                Nav-Spacer                                              spacer
+                Nav-List            --Nav-List_font-size                nav-list             --nav-list-font-size
+                Nav-List-Item       --Nav-List-Item_hover-color         nav-list-item        --nav-list-item-hover-color
+                CTA-Button          --CTA-Button_body-color          X  nav-list-item-cta
+                Section1            --Section1_color                    section1             --section1-color
+                Section1            --Section1_image                    section1
+                Image-Text          --Image-Text                        image-text
+                Section2            --Section2_color                    section2             --section2-color
+                Section2            --H2_text-color-light               section2             --h2-text-color-light: white;
+                Section2            --H2_text-color-dark                section2             --h2-text-color-dark: white;
+                Section2            --H2_font-size                      section2             --h2-font-size
+                Section2-Paragraph  --Section2-Paragraph_font-weight    section2-paragraph
+                Footer              --Footer_color                      footer               --footer-color
+                Footer-List         --Footer-List_font-size             footer-list          --footer-list-font-size
+
+
+                Component/TagName   Sample
+                ClassName           Variable Name                       Rick's Class Name    Rick's Variable Name
+                ------------------  -------------------------------- -- -------------------- ----------------------
+                Header              --Header_color                      header               --header-color
+                Sidebar-Button      --SideBar-Button_margin             nav-bar
+                MenuBar-Logo        --Menubar-Logo_image                formr-logo           --formr-logo-image:
+                MenuBar-Spacer                                          spacer
+                MenuBar-Items       --MenuBar-Items_font-size           nav-list             --nav-list-font-size
+                MenuBar-Items       --MenuBar-Items_hover-color         nav-list-item        --nav-list-item-hover-color
+                MenuBar-CTA-Button  --Menubar-CTA-Button_body-color     nav-list-item-cta
+                Section1            --Section1_color                    section1             --section1-color
+                Section1            --Section1_image                    section1
+                Section1-Image-Text --Section1-Image-Text               image-text
+                Section2            --Section2_color                    section2             --section2-color
+                Section2-H2         --Section2-H2_text-color-light      section2             --h2-text-color-light: white;
+                Section2-H2         --Section2-H2_text-color-dark       section2             --h2-text-color-dark: white;
+                Section2-H2         --Section2-H2_font-size             section2             --h2-font-size
+                Section2-Paragraph  --Section2-Paragraph_font-weight    section2-paragraph
+                Footer              --Footer_color                      footer               --footer-color
+                Footer-Items        --Footer-Items_font-size            footer-list          --footer-list-font-size
+
+
+
+
+:root {
+    --header-color: #FF7034; /*dark orange*/
+    --section1-color: whitesmoke;
+    --section1-image: url( 'assets/images/monaco-blue-soft.jpg' );
+    --section2-color: whitesmoke;
+    --h2-text-color-light: white;
+    --h2-text-color-dark: black;
+    --h2-font-size: 2rem;
+    --nav-list-item-hover-color: white;
+    --nav-list-font-size: 1.2rem;
+    --formr-logo-image: url( 'assets/images/formr-logo-blue.gif' );
+    --footer-color: #FF7034; /*dark orange*/
+    --footer-list-font-size: .9rem;
+    }
+
+
+
+    Block__Element--Modifier    http://getbem.com/naming/
+
+    Block-Element_attribute
+
+    Parent-Child_attribute
+

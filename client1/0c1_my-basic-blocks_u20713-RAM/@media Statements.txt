@@ -1,0 +1,61 @@
+@media ( min-width: /* --Menubar-min-width: */ 760px ) {
+ .Menubar_logo {                                          /* formr-logo */
+    margin-left         :  30px;
+    }
+ .Menubar_nav-items {                                     /* nav-list */
+    display             :  flex;                          /* above 640px */
+    }
+  }
+
+
+
+@media (min-width: /* --Menubar-min-width: */ 760px ) {
+ .Sidebar_button {                                        /* nav-bar *.
+    display             : none;                 /* above 870px */
+    }
+  }
+
+---------------------------------------------------------------------
+
+@media (min-width: 760px) {
+  .nav-list {
+    display: flex;                           display: none;
+  }
+  .nav-bar {
+    display: none;                           display: flex;
+  }
+  .formr-logo {
+    margin-left: 54px;                       margin: 0px 0px 0px 10px;    /*Top Right Bottom Left*/
+    }
+}
+
+
+
+---------------------------------------------------------------------
+
+@media (min-width: 760px) { /*
+ .formr-logo {
+    margin-left: 54px;
+    }
+ .nav-list {
+    display: flex;
+    }
+ .nav-bar {
+    display: none;
+    }
+  }
+
+------------------------------------------------------------------------------
+
+@media screen and (max-width: 480px) {                          /* under 480px */
+  .section2 { background: red; }
+}
+@media screen and (min-width: 481px) and (max-width: 760px) {   /* between 481px and 760px */
+  .section2 { background: green; }
+}
+@media screen and (min-width: 761px) {                          /* over 760px */
+  .section2 { background: blue; }
+}
+
+
+
