@@ -1,0 +1,84 @@
+/* ----------------------------------------------------------------------- */
+/* Menubar.css                                                             */
+/* ----------------------------------------------------------------------- */
+
+.Menubar_hidden-block {
+    top                 :  0px;
+    height              :  var(--Menubar_body-height);    /* 100px, not 10% */
+    margin              :  0px;
+    padding             :  0px;
+    background-color    : pink;
+    width               : 600px;
+    }
+
+.Menubar_nav {
+    position            :  fixed;
+    top                 :   0px;
+    left                :   0px;
+    width               : 100%;
+    height              :  var(--Menubar_body-height);    /* 100px, not 10% */
+    padding             :   0px 15px;                     /* Space between ToorBar edge and Logo */
+    display             :  flex;
+    align-items         :  center;
+    background          :  var(--Menubar_body-color);
+    font-family         :  var(--Menubar_font-family);
+    font-weight         :  700;
+    }
+
+.Menubar_logo {
+/*    width             : 100%; */
+/*    height            : 100%; */
+    width               :  var(--Menubar_logo-width);     /* 210px;* was: 225 ; width is really 280px*/
+    height              :  var(--Menubar_logo-height);
+/*  margin-top          :   0px;  */                      /* was: -6px; */
+/*  margin-left         :   0px; */                       /* Space between ToggleButton and Logo was: 15px*/
+    margin-bottom       :  var(--Menubar_logo-margin-bottom);
+    background-image    :  var(--Menubar_logo-image);
+    background-size     :  var(--Menubar_logo-width) var(--Menubar_logo-height);  */    /* 210px 60px; 75% 73%;  *//* was 140px 41px == 50%;  */
+    background-repeat   :  no-repeat;
+    }
+
+.Menubar_logo a {
+    color               : rgb(255, 255, 255);
+    text-decoration     :  none;
+/*  font-size           :  36px;  */ /* was: 2rem */
+    }
+
+.Menubar_spacer {
+    flex                :  1;                             /* Space between left and right items */
+    }
+
+.Menubar_nav-items {
+    display             :  none;                          /* hide below var(--Menubar_min-width) */
+    }
+
+.Menubar_nav-items ul {
+    margin              :   3px 0px 0px 0px;
+    padding             :   0px;
+    display             :  flex;
+    flex-flow           :  row;                           /* Space DIVs horizontally */
+    list-style          :  none;
+    font-size           :  var(--Menubar_font-size);      /* 36px;  was: 2rem */
+    text-shadow         :  var(--Menubar_font-shadow);
+    font-weight         :  bold;
+    }
+
+.Menubar_nav-items li {
+    margin-top          :  -4px;                          /* Added */
+    padding             :   0px 10px;
+    }
+
+.Menubar_nav-items a {
+    text-decoration     :  none;
+    letter-spacing      :  var(--Menubar_font-spacing);
+    color               :  var(--Menubar_font-color)
+    }
+
+.Menubar_nav-items a:hover,
+.Menubar_nav-items a:active {
+    color               :  var(--Menubar_hover-font-color)
+    }
+
+
+
+

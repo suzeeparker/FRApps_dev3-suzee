@@ -1,0 +1,32 @@
+<div  class="Section1">
+  <h2 class="Heading1"                          >Image Text 1</h2>
+  <h2 class="Heading2"                          >Image Text 2</h2>
+  <h2 class="Heading3 shadow1"                  >Image Text 3</h2>
+  <h2 class="Heading4 gradient1"                >Image Text 4</h2>
+  <h2 class="Heading5" data-text="Image Text 5" >Image Text 5</h2>
+
+   h2 {
+   h2.Heading1 {
+   h2.Heading2 {
+   h2.Heading3 {
+   h2.Heading4 {
+   h2.Heading5 {
+
+
+
+
+<div     class="Main_section1">
+  <h2    class="Section1_text0"                              >Section1 Text</h2>
+  <h2    class="Section1_text1"                              >Section1 Text 1</h2>
+  <h2    class="Section1_text2"                              >Section1 Text 2</h2>
+  <h2    class="Section1_text3  shadow1"                     >Section1 Text 3</h2>
+  <h2    class="Section1_text4  gradient1"                   >Section1 Text 4</h2>
+  <h2    class="Section1_text5" data-text="Section1 Text 5"  >Section1 Text 5</h2>
+</div>
+
+   .Main_section1 h2 {
+   h2.Section1_text1 {
+   h2.Section1_text2 {
+   h2.Section1_text3 {
+   h2.Section1_text4 {
+   h2.Section1_text5 {

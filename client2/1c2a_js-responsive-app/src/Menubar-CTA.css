@@ -1,0 +1,51 @@
+/* ----------------------------------------------------------------------- */
+/* Menubar-CTA.css                                                         */
+/* ----------------------------------------------------------------------- */
+
+#Menubar-CTA_button {
+    width               :  var(--CTA_button-width);
+    min-width           :  var(--CTA_button-width);       /* .(20630.08.1 RAM Added) */
+    margin-top          :  var(--CTA_button-margin-top);  /* was -4px */
+    }
+
+#Menubar-CTA_button a {                                   /* id: cta - Call-to-Action button */
+    width               :  var(--CTA_button-width);
+    background          :  var(--CTA_button-body-color);  /* #ff1b68; red */
+/*  background-image    :  url( '../../assets/avatars/FormR_Avatar-Admin_32x32.png' ) */
+    border-radius       :   8px;
+    padding             :  var(--CTA_button-padding);
+    color               :  var(--CTA_button-font-color);  /* was white; */
+    font-size           :  var(--CTA_button-font-size);   /* 30px; */
+    }
+
+#Menubar-CTA_button a:hover,
+#Menubar-CTA_button a:active {
+    border              :  none;
+    background          :  var(--CTA_button-hover-color); /* #ff1b68; red */
+    color               :  var(--CTA_button-hover-font-color);  /* #ff1b68; */
+    text-shadow         :   0px 0px var(--CTA_button-font-color);
+    }
+
+/**  CTA BUTTON ANIMATION  **/                            /* .(20629.01.1 RAM Add Wiggle animation for Sign-In button) */
+/*   ---------------------------------------- */
+
+#Menubar-CTA_button {
+    animation           :  wiggle 400ms 2s 8 ease-out none;
+    }
+
+@keyframes wiggle {
+    0% { transform      :  rotateZ(  0deg ); }
+   50% { transform      :  rotateZ(-10deg ); }
+  100% { transform      :  rotateZ( 10deg ); }
+  }
+
+@media ( min-width: /* --Menubar-min-width: */ 760px ) {
+ .Menubar_logo {
+    margin-left         :  30px;
+    }
+ .Menubar_nav-items {
+    display             :  flex;                          /* above 640px */
+    }
+  }
+
+/* ----------------------------------------------------------------------- */

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="68" height="68">
+
+  <rect x="10" y="10" height="48" width="48" stroke="black" stroke-width="1" fill="param(color) red"></rect>
+  <rect x="29" y="0"  height="10" width="10"                                 fill="black"></rect>
+  <text x="24" y="46" fill="param(text) black" style="font-size:32px;" content-value="param(number) 1">
+    1
+  </text>
+
+  <script type="text/ecmascript" xlink:href="param.js" />
+</svg>

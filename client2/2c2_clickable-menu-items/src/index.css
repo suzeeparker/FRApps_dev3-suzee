@@ -1,0 +1,12 @@
+html {
+    height: 100%; /* needed for SideDrawer */
+    }
+
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100%;  /* needed for SideDrawer */
+    }
+
+/* @import "components/Toolbar/Toolbar.css"; */

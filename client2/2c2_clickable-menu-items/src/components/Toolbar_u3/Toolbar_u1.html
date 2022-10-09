@@ -1,0 +1,125 @@
+
+  <body>
+
+    <header  class    ="toolbar">
+      <nav   class    ="toolbar_nav">
+        <div>
+          <!-- SideDrawer.ToggleButton -->
+        </div>
+        <div class    ="toolbar_logo"><a href="#">Logo - Tootbar1</a></div>  <!-- &nbsp; is required -->
+
+        <div class    ="toolbar_spacer"></div>                               <!-- Ending tag is required -->
+
+        <div class    ="toolbar_nav-items">
+          <ul>
+            <li    ><a href="#" onclick=        " ( (aItem, pEvent) => {
+                       console.log( '[1] Clicked ' + aItem + ', Event:', pEvent )
+                       alert(       '[1] Clicked ' + aItem )
+                       } )( 'Home ', event )">Home</a></li>                                      <!-- No Import [1] -->
+            <li    ><a href="/" onclick="ToolbarItems2.onClick( 'Links', event )">Links</a></li> <!-- but event is defined here -->
+            <li    ><a href="Javascript: ToolbarItems3.onClick( 'Cards', event )">Cards</a></li> <!-- event is not defined      -->
+            <button             onclick="ToolbarItems4.onClick( 'FAQs ', event )">FAQs </button> <!-- but event is defined here -->
+            <li id="cta" ><a    onclick="ToolbarItems5.onClick( 'Login', event )">Sign In</a></li>
+          </ul>
+        </div>
+        <script>
+        <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
+              console.log( "---------------------------------------------------" )
+      var ToolbarItems2 = { }                                                                                              //  Import [2]
+//        ToolbarItems2.onClick =         ( aItem, pEvent ) => {                                                           // [[Prototype]]: Object
+          ToolbarItems2.onClick = function( aItem, pEvent )    {
+          var pItem  = pEvent ? pEvent.currentTarget : {}
+          var aItem  = pEvent ? pItem.innerText      : aItem
+              pEvent ? pEvent.preventDefault() : null
+
+              console.log( "[2] Clicked " + aItem.padEnd(5) + ", Event:", pEvent);
+          if (aItem.match( /Item/)) { return }
+              console.log( "    Toolbar1[  2]  alert( '[2] Clicked " + aItem + "' )" )
+              alert(       "[2] Clicked " + aItem )
+              }
+          console.log(     "[2] ToolbarItems2:", ToolbarItems2 ); ToolbarItems2.onClick( "Item2" )
+
+        </script>
+        <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
+        <script type="module" src='/client/1c-html-custom-app_final/src/components/Toolbar/ToolbarItems.mjs'></script>    <!-- Import [4] -->
+<!--    <script               src='/client/1c-html-custom-app_final/src/components/Toolbar/ToolbarItems.mjs'></script>--> <!-- Import [5] -->
+
+        <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
+        <script>
+
+
+
+          ToolbarItems5 = ToolbarItems4                               // Not defined
+// import ToolbarItems5 from './ToolbarItems.mjs'                     // Cannot use import statement outside a module      //  Import [5]
+          console.log(     "[5] ToolbarItems5:", ToolbarItems5 ); ToolbarItems5.onClick( "Item5" )
+
+
+        </script>
+        <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
+
+        <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
+        <script>
+
+      var ToolbarItems3 = { }                                                                                              //  Import [3]
+          ToolbarItems3.onClick = function( aItem, pEvent ) {
+          var pItem  = pEvent ? pEvent.currentTarget : {}
+          var aItem  = pEvent ? pItem.innerText      : aItem
+              pEvent ? pEvent.preventDefault() : null
+
+              console.log( "[3] Clicked " + aItem.padEnd(5) + ", Event:", pEvent );
+          if (aItem.match( /Item/)) { return }
+              console.log( "    Toolbar1[  3]  alert( '[3] Clicked " + aItem + "' )" )
+              alert(       "[3] Clicked " + aItem )
+              }
+          console.log(     "[3] ToolbarItems3:", ToolbarItems3 ); ToolbarItems3.onClick( "Item3" )
+
+        </script>
+        <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
+      </nav>
+    </header>
+
+  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

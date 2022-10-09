@@ -1,0 +1,132 @@
+<body>
+  <div style="height: 100%;" >
+
+    <header  class    ="toolbar">
+      <nav   class    ="toolbar_nav">
+        <div>
+          <!-- SideDrawer.ToggleButton -->
+        </div>
+        <div class    ="toolbar_logo"><a href="/">Logo - Tootbar</a></div>  <!-- &nbsp; is required -->
+
+        <div class    ="toolbar_spacer"></div>                              <!-- Ending tag is required -->
+
+        <div class    ="toolbar_nav-items">
+          <ul>
+<!--        <li         ><a href="#" onclick="   (event) => { console.log( '[1] Clicked Home , Event:', pEvent ) }"           >Home</a></li>--><!-- No Import [1] -->
+            <li         ><a href="#" onclick="( (pEvent) => { console.log( '[1] Clicked Home , Event:', pEvent ) } )( event )">Home</a></li>   <!-- No Import [1] -->
+
+
+            <li         ><a href="/" onclick="ToolbarItems2.onClick( 'Links', event )">Links</a></li> <!-- but event is defined here -->
+            <li         ><a href="Javascript: ToolbarItems3.onClick( 'Cards', event )">Cards</a></li> <!-- event is not defined      -->
+            <button                  onclick="ToolbarItems4.onClick( 'FAQs ', event )">FAQs </button> <!-- but event is defined here -->
+            <li id="cta"><a href="#" onclick="ToolbarItems5.onClick( 'Login', event )">Sign In</a></li>
+          </ul>
+        </div>
+        <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
+        <script>
+
+      var ToolbarItems2 = { }                                                                                              //  Import [2]
+//        ToolbarItems2.onClick =         ( aItem, pEvent ) => {                                                           // [[Prototype]]: Object
+          ToolbarItems2.onClick = function( aItem, pEvent )    {
+          var pItem  = pEvent ? pEvent.currentTarget : {}
+          var aItem  = pEvent ? pItem.innerText      : aItem
+              pEvent ? pEvent.preventDefault() : null
+
+              console.log( "[2] Clicked " + aItem.padEnd(5) + ", Event:", pEvent);
+
+              console.log( "    Toolbar2[  2]  alert( '[2] Clicked " + aItem + "' )" )
+              alert(       "[2] Clicked " + aItem )
+              }
+
+
+        </script>
+        <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+<!--    <script type="module" src='/client/1c-html-custom-app_final/src/components/Toolbar/ToolbarItems.mjs'></script>--> <!-- Import [4] -->
+        <script               src='/client/1c-html-custom-app_final/src/components/Toolbar/ToolbarItems.js' ></script>    <!-- Import [5] -->
+
+        <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
+        <script>
+          console.log( "    Begin waiting: " + (new Date) )
+          setTimeout( () => console.log( "    End 3sec wait: " + (new Date) ), 3000 )
+
+          ToolbarItems5 = ToolbarItems4                               // Not defined via script module, but it is via normal script.js
+// import ToolbarItems5 from './ToolbarItems.mjs'                     // Cannot use import statement outside a module      //  Import [5]
+          console.log(     "[5] ToolbarItems5:", ToolbarItems5 ); ToolbarItems5.onClick( "Item5" )
+//        console.log(     "[7] ToolbarItems7:", ToolbarItems7 ); ToolbarItems7.onClick( "Item7" )                         //  Import [7] No workie
+
+        </script>
+        <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
+
+        <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
+        <script>
+
+      var ToolbarItems3 = { }                                                                                              //  Import [3]
+          ToolbarItems3.onClick = function( aItem, pEvent ) {
+          var pItem  = pEvent ? pEvent.currentTarget : {}
+          var aItem  = pEvent ? pItem.innerText      : aItem
+              pEvent ? pEvent.preventDefault() : null
+
+              console.log( "[3] Clicked " + aItem.padEnd(5) + ", Event:", pEvent );
+
+              console.log( "    Toolbar2[  3]  alert( '[3] Clicked " + aItem + "' )" )
+              alert(       "[3] Clicked " + aItem )
+              }
+
+
+        </script>
+        <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
+      </nav>
+    </header>
+
+    <main style="margin-top: 64px;">
+      <p>This is the page content</p>
+    </main>
+
+  </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

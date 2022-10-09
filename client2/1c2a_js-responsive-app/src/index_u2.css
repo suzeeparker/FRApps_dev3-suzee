@@ -1,0 +1,44 @@
+/* ----------------------------------------------------------------------- */
+
+/*-----------------------------------------
+The theme and component stylesheets
+INSERT
+------------------------------------------*/
+
+   @import "theme2.css";                   /* Must be first */          
+   @import "components.css";
+
+/*-----------------------------------------
+The html properites
+NO CHANGES or ADDITIONS
+------------------------------------------*/
+html {
+/*  background      : #b3b3b3;            */
+    height          : 100%;                /* needed for Sidebar ? */
+/*  padding         :   0px;              */
+    }
+
+/*-----------------------------------------
+The body properites
+NO CHANGES or ADDITIONS
+------------------------------------------*/
+body {
+    background      : white;             /* by Rick */
+    height          : 100%;                /* needed for Sidebar ? */
+    width           : 100%;                /* By Rick ?? */
+    margin          :   0px;
+    padding         :   0px;               /* RAM put here rather than in html */
+    font-size       :  16px;               /* Added by RAM */ 
+    font-family     : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+/*-----------------------------------------
+The root properites
+INSERT
+------------------------------------------*/
+#root { 
+   height           : 100%; 
+   }
+
+/* ----------------------------------------------------------------------- */
+

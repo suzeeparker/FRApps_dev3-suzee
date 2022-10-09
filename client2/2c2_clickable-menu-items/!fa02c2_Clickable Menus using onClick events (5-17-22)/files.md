@@ -1,0 +1,51 @@
+|        Size |   Date    Time  | File Names in /c/Repos/FRApps_/dev02-robin/client1/01c1b-html-custom-app_final
+| ----------- |---------------- |---------------------------------------------------------------------------
+|           0 |2022-05-21 20:41 |./!fa01c1b_Final HTML Custom App Based on Max & Brad Tutorials (5-20-22)    
+|         761 |2022-05-18 10:22 |./package.json    
+|           0 |2022-05-17 08:09 |./public    
+|           0 |2022-05-14 12:35 |./README.md    
+|           0 |2022-05-21 18:01 |./src    
+|         714 |2022-05-21 16:58 |./src/App.mjs    
+|         717 |2022-05-21 16:57 |./src/App_u3.mjs    
+|           0 |2022-05-21 18:01 |./src/assets    
+|           0 |2022-05-21 18:01 |./src/assets/avatars    
+|        2742 |2022-01-22 13:46 |./src/assets/avatars/FormR_Avatar-admin_32x32.png    
+|        2332 |2022-01-22 13:46 |./src/assets/avatars/FormR_Avatar-Bruce_32x32.png    
+|        2825 |2022-01-22 13:46 |./src/assets/avatars/FormR_Avatar-Robin_32x32.png    
+|           0 |2022-05-13 15:40 |./src/assets/images    
+|           0 |2022-05-21 18:01 |./src/assets/logos    
+|        5561 |2022-05-16 02:42 |./src/assets/logos/FormR_Logo-02_White_150x50.png    
+|        4286 |2022-05-17 11:23 |./src/assets/logos/FormR_Logo-04_Black_32x32.ico    
+|           0 |2022-05-21 18:01 |./src/components    
+|           0 |2022-05-21 18:01 |./src/components/Toolbar    
+|        2271 |2022-05-21 17:56 |./src/components/Toolbar/Toolbar.css    
+|        2329 |2022-05-21 17:45 |./src/components/Toolbar/Toolbar.mjs    
+|        5631 |2022-05-21 17:32 |./src/components/Toolbar/ToolbarItems.mjs    
+|           0 |2022-05-21 18:01 |./src/components/Toolbar_u3    
+|        4071 |2022-05-19 20:43 |./src/components/Toolbar_u3/Toolbar-tests.html    
+|        1892 |2022-05-21 17:58 |./src/components/Toolbar_u3/Toolbar-tests_v20521.html    
+|        1903 |2022-05-17 13:50 |./src/components/Toolbar_u3/Toolbar.css    
+|        2390 |2022-05-19 15:20 |./src/components/Toolbar_u3/Toolbar.html    
+|        6305 |2022-05-21 16:25 |./src/components/Toolbar_u3/Toolbar.mjs    
+|        5062 |2022-05-19 21:11 |./src/components/Toolbar_u3/Toolbar.mjs.html    
+|        5458 |2022-05-21 16:43 |./src/components/Toolbar_u3/ToolbarItems.js    
+|        6355 |2022-05-21 16:47 |./src/components/Toolbar_u3/ToolbarItems.mjs    
+|        2607 |2022-05-19 17:21 |./src/components/Toolbar_u3/ToolbarItems_onClick.njs    
+|        4823 |2022-05-19 20:49 |./src/components/Toolbar_u3/Toolbar_u1.html    
+|        4942 |2022-05-19 21:11 |./src/components/Toolbar_u3/Toolbar_u2.html    
+|        2127 |2022-05-19 17:15 |./src/components/Toolbar_u3/Toolbar_v2.mjs    
+|        2127 |2022-05-19 18:06 |./src/components/Toolbar_u3/Toolbar_v3.mjs    
+|           0 |2022-05-21 18:01 |./src/components/Toolbar_v4    
+|        1903 |2022-05-17 13:50 |./src/components/Toolbar_v4/Toolbar.css    
+|        6305 |2022-05-21 16:25 |./src/components/Toolbar_v4/Toolbar.mjs    
+|        6355 |2022-05-21 16:47 |./src/components/Toolbar_v4/ToolbarItems.mjs    
+|           0 |2022-05-21 18:01 |./src/components/_mt_Component    
+|         539 |2022-05-13 20:30 |./src/components/_mt_Component/MT_Component.css    
+|         514 |2022-05-13 20:15 |./src/components/_mt_Component/MT_Component.mjs    
+|         296 |2022-05-17 10:23 |./src/index.css    
+|         731 |2022-05-21 16:50 |./src/index.html    
+|         437 |2022-05-21 17:33 |./src/index.mjs    
+|         734 |2022-05-21 16:50 |./src/index_u3.html    
+|         831 |2022-05-21 16:58 |./src/index_u3.mjs    
+|         886 |2022-05-20 09:49 |./src/testIt.njs    
+|             |                 |

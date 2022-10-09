@@ -1,0 +1,12 @@
+{
+  "name": "frapps_1c1b-html-custom-app_final",
+  "description" : "Final HTML Custom App Based on Max & Brad Tutorials (5-20-22)",
+  "version": "0.01.001",
+  "author": "8020data",
+  "license": "ISC",
+  "main": "index.html",
+  "private": true,
+  "scripts": {
+    "start" : "cd ../../ && live-server --port=55511 --open=/client/1c1b-html-custom-app_final/src/index.html",
+    "startc": "cd ../../ && live-server --port=55511 --open=/client/1c1b-html-custom-app_final/src/index.html --browser=chrome "
+}

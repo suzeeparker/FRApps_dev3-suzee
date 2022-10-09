@@ -1,0 +1,76 @@
+/* ----------------------------------------------------------------------- */
+/* Sidebar.css                                                             */
+/* ----------------------------------------------------------------------- */
+
+.Sidebar {
+    position            :  fixed;
+    top                 :   0px;
+    left                :   0px;
+    height              : 100%;
+    width               :  70%;                 /* why? */
+    max-width           : 400px;
+    background          : white;
+    box-shadow          :   2px 0px 5px rgb(0,0,0, 0.5);
+    z-index             : 200;
+    }
+
+.Sidebar li {
+    margin              :  0.5rem 0;
+    list-style          :  none;                /* added */
+    }
+
+.Sidebar a {
+    color               : blue;
+    text-decoration     :  none;
+    font-size           :  19.2px;              /*  1.2rem;  */
+    }
+
+.Sidebar a:hover,
+.Sidebar a:active {
+    color               : #fa923f;
+    }
+
+/* ----------------------------------------------------------------------- */
+
+.Sidebar_button {
+    display             :  flex;                /* .(20630.06.1) */
+    flex-direction      :  column;              /* Stack DIVs vertically */
+/*  justify-content     :  space-between;     */
+    justify-content     :  space-around;        /* better */
+    height              :  24px;
+    width               :  24px;
+    background          :  transparent;
+    border              :  none;
+    cursor              :  pointer;
+    padding             :  0px;                 /* no effect */
+    margin-right        :  6px;
+    box-sizing          :  border-box;          /* no effect */
+    }
+
+.Sidebar_button:focus {                         /* ?? */
+    outline             :  none;
+    }
+/*
+.Sidebar_button-image {                                                  */
+/*  background-image    :  url( assets\icons\hamburger.svg );            *//* no workie */
+/*  background-image    :  url( assets\icons\hamburger.svg?fill=blue );  *//* no workie */
+/*  background-image    :  url( assets\icons\hamburger.png );            *//* no workie */
+/*  background-image    :  var(--Sidebar_button-image);                  *//* no workie */
+/*  }                                                                    */
+
+.Sidebar_button-line {
+    width               : 100%;                 /* or 30px; no effect */
+    height              :   4px;
+    background          : white;
+    }
+
+@media (min-width: /* --Menubar-min-width: */ 760px ) {
+ .Sidebar_button {
+    display             : none;                 /* above 870px */
+    }
+  }
+
+/* ----------------------------------------------------------------------- */
+
+
+

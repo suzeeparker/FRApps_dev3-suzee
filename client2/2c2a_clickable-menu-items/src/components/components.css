@@ -1,0 +1,237 @@
+/* ----------------------------------------------------------------------- */
+
+.Toolbar {
+    position            :  fixed;
+    top                 :  0px;
+    left                :  0px;
+    width               :  100%;
+    height              :  var(--header-height);  /* 58px; */
+    background          :  var(--header-color);
+    font-family         :  var(--toolbar-font-family);
+    font-weight         :  700;
+    }
+
+.Toolbar_nav {
+    display             :  flex;
+    height              :  100%;
+    align-items         :  center;
+    padding             :    0px 15px;    /* Space between ToorBar edge and Logo */
+    }
+
+.Toolbar_logo {
+    margin-left         :    0px;    /* Space between ToggleButton and Logo was: 15px*/
+    width               :  var(--toolbar-logo-width);  /* 210px;* was: 225 ; width is really 280px*/
+    margin-top          :  -6px; /* was: -6px; */
+    padding-bottom      :  var(--toolbar-logo-padding-bottom);
+    background-image    :  var(--toolbar-logo-image);
+    background-size     :  var(--toolbar-logo-width); /* 210px 60px; 75% 73%;  *//* was 140px 41px == 50%;  */
+    background-repeat   :  no-repeat;
+    }
+
+.Toolbar_logo a {
+    color               : rgb(255, 255, 255);
+    text-decoration     :  none;
+    font-size           :  36px;  /* was: 2rem */
+    }
+
+.Toolbar_spacer {
+    flex                :  1;              /* Space between left and right items */
+    }
+
+.Toolbar_nav-items {
+    display             :  none;      /* hide below var(--toolbar-min-width) */
+    }
+
+.Toolbar_nav-items ul {
+    display             :  flex;
+    margin              :   3px 0px 0px 0px;
+    padding             :   0px;
+    flex-flow           :  row;                   /* Space DIVs horizontally */
+    list-style          :  none;
+    font-size           :  var(--toolbar-font-size);  /* 36px;  was: 2rem */
+    text-shadow         :  var(--toolbar-font-shadow);
+    font-weight         :  bold;
+    }
+
+.Toolbar_nav-items li {
+    margin-top          :  -4px;      /* Added */
+    padding             :   0px 10px;
+    }
+
+.Toolbar_nav-items a {
+    text-decoration     :  none;
+    color               :  var(--toolbar-font-color)
+    }
+
+.Toolbar_nav-items a:hover,
+.Toolbar_nav-items a:active {
+    color               :  var(--toolbar-hover-color)
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------- */
+
+#Toolbar_cta-button {
+    width               :  150px;
+    min-width           :  150px;   /* .(20630.08.1 RAM Added) */
+    margin-top          :   -4px;   /* was -4px */
+    }
+
+#Toolbar_cta-button a {                      /* id: cta - Call-to-Action button */
+    background          :  var(--cta-button-color); /* #ff1b68; red */
+/*  background-image    :  url( '../../assets/avatars/FormR_Avatar-Admin_32x32.png' ) */
+    border-radius       :   8px;
+    padding             :  var(--cta-button-padding);
+    color               :  var(--cta-button-font-color); /* was white; */
+    font-size           :  var(--cta-button-font-size);  /* 30px; */
+    }
+
+#Toolbar_cta-button a:hover,
+#Toolbar_cta-button a:active {
+    background          :  var(--cta-button-hover-color); /* #ff1b68; red */
+    border              :  none;
+    color               :  var(--cta-button-hover-font-color);  /* #ff1b68; */
+    }
+
+/**  CTA BUTTON ANIMATION  **/                  /* .(20629.01.1 RAM Add Wiggle animation for Sign-In button) */
+/*   ---------------------------------------- */
+
+#Toolbar_cta-button {
+    animation           :  wiggle 400ms 2s 8 ease-out none;
+    }
+
+@keyframes wiggle {
+    0% { transform      :  rotateZ(  0deg ); }
+   50% { transform      :  rotateZ(-10deg ); }
+  100% { transform      :  rotateZ( 10deg ); }
+  }
+
+@media (min-width: 870px) {   /* var(--toolbar-min-width): 870px; */
+.Sidebar_Button {
+    display             :  none;            /* above 640px */
+    }
+.Toolbar_logo {
+    margin-left         :  30px;
+    }
+.Toolbar_nav-items {
+    display             :  flex;            /* above 640px */
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------- */
+
+.Sidebar {
+    position            :  fixed;
+    top                 :   0px;
+    left                :   0px;
+    height              : 100%;
+    width               :  70%;          /* why? */
+    max-width           : 400px;
+    background          : white;
+    box-shadow          :   2px 0px 5px rgb(0,0,0, 0.5);
+    z-index             : 200;
+    }
+
+.Sidebar li {
+    margin              : 0.5rem 0;
+    list-style          : none;   /* added */
+    }
+
+.Sidebar a {
+    color               : blue;
+    text-decoration     : none;
+    font-size           : 19.2px;  /*  1.2rem;  */
+    }
+
+.Sidebar a:hover,
+.Sidebar a:active {
+    color               : #fa923f;
+    }
+
+/* ----------------------------------------------------------------------- */
+
+.Sidebar_button {
+/*  display             : flex;                    *//* .(20630.06.1) */
+    display             : flex;                      /* .(20630.06.1) */
+
+    flex-direction      : column;             /* Stack DIVs vertically */
+/*  justify-content     : space-between;   */
+    justify-content     : space-around;      /* better */
+    height              : 24px;
+    width               : 24px;
+    background          : transparent;
+    border              : none;
+    cursor              : pointer;
+    padding             : 0px;                       /* no effect */
+    margin-right        : 6px;
+    box-sizing          : border-box;             /* no effect */
+/*  border              : 1px solid black;  */
+    }
+
+.Sidebar_button:focus {
+    outline             : none;
+    }
+
+.Sidebar_button-line {
+    width               : 100%;                        /* or 30px; no effect */
+    height              : 4px;
+    background          : white;
+    }
+
+@media (min-width: 870px) {   /* toolbar-min-width: 840px; */
+ .Sidebar_button {
+    display             : none;         /* above 640px */
+    }
+  }
+
+

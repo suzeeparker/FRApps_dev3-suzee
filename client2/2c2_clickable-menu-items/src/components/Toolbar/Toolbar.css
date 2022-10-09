@@ -1,0 +1,84 @@
+.toolbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+/*  background:   #3ADD63;  *//* Light Green */  
+/*  background:   #99D9E9;  *//* Light Blue  */  
+    background: #80AFB5;    /* Blue Grey   */  
+    height: 58px;
+    }
+
+.toolbar_nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0px 15px;    /* Space between ToorBar edge and Logo */
+    }
+
+.toolbar_logo {
+    margin-left: 15px;    /* Space between ToggleButton and Logo */
+    width: 150px;
+    margin-top: -6px;
+    background-image: url( '../../assets/logos/FormR_Logo-02_White_150x50.png' );
+    }
+
+.toolbar_logo a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 36px;  /* was: 2rem */
+    }
+
+.toolbar_spacer {
+    flex: 1;                          /* Space between left and right items */
+    }    
+    
+.toolbar_nav-items ul {
+    list-style: none;
+    font-size: 36px;                  /* to file in 769 width. was: 2rem */
+    text-shadow: 3px 1.5px #070707;
+    font-weight: bold;
+    margin: 3px 0px 0px 0px;          /* was: top 6px, left 0px, bottom 0px, right 0px */ 
+    padding: 0px;
+    display: flex;
+    flex-flow: row;                   /* Space DIVs horizontally */
+    }
+
+.toolbar_nav-items li {
+    padding: 0 10px;
+    }
+
+.toolbar_nav-items span {             /* .(20521.01.1 Beg RAM: Add <span> instead of <a> tag) */ 
+    text-decoration: none;
+    color: white;
+    }
+.toolbar_nav-items span:hover, 
+.toolbar_nav-items span:active {
+    color: #fa923f;
+    }                                 /* .(20521.01.1 End) */
+
+.toolbar_nav-items a {
+    text-decoration: none;
+    color: white;
+    }
+
+.toolbar_nav-items a:hover, 
+.toolbar_nav-items a:active {
+    color: #fa923f;
+    }
+
+#cta a {                          /* id: cta - Call-to-Action button */ 
+    color: white;
+    background: #fa923f;        /* was red */
+    padding: 6px 16px 4px;        /* was: */ 
+    margin-top: 0px;   
+    border-radius: 8px;
+/*  background-image: url( '../../assets/avatars/FormR_Avatar-Admin_32x32.png' ) */
+    }
+
+#cta a:hover,
+#cta a:active {
+    color: #fa923f;            /* was red */
+    background: white;
+    border: none;
+    }

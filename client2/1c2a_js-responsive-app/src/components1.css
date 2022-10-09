@@ -1,0 +1,378 @@
+/* ----------------------------------------------------------------------- */
+/* Menubar.css                                                             */
+/* ----------------------------------------------------------------------- */
+
+.Menubar_hidden-block {
+    top                 :  0px;
+    height              :  var(--Menubar_body-height);    /* 100px, not 10% */
+    margin              :  0px;
+    padding             :  0px;
+    background-color    : pink;
+    width               : 600px;
+    }
+
+.Menubar_nav {
+    position            :  fixed;
+    top                 :   0px;
+    left                :   0px;
+    width               : 100%;
+    height              :  var(--Menubar_body-height);    /* 100px, not 10% */
+    padding             :   0px 15px;                     /* Space between ToorBar edge and Logo */
+    display             :  flex;
+    align-items         :  center;
+    background          :  var(--Menubar_body-color);
+    font-family         :  var(--Menubar_font-family);
+    font-weight         :  700;
+    }
+
+.Menubar_logo {
+/*    width             : 100%; */
+/*    height            : 100%; */
+    width               :  var(--Menubar_logo-width);     /* 210px;* was: 225 ; width is really 280px*/
+    height              :  var(--Menubar_logo-height);
+/*  margin-top          :   0px;  */                      /* was: -6px; */
+/*  margin-left         :   0px; */                       /* Space between ToggleButton and Logo was: 15px*/
+    margin-bottom       :  var(--Menubar_logo-margin-bottom);
+    background-image    :  var(--Menubar_logo-image);
+    background-size     :  var(--Menubar_logo-width) var(--Menubar_logo-height);  */    /* 210px 60px; 75% 73%;  *//* was 140px 41px == 50%;  */
+    background-repeat   :  no-repeat;
+    }
+
+.Menubar_logo a {
+    color               : rgb(255, 255, 255);
+    text-decoration     :  none;
+/*  font-size           :  36px;  */ /* was: 2rem */
+    }
+
+.Menubar_spacer {
+    flex                :  1;                             /* Space between left and right items */
+    }
+
+.Menubar_nav-items {
+    display             :  none;                          /* hide below var(--Menubar_min-width) */
+    }
+
+.Menubar_nav-items ul {
+    margin              :   3px 0px 0px 0px;
+    padding             :   0px;
+    display             :  flex;
+    flex-flow           :  row;                           /* Space DIVs horizontally */
+    list-style          :  none;
+    font-size           :  var(--Menubar_font-size);      /* 36px;  was: 2rem */
+    text-shadow         :  var(--Menubar_font-shadow);
+    font-weight         :  bold;
+    }
+
+.Menubar_nav-items li {
+    margin-top          :  -4px;                          /* Added */
+    padding             :   0px 10px;
+    }
+
+.Menubar_nav-items a {
+    text-decoration     :  none;
+    letter-spacing      :  var(--Menubar_font-spacing);
+    color               :  var(--Menubar_font-color)
+    }
+
+.Menubar_nav-items a:hover,
+.Menubar_nav-items a:active {
+    color               :  var(--Menubar_hover-font-color)
+    }
+
+
+/* ----------------------------------------------------------------------- */
+/* Menubar-CTA.css                                                         */
+/* ----------------------------------------------------------------------- */
+
+#Menubar-CTA_button {
+    width               :  var(--CTA_button-width);
+    min-width           :  var(--CTA_button-width);       /* .(20630.08.1 RAM Added) */
+    margin-top          :  var(--CTA_button-margin-top);  /* was -4px */
+    }
+
+#Menubar-CTA_button a {                                   /* id: cta - Call-to-Action button */
+    width               :  var(--CTA_button-width);
+    background          :  var(--CTA_button-body-color);  /* #ff1b68; red */
+/*  background-image    :  url( '../../assets/avatars/FormR_Avatar-Admin_32x32.png' ) */
+    border-radius       :   8px;
+    padding             :  var(--CTA_button-padding);
+    color               :  var(--CTA_button-font-color);  /* was white; */
+    font-size           :  var(--CTA_button-font-size);   /* 30px; */
+    }
+
+#Menubar-CTA_button a:hover,
+#Menubar-CTA_button a:active {
+    border              :  none;
+    background          :  var(--CTA_button-hover-color); /* #ff1b68; red */
+    color               :  var(--CTA_button-hover-font-color);  /* #ff1b68; */
+    text-shadow         :   0px 0px var(--CTA_button-font-color);
+    }
+
+/**  CTA BUTTON ANIMATION  **/                            /* .(20629.01.1 RAM Add Wiggle animation for Sign-In button) */
+/*   ---------------------------------------- */
+
+#Menubar-CTA_button {
+    animation           :  wiggle 400ms 2s 8 ease-out none;
+    }
+
+@keyframes wiggle {
+    0% { transform      :  rotateZ(  0deg ); }
+   50% { transform      :  rotateZ(-10deg ); }
+  100% { transform      :  rotateZ( 10deg ); }
+  }
+
+@media ( min-width: /* --Menubar-min-width: */ 760px ) {
+ .Menubar_logo {
+    margin-left         :  30px;
+    }
+ .Menubar_nav-items {
+    display             :  flex;                          /* above 640px */
+    }
+  }
+
+
+/* ----------------------------------------------------------------------- */
+/* Main.css                                                                */
+/* ----------------------------------------------------------------------- */
+.Main_body {
+    width               : 100%;
+    height              : 100%;
+    padding             :   0px;                          /* var(--Main_body-padding); */
+    font-family         :  var(--Main_body-font-family);
+    }
+
+/* .Main_body p { margin-top:   0rem; } */                /* no top margin for all paragraphs? */
+
+/*-----------------------------------------
+The .section1 properites
+CHANGES: background
+ADDITIONS: background-color, background-repeat,
+           background-size & background-position
+------------------------------------------*/
+.Main_section1 {
+/*  top                 :  var(--Menubar_body-height);  *//* RJS set to be below the header, aka Menubar_body-height, was 10%) */
+    height              :  45%;                           /* RJS Added 5% to create scrolling */
+    min-height          : 288px;                          /* When screen height gets small */
+/*  background-color    :  var(--Section1_body-color);  */
+    background-image    :  var(--Section1_image);
+    background-repeat   :  no-repeat;
+    background-size     :  cover;
+    background-position :  center;
+/*  border              :  1px solid black;             *//* reduces width by 2 */
+    }
+
+/*-----------------------------------------
+Sets all the propterties for the font-based
+text overlay (sits over top of the image above)
+------------------------------------------*/
+.Main_section1 h2 {
+/*  width               :  50%;                         *//* RAM Added, not by Rick) */
+    margin-top          :   0px;                          /* RAM Why was margin-top: 39.89px?? */
+    padding             :  var(--Section1_h2-padding);    /* RAM changed padding-left to 80px, was: 0px by Rick; top was: 80px) */
+    font-weight         :  bolder;                        /* RAM Why not bold ot 700 */
+    font-size           :   3rem;
+    text-shadow         :   2px 2px 12px #000000;
+    color               :  var(--Section1_font-color)     /* white; */
+    }
+
+/*-----------------------------------------
+Sets the properties for the first letter
+of the font-based text overlay, above
+------------------------------------------*/
+.Main_section1 h2::first-letter {
+    font-size           : 150%;
+    color               :  var(--Section1_1stchar-font-color) /* white; */
+    }
+
+/*-----------------------------------------
+The .section2 properites
+NO CHANGES or ADDITIONS
+------------------------------------------*/
+.Main_section2 {
+    width               :  var(--Section2_width);         /* was 100%; */
+    height              :  55%;                           /* Added 5% to create scrolling*/
+    margin              :  var(--Section2_margin);        /* RAM No effect, but H2 does!! */
+    padding             :  var(--Section2_padding);
+    background-color    :  var(--Section2_body-color);
+    }
+
+/*-----------------------------------------
+This is another <h2> override setting
+the font color from white to black
+------------------------------------------*/
+.Main_section2 h2 {
+    margin              : 0px;                                      /* default margin is 19.92px */
+    padding             : 100px 50px 5px 50px;
+    color               :  var(--Section2_h2-font-color-dark);      /* was: black; */
+    text-align          :  var(--Section2_h2-font-alignment);
+    }
+
+/*-----------------------------------------               /* 20705.05.1 RAM Added) */
+The .section2 paragraph properites
+NO CHANGES or ADDITIONS
+------------------------------------------*/
+.Main_section2 p {
+    color               :  var(--Section2_font-color);
+    font-size           :  var(--Section2_font-size);
+    text-align          :  var(--Section2_font-alignment);
+    }
+
+
+/* ----------------------------------------------------------------------- */
+/* Footer.css                                                              */
+/* ----------------------------------------------------------------------- */
+
+/*-----------------------------------------
+The .footer properites
+ADDITION: z-index, bottom
+CHANGES: position
+REMOVAL: top
+------------------------------------------*/
+.Footer_body {
+    position            :  fixed;
+/*  top                 :  10%;                             *//* Removed in place of the bottom property */
+    bottom              :   0px;
+    width               : 100%;
+    height              :  var(--Footer_body-height);         /* RAM Added 50px */
+    background-color    :  var(--Footer_body-color);
+    z-index             :  99;
+    }
+
+/*-----------------------------------------
+This is another <h2> override
+REMOVAL: the entire property
+due to <h2> tag was removed from html
+in the footer
+------------------------------------------*/              /* not used *//*
+* .Footer_body h2 {
+*      padding          :  0px;
+*      } */
+
+/*-----------------------------------------
+Sets properties for the footer text
+NO CHANGES
+------------------------------------------*/              /* not used *//*
+* .Footer_body-text {
+*     font-size         :  x-large;
+*     text-align        :  right;
+*     padding           :  0px 30px 0px 25px;           *//* padding-right: was 65% ??? *//*
+*     }                                                 */
+
+/*-----------------------------------------
+Sets properties for the footer nav list
+introducing the flex property
+NO CHANGES
+------------------------------------------*/
+.Footer_body ul {
+    margin              :  20px;
+    margin-top          :  calc( ( var(--Footer_body-height) - var(--Footer_font-size) ) * .45 );   /* was: 12px; */
+    padding             :  0;
+    display             :  flex;
+    flex-direction      :  row;
+    justify-content     :  center;
+    list-style          :  none;
+    }
+
+/*-----------------------------------------
+Sets the properties for each nav item
+introducing the flex property
+of the nav-bar items
+NO CHANGES
+------------------------------------------*/
+.Footer_body a {
+    margin              :  0 10px;  /* was: 8px 0; */
+    font-family         :  var(--Menubar_font-family);
+    font-size           :  var(--Footer_font-size);
+    font-weight         :  bold;
+    text-decoration     :  none;
+    text-shadow         :  var(--Footer_font-shadow);
+    color               :  var(--Footer_font-color);
+    }
+
+/*-----------------------------------------
+Sets the color of the footer nav
+items when you hover
+NO CHANGES
+------------------------------------------*/
+.Footer_body a:hover,
+.Footer_body a:active {
+    color               :  var(--Footer_hover-font-color);
+    }
+
+
+/* ----------------------------------------------------------------------- */
+/* Sidebar.css                                                             */
+/* ----------------------------------------------------------------------- */
+
+.Sidebar {
+    position            :  fixed;
+    top                 :   0px;
+    left                :   0px;
+    height              : 100%;
+    width               :  70%;                 /* why? */
+    max-width           : 400px;
+    background          : white;
+    box-shadow          :   2px 0px 5px rgb(0,0,0, 0.5);
+    z-index             : 200;
+    }
+
+.Sidebar li {
+    margin              :  0.5rem 0;
+    list-style          :  none;                /* added */
+    }
+
+.Sidebar a {
+    color               : blue;
+    text-decoration     :  none;
+    font-size           :  19.2px;              /*  1.2rem;  */
+    }
+
+.Sidebar a:hover,
+.Sidebar a:active {
+    color               : #fa923f;
+    }
+
+/* ----------------------------------------------------------------------- */
+
+.Sidebar_button {
+    display             :  flex;                /* .(20630.06.1) */
+    flex-direction      :  column;              /* Stack DIVs vertically */
+/*  justify-content     :  space-between;     */
+    justify-content     :  space-around;        /* better */
+    height              :  24px;
+    width               :  24px;
+    background          :  transparent;
+    border              :  none;
+    cursor              :  pointer;
+    padding             :  0px;                 /* no effect */
+    margin-right        :  6px;
+    box-sizing          :  border-box;          /* no effect */
+    }
+
+.Sidebar_button:focus {                         /* ?? */
+    outline             :  none;
+    }
+/*
+.Sidebar_button-image {                                                  */
+/*  background-image    :  url( assets\icons\hamburger.svg );            *//* no workie */
+/*  background-image    :  url( assets\icons\hamburger.svg?fill=blue );  *//* no workie */
+/*  background-image    :  url( assets\icons\hamburger.png );            *//* no workie */
+/*  background-image    :  var(--Sidebar_button-image);                  *//* no workie */
+/*  }                                                                    */
+
+.Sidebar_button-line {
+    width               : 100%;                 /* or 30px; no effect */
+    height              :   4px;
+    background          : white;
+    }
+
+@media (min-width: /* --Menubar-min-width: */ 760px ) {
+ .Sidebar_button {
+    display             : none;                 /* above 870px */
+    }
+  }
+
+/* ----------------------------------------------------------------------- */
+
+
+

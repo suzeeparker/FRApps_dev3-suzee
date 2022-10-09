@@ -1,0 +1,238 @@
+
+
+
+:root {
+
+
+    --width-factor            : 8;
+
+    --Section1-Text_font-size : 100px;   /* 6.25rem = 100px = calc( 6.25 * 16px ); */
+    --height-adj              :  .97;
+
+/*  --Section1-Text_font-size :  80px;
+    --height-adj              :  .98; */
+
+    --Section1-Text_font-size :  50px;
+    --height-adj              : 1.02;
+
+    --Section1-Text_margin-top: 30px;
+
+    --Section1_text-display   : none;
+    --Section1_text1-display  : block;
+    --Section1_text2-display  : block;
+    --Section1_text3-display  : block;  /* Rick's Shadow */
+    --Section1_text4-display  : block;
+    --Section1_text5-display  : block;
+
+    --Section2_display        : block;
+    }
+/* -------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  --------------------------------------------------------------------------- */
+
+.Main_section1 h2 {
+                           /* Does this width have precedence over image-text2? */
+    width                   : calc( var(--Section1-Text_font-size) * ( var(--width-factor) + 0 ) ) ;
+    margin                  : 0px;
+/*  padding                 : 0px;  */
+/*  padding                 : var(--Section1_h2-padding);     *//* RAM changed padding-left to 80px, was: 0px by Rick; top was: 80px) */
+
+/*  height                  : calc( var(--Section1-Text_font-size) * 2 ); */
+    font-size               : var(--Section1-Text_font-size);
+    line-height             : 75%;                              /* Font is aligned at top of line and block */
+/*  vertical-align          : top;                            *//* no effect */
+
+/*  margin-top              : calc(  var(--Section1-Text_font-size) * -.18 ); */
+/*  margin-bottom           : calc(  var(--Section1-Text_font-size) * -.18 ); */
+    padding-bottom          : calc(  var(--Section1-Text_font-size) *  .18 );   /* height ( 93 ) = .75 * 100px + .18 * 100px */
+/*  padding-left            : 10px; */
+/*  border                  : 1px solid red;  */
+    text-align              : left;
+    white-space             : nowrap;
+    }
+/* ---------------------------------------------------------- */
+
+h2.Section1_text {
+    display                 : var(--image-text_display);
+    }
+/* ---------------------------------------------------------- */
+
+h2.Section1_text1 {
+    display                 : var(--Section1_text1-display);
+
+    position                : relative;                         /* was: absolute; when standalone by itself */
+    top                     : var(--Section1-Text_margin-top);  /* the distance from top of page if first block */
+                                                                /* same as position: relative if first block */
+/*  position                : relative;                       *//* default if first block */
+/*  top                     : 30px;                           *//* the distance from top of page if first block */
+                                                                /* same as position: absolute if first block */
+    width                   : calc( var(--Section1-Text_font-size) * ( var(--width-factor) + 1 ) );
+    left                    : 30px;
+/*  margin                  : 10px 0 0 0;                     *//* text begins at (10px + top); changes size of block */
+    padding                 : 10px 0px 8px 10px;                /* text begins at  10px below top of line-height */
+    background-color        : pink;                             /* and background-color covers padded areas */
+
+/*  font-size               : var(--Section1-Text_font-size); */
+    color                   : darkgreen;
+
+/*  transform               : translate( -50%, -50% );        */
+    text-transform          : uppercase;
+      }
+/* ---------------------------------------------------------- */
+
+h2.Section1_text2 {
+    display                 : var(--Section1_text2-display);
+
+/*  position                : absolute; */
+/*  top                     : 123px;                          *//* always the distance from top of page */
+
+    position                : relative;                         /* default */
+    top                     : var(--Section1-Text_margin-top);
+/*  top                     : 123px;                          *//* the distance from top of previous visible relative block, or */
+/*  top                     :  30px;                            /* the distance from ?? of the ?? relative block, or */
+                                                                /* the distance from top of page if no previous visible relative blocks, or */
+    left                    : 80px;
+    width                   : calc( var(--Section1-Text_font-size) * ( var(--width-factor) + 0.0 ) );
+/*  margin                  : 10px 0 0 0;                     *//* text begins at (10px + top) */
+/*  padding                 : 20px 0 0 0;                     *//* text begins at 40px below top of line-height */
+    background              : lightgoldenrodyellow;
+
+/*  font-size               : var(--Section1-Text_font-size); */
+    color                   : red;
+
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: blueviolet;
+    }
+/* ---------------------------------------------------------- */
+
+h2.Section1_text3 {
+    display                 : var(--Section1_text3-display);
+
+/*  position                : absolute;
+/*  top                     : 216px;                          *//* always the distance from top of page */
+
+    position                : relative;                         /* not the default */
+    top                     : var(--Section1-Text_margin-top);
+/*  top                     : 123px;                          *//* the distance from top of previous visible relative block, or */
+/*  top                     :  30px;                            /* the distance from ?? of the ?? relative block, or */
+                                                                /* the distance from top of page if no previosu visible relative blocks, or */
+    left                    : 130px;
+    width                   : calc( var(--Section1-Text_font-size) * ( var(--width-factor) + .5 ) ) ;
+/*  margin                  : 10px 0 0 0;                     *//* text begins at (10px + top) */
+/*  padding                 : 20px 0 0 0;                     *//* text begins at 40px below top of line-height */
+    background-color        : transparent;
+
+/*  font-size               : var(--Section1-Text_font-size); */
+    color                   : blue;
+    }
+
+h2.Section1_text3::first-letter {
+/*  display                 : var(--Section1_text3-display);  */
+    font-size               : 150%;
+    color                   : cornflowerblue;
+    }
+/* ---------------------------------------------------------- */
+
+h2.Section1_text4 {
+    display                 : var(--Section1_text4-display);
+/*  content                 : attr(data-text);  */
+
+    position                : relative;                         /* not the default */
+    top                     : var(--Section1-Text_margin-top);
+/*  top                     : 123px;                          *//* the distance from top of previous visible relative block, or */
+/*  top                     :  30px;                    /* ?? *//* the distance from ?? of the ?? relative block, or */
+
+    left                    : 180px;
+    width                   : calc( var(--Section1-Text_font-size) * ( var(--width-factor) + 0.0 ) ) ;
+/*  font-size               : var(--Section1-Text_font-size);  */
+
+/*  border                  : 1px solid red; */
+    }
+/* ---------------------------------------------------------- */
+
+h2.Section1_text5 {
+    display                 : var(--Section1_text5-display);
+    content                 : attr(data-text);
+
+/*  position                : static;                           /* the default, ignores top, left, bottom, right; but no workie */
+    position                : absolute;                         /* the default, ignores top, left, bottom, right */
+    top                     : calc( var(--Menubar_body-height) + var(--Section1-Text_margin-top) + ( 4 * ( var(--height-adj) * var(--Section1-Text_font-size) ) ) );
+/*  top                     : calc( 95px + ( 4 * ( var(--Section1-Text_font-size) * 1 ) ) );  */
+
+    left                    : 230px;
+/*  width                   : calc( var(--Section1-Text_font-size) * ( var(--width-factor) + 0.0 ) ); */
+/*  font-size               : var(--Section1-Text_font-size);  */
+
+    background              : linear-gradient( 90deg, #d630f2, #ff002f, #e4ff00, #2d30d8 );
+/*  background-size         : 500; */
+    overflow                : hidden;
+
+   -webkit-background-clip  : text;
+    background-clip         : text;
+   -webkit-text-filL-color  : transparent;
+
+    border                  : 1px solid red;
+    }
+/* ---------------------------------------------------------- */
+
+h2.Section1_text5:before {
+    display                 : var(--Section1_text5-display);
+    position                : absolute;
+    content                 : attr(data-text);
+    white-space             : nowrap;
+    background              : linear-gradient( 90deg, #d630f2, #ff002f, #e4ff00, #2d30d8 );
+/*  background-size         : 500; */
+    overflow                : hidden;
+    transition              : width 2s ;
+    animation               : animate 5s linear infinite;
+    width                   : 0;
+   -webkit-background-clip  : text;
+    background-clip         : text;
+   -webkit-text-filL-color  : transparent;
+    }
+
+h2.Section1_text5:hover:before {
+    width                   : 100%;
+/*  width                   : calc( var(--Section1-Text_font-size) * ( var(--width-factor) + 0.0 ) );  */
+    }
+/* ---------------------------------------------------------- */
+
+.shadow1{
+    text-shadow             :  4px 3px 6px #000000;
+    }
+
+.gradient1{
+    background              : linear-gradient( 90deg, #e7e0f5, #150453 );
+/*  background-size         : 300; */
+    overflow                : hidden;
+
+   -webkit-background-clip  : text;
+    background-clip         : text;
+   -webkit-text-filL-color  : transparent;
+    }

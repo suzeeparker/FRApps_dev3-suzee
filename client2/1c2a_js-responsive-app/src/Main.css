@@ -1,0 +1,88 @@
+/* ----------------------------------------------------------------------- */
+/* Main.css                                                                */
+/* ----------------------------------------------------------------------- */
+
+.Main_body {
+    width               : 100%;
+    height              : 100%;
+    padding             :   0px;                          /* var(--Main_body-padding); */
+    font-family         :  var(--Main_body-font-family);
+    }
+
+/* .Main_body p { margin-top:   0rem; } */                /* no top margin for all paragraphs? */
+
+/*-----------------------------------------
+The .section1 properites
+CHANGES: background
+ADDITIONS: background-color, background-repeat,
+           background-size & background-position
+------------------------------------------*/
+.Main_section1 {
+/*  top                 :  var(--Menubar_body-height);  *//* RJS set to be below the header, aka Menubar_body-height, was 10%) */
+    height              :  45%;                           /* RJS Added 5% to create scrolling */
+    min-height          : 288px;                          /* When screen height gets small */
+/*  background-color    :  var(--Section1_body-color);  */
+    background-image    :  var(--Section1_image);
+    background-repeat   :  no-repeat;
+    background-size     :  cover;
+    background-position :  center;
+/*  border              :  1px solid black;             *//* reduces width by 2 */
+    }
+
+/*-----------------------------------------
+Sets all the propterties for the font-based
+text overlay (sits over top of the image above)
+------------------------------------------*/
+.Main_section1 h2 {
+/*  width               :  50%;                         *//* RAM Added, not by Rick) */
+    margin-top          :   0px;                          /* RAM Why was margin-top: 39.89px?? */
+    padding             :  var(--Section1_h2-padding);    /* RAM changed padding-left to 80px, was: 0px by Rick; top was: 80px) */
+    font-weight         :  bolder;                        /* RAM Why not bold ot 700 */
+    font-size           :   3rem;
+    text-shadow         :   2px 2px 12px #000000;
+    color               :  var(--Section1_font-color)     /* white; */
+    }
+
+/*-----------------------------------------
+Sets the properties for the first letter
+of the font-based text overlay, above
+------------------------------------------*/
+.Main_section1 h2::first-letter {
+    font-size           : 150%;
+    color               :  var(--Section1_1stchar-font-color) /* white; */
+    }
+
+/*-----------------------------------------
+The .section2 properites
+NO CHANGES or ADDITIONS
+------------------------------------------*/
+.Main_section2 {
+    width               :  var(--Section2_width);         /* was 100%; */
+    height              :  55%;                           /* Added 5% to create scrolling*/
+    margin              :  var(--Section2_margin);        /* RAM No effect, but H2 does!! */
+    padding             :  var(--Section2_padding);
+    background-color    :  var(--Section2_body-color);
+    }
+
+/*-----------------------------------------
+This is another <h2> override setting
+the font color from white to black
+------------------------------------------*/
+.Main_section2 h2 {
+    margin              : 0px;                                      /* default margin is 19.92px */
+    padding             : 100px 50px 5px 50px;
+    color               :  var(--Section2_h2-font-color-dark);      /* was: black; */
+    text-align          :  var(--Section2_h2-font-alignment);
+    }
+
+/*-----------------------------------------               /* 20705.05.1 RAM Added) */
+The .section2 paragraph properites
+NO CHANGES or ADDITIONS
+------------------------------------------*/
+.Main_section2 p {
+    color               :  var(--Section2_font-color);
+    font-size           :  var(--Section2_font-size);
+    text-align          :  var(--Section2_font-alignment);
+    }
+
+/* ----------------------------------------------------------------------- */

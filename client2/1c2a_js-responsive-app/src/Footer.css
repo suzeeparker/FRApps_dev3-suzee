@@ -1,0 +1,83 @@
+/* ----------------------------------------------------------------------- */
+/* Footer.css                                                              */
+/* ----------------------------------------------------------------------- */
+
+/*-----------------------------------------
+The .footer properites
+ADDITION: z-index, bottom
+CHANGES: position
+REMOVAL: top
+------------------------------------------*/
+
+.Footer_body {
+    position            :  fixed;
+/*  top                 :  10%;                             *//* Removed in place of the bottom property */
+    bottom              :   0px;
+    width               : 100%;
+    height              :  var(--Footer_body-height);         /* RAM Added 50px */
+    background-color    :  var(--Footer_body-color);
+    z-index             :  99;
+    }
+
+/*-----------------------------------------
+This is another <h2> override
+REMOVAL: the entire property
+due to <h2> tag was removed from html
+in the footer
+------------------------------------------*/              /* not used *//*
+* .Footer_body h2 {
+*      padding          :  0px;
+*      } */
+
+/*-----------------------------------------
+Sets properties for the footer text
+NO CHANGES
+------------------------------------------*/              /* not used *//*
+* .Footer_body-text {
+*     font-size         :  x-large;
+*     text-align        :  right;
+*     padding           :  0px 30px 0px 25px;           *//* padding-right: was 65% ??? *//*
+*     }                                                 */
+
+/*-----------------------------------------
+Sets properties for the footer nav list
+introducing the flex property
+NO CHANGES
+------------------------------------------*/
+.Footer_body ul {
+    margin              :  20px;
+    margin-top          :  calc( ( var(--Footer_body-height) - var(--Footer_font-size) ) * .45 );   /* was: 12px; */
+    padding             :  0;
+    display             :  flex;
+    flex-direction      :  row;
+    justify-content     :  center;
+    list-style          :  none;
+    }
+
+/*-----------------------------------------
+Sets the properties for each nav item
+introducing the flex property
+of the nav-bar items
+NO CHANGES
+------------------------------------------*/
+.Footer_body a {
+    margin              :  0 10px;  /* was: 8px 0; */
+    font-family         :  var(--Menubar_font-family);
+    font-size           :  var(--Footer_font-size);
+    font-weight         :  bold;
+    text-decoration     :  none;
+    text-shadow         :  var(--Footer_font-shadow);
+    color               :  var(--Footer_font-color);
+    }
+
+/*-----------------------------------------
+Sets the color of the footer nav
+items when you hover
+NO CHANGES
+------------------------------------------*/
+.Footer_body a:hover,
+.Footer_body a:active {
+    color               :  var(--Footer_hover-font-color);
+    }
+
+/* ----------------------------------------------------------------------- */
