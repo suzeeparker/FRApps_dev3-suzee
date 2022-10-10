@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Bookman+Old+Style' );
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre'  );
+
+/*-----------------------------------------
+root selector to create variables
+CHANGE: h2-font-size
+-------------------------------------------*/
+:root {
+    --header-height              :  58px;
+    --header-color3              :  cornflowerblue;
+    --header-color               : #3ADD63;
+
+    --toolbar-logo-image         :  url( '../../assets/logos/formr-logo.gif' );  /* .(20630.07.01 RAM Was: ../../assets/logos/FormR_Logo-01_225x50.png) */
+    --toolbar-logo-width         : 140px;
+    --toolbar-logo-padding-bottom:  0px;
+
+/*  --toolbar-font-family        : "Bookman Old Style", "Gill Sans", "Calibri", "Trebuchet MS" "sans-serif"; */
+/*  --toolbar-font-family        : "Frank Ruhl Libre"; */
+    --toolbar-font-family        : "Bookman Old Style", "Gill Sans";
+    --toolbar-font-size          :  36px;      /* was  --nav-list-font-size: 1.2rem; */
+    --toolbar-font-color         :  white;     /* was  black */
+    --toolbar-hover-color        : #FF7034;    /* was  --nav-list-item-hover-color: white */
+    --toolbar-font-shadow        :  3px 1.5px #070707;
+
+    --cta-button-color           : #ff1b68;                     /* was #ff1b68; red */
+    --cta-button-font-color      :  white;                           /* was white; */
+    --cta-button-font-size       :  calc( var(--toolbar-font-size) * .85 );      /* was white; */
+    --cta-button-hover-color     :  var(--cta-button-font-color);    /* was white  */
+    --cta-button-hover-font-color:  var(--cta-button-color);       /* was #ff1b68; */
+    --cta-button-padding         :   2px 16px  4px 16px;            /* was: top right.left bottom: height 6 + font-size + 4 */
+
+    --section1-color             : whitesmoke;
+    --section2-color             : whitesmoke;
+
+    --h2-text-color-light        : white;
+    --h2-text-color-dark         : black;
+    --h2-font-size               : 2.0rem;
+
+    --footer-color               : #FF7034; /*dark orange*/
+    --footer-list-font-size      : 0.9rem;
+
+    --toolbar-min-width          : 870px;       /* no workie */
+    }
+
+html {
+    height          : 100%; /* needed for SideDrawer */
+    }
+
+body {
+    height          : 100%;  /* needed for Sidebar */
+    margin          :   0;
+    padding         :   0;
+    font-size       :  16px;
+    font-family     : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+/* @import "components/Toolbar/toolbar.css"; */
+/* @import "components/Sidebar/sidebar_button.css"; */
+/* @import "components/Sidebar/sidebar.css"; */
+/* @import "components/Backdrop/backdrop.css"; */

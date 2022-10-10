@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"       content="width=device-width, initial-scale=1">
+    <meta name="description"    content="Web site created using HTML, CSS and Javascript">
+    <title>FRApps 7c2. JS Responsive Menubar</title>
+
+    <link type="text/css" rel="stylesheet" href="index_u2.css">
+    <link type="text/css" rel="stylesheet" href="./components/Toolbar/Toolbar.css">
+    <link type="text/css" rel="stylesheet" href="./components/Sidebar/sidebar_button.css">
+    <link type="text/css" rel="stylesheet" href="./components/Sidebar/sidebar.css">
+    <link type="text/css" rel="stylesheet" href="./components/Backdrop/backdrop.css">
+
+</head>
+
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <div id="root">
+
+<!--  <div style="height: 100%;"> -->
+
+        <header  class="Toolbar">
+          <nav   class="Toolbar_nav">
+
+            <div class="Toolbar_sidebar-button">
+
+              <div   class="Sidebar_button" onclick="Sidebar_button_onClick()">   <!-- defined in App.mjs -->
+                <div class="Sidebar_button-line"></div>
+                <div class="Sidebar_button-line"></div>
+                <div class="Sidebar_button-line"></div>
+              </div>
+
+              <script>
+               function  Sidebar_button_onClick( )    {  
+                        bSidebar_button_isOpen  =  ! bSidebar_button_isOpen 
+                         alert(`Sidebar is now ${ bSidebar_button_isOpen ? 'open' : 'closed' } (HTML inline - index_u2.html)`)
+                         } 
+              </script>
+
+            </div>
+
+            <div class="Toolbar_logo"><a href="/">&nbsp;</a></div>  <!-- &nbsp; is required -->
+
+            <div class="Toolbar_spacer"></div>                      <!-- Ending tag is required -->
+
+            <div class="Toolbar_nav-items">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Links</a></li>
+                <li><a href="/">Cards</a></li>
+                <li><a href="/">FAQs</a></li>
+                <li id="Toolbar_cta-button"><a href="/">Sign In</a></li>
+              </ul>
+            </div>
+
+          </nav>
+        </header>
+
+        null
+        null
+
+        <main style="margin-top: 64px;">
+          <p>This is some more page content</p>
+          <p style="margin-left:10px;"> HTML version _u2 </p>
+        </main>
+
+  <!--</div>-->
+  </div>
+
+<!-- <script type="module" src="index.mjs"></script> -->
+
+     <script>
+           alert( "Begin javascript" )
+           bSidebar_button_isOpen  =  false
+/*           
+  function  Sidebar_button_onClick( )    {  
+           bSidebar_button_isOpen  =  ! Sidebar_button_isOpen 
+            alert(`Sidebar is now ${ bSidebar_button_isOpen ? 'open' : 'closed' } (HTML body - index_u2.html)`)
+            } */
+     </script>       
+</body>
+
+</html>
+
